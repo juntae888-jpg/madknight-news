@@ -1,24 +1,48 @@
 {
   "username": "MadKnight 뉴스",
+  "avatar_url": "https://juntae888-jpg.github.io/madknight-news/mk.png",
   "embeds": [
     {
-      "title": "🌙 AI 트렌드 브리핑 · 2026-08-21 (금)",
+      "author": {
+        "name": "MADKNIGHT · 매일 아침 AI & 게임 브리핑",
+        "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
+      },
+      "title": "🌙  2026-08-21 (금) · 오늘의 브리핑",
       "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html",
       "color": 16747100,
-      "description": "**⚡ 30초 요약**\n\n• OpenAI, **프론티어 RL 훈련 2주 중단** — 모델이 샌드박스를 뚫고 Hugging Face 침입\n• Stripe, **OpenRouter $75억 인수 확정** — 3개월 만에 밸류 6배\n• Google, **Marvell 커스텀 AI 칩 딜** — 최대 $122억 지분 옵션, 주가 10%↑\n• OpenAI, **ZDR + Private Safety Processing** 프리뷰\n• **Cursor 클라우드 에이전트 대형 업데이트** — 이벤트 구독 · /goal · 격리 VM",
+      "thumbnail": {
+        "url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
+      },
+      "description": "**[OpenAI, 프론티어 RL 훈련 2주 중단](https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html)**\n> 모델이 샌드박스를 뚫고 Hugging Face 침입, 최대 규모 훈련은 무기한 보류\n\n**[Stripe, OpenRouter 75억 달러 인수 확정](https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/)**\n> 3개월 만에 몸값 6배 · AI 토큰 지출 관리가 진짜 노림수\n\n**[Google·Marvell, 122억 달러 커스텀 AI 칩 딜](https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html)**\n> 지분 매입 옵션 포함 2033년까지 · Marvell 주가 10%↑\n\n**[OpenAI, ZDR 확대 + Private Safety Processing](https://openai.com/index/offering-zero-data-retention-for-frontier-models/)**\n> 고객 데이터에 손대지 않고 오남용 탐지 · 9월 정식 배포\n\n**[터미널 코딩 에이전트 러시](https://news.hada.io/topic?id=32683)**\n> Kimi Code CLI · fx · OpenSandbox, 하루에 동시 공개",
       "fields": [
         {
-          "name": "📌 오늘의 팁",
-          "value": "'완료 조건 카드' — 긴 작업 첫 메시지에 완료 조건 3개를 명시하고 ✅/❌ 자가검증을 요구하면, 결과물을 열기 전에 품질을 3초 만에 판정할 수 있습니다."
+          "name": "🎮 국내 게임",
+          "value": "• [크래프톤 5종·엔씨 3종, 게임스컴 출품작 공개](https://dealsite.co.kr/articles/147032)\n• [TL 쓰론 앤 리버티 8/20 업데이트](https://tl.plaync.com/ko-kr/board/update/view?articleId=68a4593082c9cb2b96bd6629)",
+          "inline": true
         },
         {
-          "name": "🔗 전체 브리핑",
-          "value": "[웹에서 카드 펼쳐보기](https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "name": "🌍 해외 게임",
+          "value": "• [게임스컴 2026, 8/26 개막 · 사상 첫 완판](https://www.techtimes.com/articles/324874/20260818/gamescom-2026-first-ever-sold-out-floor-full-schedule-where-watch.htm)\n• [Xbox, 게임스컴 방송 라인업 대량 공개](https://www.purexbox.com/news/2026/08/xbox-reveals-huge-list-of-games-for-its-two-gamescom-2026-broadcasts)",
+          "inline": true
+        },
+        {
+          "name": "Ⓝ 넥슨 키워드",
+          "value": "`서든어택 21주년 업데이트` `메이플 여름 신규 보스` `8월 일정 캘린더`\n[서든어택 21주년](https://m.bodnara.co.kr/article/view.html?num=214081) · [여름 업데이트 총정리](https://www.youthdaily.co.kr/mobile/article.html?no=225419) · [넥슨 뉴스룸](https://kr-newsroom.nexon.com/)"
+        },
+        {
+          "name": "💡 오늘의 팁 · 완료 조건 카드",
+          "value": "> 긴 작업 첫 메시지에 **완료 조건 3개**를 명시하고 ✅/❌ 자가검증을 요구하세요.\n> 결과물을 열기 전에 품질을 **3초 만에** 판정할 수 있습니다."
+        },
+        {
+          "name": "​",
+          "value": "**[📖  전체 브리핑 펼쳐보기](https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html)**   ·   [🗂  아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "footer": {
-        "text": "MadKnight 뉴스 · 08:00 KST · Cowork 아침 브리핑"
-      }
+        "text": "MadKnight 뉴스 · 매일 08:00 KST",
+        "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
+      },
+      "timestamp": "2026-08-20T23:00:00.000Z"
     }
   ]
 }
