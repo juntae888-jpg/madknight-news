@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadKnight 뉴스</title>
+<style>
+  :root { --bg:#0d0f14; --panel:#161a22; --line:#2a3040; --text:#e8eaf0; --dim:#8a92a6; --mk:#FF8A5C; --mk-dark:#d96a3e; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif; line-height:1.7; min-height:100vh; position:relative; overflow-x:hidden; }
+  .watermark { position:fixed; top:40%; left:50%; transform:translate(-50%,-50%) rotate(-14deg); font-size:18vw; font-weight:900; color:rgba(255,138,92,.035); pointer-events:none; user-select:none; white-space:nowrap; }
+  .wrap { max-width:680px; margin:0 auto; padding:56px 20px 80px; position:relative; z-index:1; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:8px; }
+  .mk-badge { width:54px; height:54px; border-radius:14px; background:linear-gradient(135deg,var(--mk),var(--mk-dark)); display:flex; align-items:center; justify-content:center; font-weight:900; font-size:22px; color:#14161c; box-shadow:0 4px 18px rgba(255,138,92,.35); }
+  h1 { font-size:26px; }
+  .sub { color:var(--dim); font-size:13.5px; margin:14px 0 34px; }
+  .item { display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin-bottom:12px; text-decoration:none; color:var(--text); transition:border-color .2s, transform .15s; }
+  .item:hover { border-color:var(--mk); transform:translateX(4px); }
+  .item .d { color:var(--mk); font-weight:800; font-size:14px; }
+  .item .t { color:#c9cedb; font-size:13.5px; margin-top:4px; }
+  .item .arrow { float:right; color:var(--dim); }
+  footer { margin-top:48px; color:var(--dim); font-size:11.5px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <header>
+    <div class="mk-badge">MK</div>
+    <div><h1>🌙 MadKnight 뉴스</h1></div>
+  </header>
+  <p class="sub">매일 아침 08:00 KST · AI 트렌드 브리핑 아카이브 · Claude(Cowork) · ChatGPT · Gemini · Cursor</p>
+  <div id="list"></div>
+  <footer>MadKnight 뉴스 · powered by Cowork 아침 브리핑</footer>
+</div>
+<script>
+  // 새 브리핑이 나오면 이 배열 맨 앞에 한 줄 추가
+  var BRIEFINGS = [
+    ["2026-08-21", "금", "OpenAI 프론티어 훈련 2주 중단 · Stripe, OpenRouter $75억 인수 · Google-Marvell $122억 칩 딜"],
+    ["2026-08-19", "수", "Anthropic 매출 $650억 · ChatGPT for Teens · 유럽 광고 확대 · 오하이오 8GW 데이터센터"]
+  ];
+  var el = document.getElementById('list');
+  BRIEFINGS.forEach(function(b) {
+    var a = document.createElement('a');
+    a.className = 'item';
+    a.href = 'news/' + b[0] + '.html';
+    a.innerHTML = '<span class="arrow">→</span><div class="d">' + b[0] + ' (' + b[1] + ')</div><div class="t">' + b[2] + '</div>';
+    el.appendChild(a);
+  });
+</script>
+</body>
+</html>

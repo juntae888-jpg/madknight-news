@@ -1,0 +1,28 @@
+name: Post briefing to Discord
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "discord/latest.json"
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post embed to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "::error::DISCORD_WEBHOOK secret is not set (Settings > Secrets and variables > Actions)"
+            exit 1
+          fi
+          curl -sf -X POST \
+            -H "Content-Type: application/json" \
+            -d @discord/latest.json \
+            "$DISCORD_WEBHOOK"
+          echo "Posted discord/latest.json to Discord."

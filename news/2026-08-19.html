@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadKnight 뉴스 · 2026-08-19 (수)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.035); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; position: relative; z-index: 1; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 6px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 14px 0 26px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body {
+    max-height: 0; overflow: hidden; transition: max-height .35s ease;
+    border-top: 0 solid transparent;
+  }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  footer { margin-top: 46px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+  .backlink { display:inline-block; margin-bottom: 22px; color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <a class="backlink" href="../index.html">← 전체 브리핑 목록</a>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-08-19 (수)</div>
+    </div>
+  </header>
+  <p class="meta">범위: 8/18(화) 아침 ~ 8/19(수) 아침 KST · 도구: Claude(Cowork) · ChatGPT · Gemini · Cursor · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li>Anthropic <b>연환산 매출 $650억 돌파</b> — IPO 서류 비공개 제출, OpenAI보다 먼저 상장 가능성</li><li>OpenAI <b>'ChatGPT for Teens'</b> 출시(13~17세 전용) + Model Spec 개정</li><li><b>ChatGPT 광고, 유럽 31개국 8/24 시작</b> — 무료·저가 플랜 대상</li><li>OpenAI·Nvidia <b>오하이오 8GW 데이터센터</b> — Nvidia가 최대 $1,050억 지급 보증</li><li><b>Claude Code 2.1.234/235</b> 배포: 사용량 한도 리셋 시 세션 자동 재개</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span style="letter-spacing:0;color:var(--dim);font-weight:400;text-transform:none;">(카드를 눌러 펼치기)</span></div>
+  <div class="card"><div class="card-head"><span class="tags">#Anthropic #IPO</span><span class="title">연환산 매출 $650억 — 상장 준비 가속</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">7월 말 기준 Anthropic의 연환산 매출(run rate)이 $650억에 도달했습니다. 5월 $470억, 2025년 말 $90억에서 급증한 수치로, 투자자들은 2026년 연매출 $1,000~1,200억을 전망합니다. 이미 IPO 서류를 비공개 제출했고 $2조 이상의 공모 밸류에이션을 목표로 OpenAI보다 먼저 상장할 수 있다는 관측입니다.<div class="srcs">👉 <a href="https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/" target="_blank" rel="noopener">TechCrunch ↗</a> <a href="https://fortune.com/2026/08/18/anthropic-annual-revenue-run-rate-65-billion/" target="_blank" rel="noopener">Fortune ↗</a> <a href="https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo" target="_blank" rel="noopener">Bloomberg ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#OpenAI #안전</span><span class="title">ChatGPT for Teens 출시 (8/18)</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">13~17세 전용 ChatGPT가 공개됐습니다. Study Mode 기본 활성화, 숙제 지름길 감지 알림, 퀴즈·학습 시각화, '학습 시간대' 설정이 들어가고 자해·폭력·섭식장애·성적 콘텐츠 차단과 부모 계정 연동·알림이 기본 적용됩니다. 같은 날 Model Spec에 청소년 상호작용 원칙과 '거짓 전제 처리' 지침이 추가됐습니다.<div class="srcs">👉 <a href="https://openai.com/index/chatgpt-for-teens/" target="_blank" rel="noopener">OpenAI 공식 ↗</a> <a href="https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/" target="_blank" rel="noopener">TechCrunch ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#OpenAI #광고</span><span class="title">ChatGPT 광고, 유럽 31개국에 8/24 상륙</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 ChatGPT 광고를 유럽 31개국으로 확대한다고 발표했습니다. 무료·저가 플랜 사용자가 대상이며 초기에는 일부 파트너를 통해, 이후 셀프서비스로 열립니다. 한국은 이번 확대 대상이 아니지만, 무료 티어의 광고 노출이 글로벌 표준이 되는 흐름은 참고할 만합니다.<div class="srcs">👉 <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/" target="_blank" rel="noopener">OpenAI 공식 ↗</a> <a href="https://searchengineland.com/chatgpt-ads-are-expanding-to-31-european-countries-485468" target="_blank" rel="noopener">Search Engine Land ↗</a> <a href="https://dataconomy.com/2026/08/19/openai-chatgpt-ads-launch-european-markets-august-24/" target="_blank" rel="noopener">Dataconomy ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#인프라 #Nvidia</span><span class="title">오하이오 8GW 데이터센터 — Nvidia $1,050억 보증</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 옛 우라늄 농축 부지에 IT 기준 8GW 규모(발전 신설 10GW) 데이터센터를 짓는다고 발표했습니다. SoftBank 계열 SB Energy가 건설·소유하고 20년 리스, 2028년부터 가동 예정이며 Nvidia가 최대 $1,050억의 조건부 리스·전력 지급 의무를 보증하고 SB Energy에 $15억을 직접 투자합니다.<div class="srcs">👉 <a href="https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy" target="_blank" rel="noopener">Axios ↗</a> <a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank" rel="noopener">CNBC ↗</a> <a href="https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/" target="_blank" rel="noopener">TechCrunch ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#개발도구</span><span class="title">Warp, 'Factories' 공개 — 에이전트 함대 관리 인프라</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Warp가 자율 코딩 에이전트를 여러 대 동시에 굴리기 위한 오픈 인프라 'Factories'를 내놨습니다. 에이전트 간 워크플로 조율과 보안 경계 설정이 핵심으로, Cursor의 Origin 발표와 함께 '에이전트 1대'에서 '에이전트 팀 운영'으로 도구 경쟁 축이 옮겨가고 있음을 보여줍니다.<div class="srcs">👉 <a href="https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/" target="_blank" rel="noopener">TechCrunch ↗</a> <a href="https://www.warp.dev/blog/open-infrastructure-for-building-a-software-factory" target="_blank" rel="noopener">Warp 공식 ↗</a></div></div></div></div>
+
+  <div class="section-label">② 내가 쓰는 도구 업데이트</div>
+  <div class="tools"><div class="tool"><span class="st">🔔</span><span class="tx"><b>Claude (Cowork 포함)</b> — Claude Code 2.1.234/235(8/18): 사용량 한도 리셋 시 세션 자동 재개, GitLab MR 배지, 선택형 맞춤법 검사, NT 네임스페이스 경로 차단 · 데스크톱/Cowork 앱은 v1.30096.5(8/14) 이후 변동 없음 · <a href='https://releasebot.io/updates/anthropic' target='_blank'>Releasebot</a></span></div><div class="tool"><span class="st">🔔</span><span class="tx"><b>ChatGPT</b> — ChatGPT for Teens 출시 + Model Spec 개정(8/18) · 유럽 31개국 광고 8/24 시작 예고 · <a href='https://openai.com/index/chatgpt-for-teens/' target='_blank'>OpenAI</a></span></div><div class="tool"><span class="st">🔔</span><span class="tx"><b>Gemini</b> — Gemini Enterprise: 3.6 Flash 미국·EU 멀티리전 확대, 홈 화면 팀 공지 GA(8/18) · Workspace Admin Assist 출시(8/17) · API는 3.7 Flash GA(8/13) 이후 변동 없음 · <a href='https://ai.google.dev/gemini-api/docs/changelog' target='_blank'>체인지로그</a></span></div><div class="tool"><span class="st">🔔</span><span class="tx"><b>Cursor</b> — 'Git at any scale'(8/18): Origin의 Continuity 저장 엔진 공개 — S3 기반 WAL + 로컬 NVMe + 선형화 push (8/17 Origin 베타 후속) · <a href='https://releasebot.io/updates/cursor' target='_blank'>Releasebot</a></span></div></div>
+
+  <div class="section-label">③ 오늘의 활용 팁</div>
+  <div class="tip"><h3>'거짓 전제 사냥' 3단 핸드오프</h3>
+<p>AI 결과물의 가장 흔한 실패는 "틀린 답"이 아니라 "틀린 전제를 조용히 받아들인 답"입니다. OpenAI가 Model Spec에 명시한 거짓 전제(false premise) 처리 지침을 검증 루틴으로 바꿔보세요.</p>
+<blockquote>1. <b>생성 → Claude(Cowork)</b>: 평소처럼 보고서·분석 초안을 만듭니다.<br>
+2. <b>전제 사냥 → ChatGPT</b>: 초안을 붙여넣고 — "이 문서가 검증 없이 사실로 가정하고 있는 전제를 최대 3개 찾아라. 각각 (a) 전제 문장, (b) 왜 검증이 필요한지, (c) 확인 방법을 표로. 정말 없으면 '없음'이라고만 답하라."<br>
+3. <b>사실 확인 → Gemini</b>: 나온 전제 문장만 검색 연동으로 확인 — 전제 3개만 던지므로 30초면 끝.</blockquote>
+<p>"결론이 맞나?"가 아니라 "출발점이 맞나?"를 점검하게 되어, 세 AI를 각각 다시 돌리는 것보다 훨씬 적은 토큰으로 치명적 오류를 걸러냅니다.</p></div>
+
+  <footer>MadKnight 뉴스 · 2026-08-19 (수) 08:00 KST 발행 · <a href="../index.html">아카이브</a></footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+</script>
+</body>
+</html>

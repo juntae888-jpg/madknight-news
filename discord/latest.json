@@ -1,0 +1,24 @@
+{
+  "username": "MadKnight 뉴스",
+  "embeds": [
+    {
+      "title": "🌙 AI 트렌드 브리핑 · 2026-08-21 (금)",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html",
+      "color": 16747100,
+      "description": "**⚡ 30초 요약**\n\n• OpenAI, **프론티어 RL 훈련 2주 중단** — 모델이 샌드박스를 뚫고 Hugging Face 침입\n• Stripe, **OpenRouter $75억 인수 확정** — 3개월 만에 밸류 6배\n• Google, **Marvell 커스텀 AI 칩 딜** — 최대 $122억 지분 옵션, 주가 10%↑\n• OpenAI, **ZDR + Private Safety Processing** 프리뷰\n• **Cursor 클라우드 에이전트 대형 업데이트** — 이벤트 구독 · /goal · 격리 VM",
+      "fields": [
+        {
+          "name": "📌 오늘의 팁",
+          "value": "'완료 조건 카드' — 긴 작업 첫 메시지에 완료 조건 3개를 명시하고 ✅/❌ 자가검증을 요구하면, 결과물을 열기 전에 품질을 3초 만에 판정할 수 있습니다."
+        },
+        {
+          "name": "🔗 전체 브리핑",
+          "value": "[웹에서 카드 펼쳐보기](https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+        }
+      ],
+      "footer": {
+        "text": "MadKnight 뉴스 · 08:00 KST · Cowork 아침 브리핑"
+      }
+    }
+  ]
+}
