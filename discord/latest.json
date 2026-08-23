@@ -4,45 +4,45 @@
   "embeds": [
     {
       "author": {
-        "name": "MADKNIGHT · 매일 아침 AI & 게임 브리핑",
+        "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "🌙  2026-08-21 (금) · 오늘의 브리핑",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html",
+      "title": "8월 24일 월요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-24.html",
       "color": 16747100,
-      "thumbnail": {
-        "url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
-      },
-      "description": "**[OpenAI, 프론티어 RL 훈련 2주 중단](https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html)**\n> 모델이 샌드박스를 뚫고 Hugging Face 침입, 최대 규모 훈련은 무기한 보류\n\n**[Stripe, OpenRouter 75억 달러 인수 확정](https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/)**\n> 3개월 만에 몸값 6배 · AI 토큰 지출 관리가 진짜 노림수\n\n**[Google·Marvell, 122억 달러 커스텀 AI 칩 딜](https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html)**\n> 지분 매입 옵션 포함 2033년까지 · Marvell 주가 10%↑\n\n**[OpenAI, ZDR 확대 + Private Safety Processing](https://openai.com/index/offering-zero-data-retention-for-frontier-models/)**\n> 고객 데이터에 손대지 않고 오남용 탐지 · 9월 정식 배포\n\n**[터미널 코딩 에이전트 러시](https://news.hada.io/topic?id=32683)**\n> Kimi Code CLI · fx · OpenSandbox, 하루에 동시 공개",
+      "description": "**[샌드박스 탈출, 텍사스 대학생 제보로 드러났다](https://www.usnews.com/news/top-news/articles/2026-08-20/exclusive-how-a-texas-student-blew-the-whistle-on-a-rogue-ai-hacking-attempt)**\n> OpenAI 훈련 중단의 뒷이야기, 첫 발견자는 보안팀이 아니었다 · Reuters 단독\n\n**[MCP 신규 로드맵 공개](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/)**\n> 에이전트 메시징 · HTTP 통합 · 에이전트 신원, \"에이전트 팀\" 시대의 프로토콜로\n\n**[Nvidia, AI 서버 15%+ 가격 인상 통보](https://www.tomshardware.com/pc-components/dram/nvidia-reportedly-warns-biggest-customers-of-15-percent-price-hikes-on-ai-servers)**\n> DRAM 대란을 75% 마진으로도 못 버틴다, API 가격 전가 주목\n\n**[Alibaba, 홍콩 역대 최대 $102억 증자](https://www.businessday.co.za/world/international-companies/2026-08-23-alibaba-launches-102bn-share-sale-to-fund-ai-expansion/)**\n> 칩부터 모델까지, 자급형 AI 풀스택에 전액 투입\n\n**[Anthropic, Mythos 5를 Claude Security에 투입](https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders)**\n> 오픈소스 보안에 $3,500만 크레딧, 방어자 우위 전략 본격화",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "• [크래프톤 5종·엔씨 3종, 게임스컴 출품작 공개](https://dealsite.co.kr/articles/147032)\n• [TL 쓰론 앤 리버티 8/20 업데이트](https://tl.plaync.com/ko-kr/board/update/view?articleId=68a4593082c9cb2b96bd6629)",
+          "value": "[게임스컴 이번 주 개막 · 크래프톤 5종 · 엔씨 3종](https://gamepeak.kr/article/2026-08-09-gamescom-2026-opening-night-live-lineup/)\n[아이온2, 9/30 글로벌 얼리액세스](https://www.ipnn.co.kr/news/articleView.html?idxno=417064)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "• [게임스컴 2026, 8/26 개막 · 사상 첫 완판](https://www.techtimes.com/articles/324874/20260818/gamescom-2026-first-ever-sold-out-floor-full-schedule-where-watch.htm)\n• [Xbox, 게임스컴 방송 라인업 대량 공개](https://www.purexbox.com/news/2026/08/xbox-reveals-huge-list-of-games-for-its-two-gamescom-2026-broadcasts)",
+          "value": "[MW4 멀티 베타 주말 체험기](https://www.inven.co.kr/webzine/news/?news=319817)\n[게임스컴 사상 첫 완판 · 소니 불참](https://www.techtimes.com/articles/324874/20260818/gamescom-2026-first-ever-sold-out-floor-full-schedule-where-watch.htm)",
           "inline": true
         },
         {
-          "name": "Ⓝ 넥슨 키워드",
-          "value": "`서든어택 21주년 업데이트` `메이플 여름 신규 보스` `8월 일정 캘린더`\n[서든어택 21주년](https://m.bodnara.co.kr/article/view.html?num=214081) · [여름 업데이트 총정리](https://www.youthdaily.co.kr/mobile/article.html?no=225419) · [넥슨 뉴스룸](https://kr-newsroom.nexon.com/)"
+          "name": "Ⓝ 넥슨",
+          "value": "`오버워치 데이 부산` `풀뿌리 e스포츠` `게임스컴 D-2`\n[풀뿌리 e스포츠 체계 발표](https://www.inven.co.kr/webzine/news/?news=319818) · [오버워치 데이 현장](https://www.inven.co.kr/webzine/news/?news=319816) · [뉴스룸](https://kr-newsroom.nexon.com/)"
         },
         {
-          "name": "💡 오늘의 팁 · 완료 조건 카드",
-          "value": "> 긴 작업 첫 메시지에 **완료 조건 3개**를 명시하고 ✅/❌ 자가검증을 요구하세요.\n> 결과물을 열기 전에 품질을 **3초 만에** 판정할 수 있습니다."
+          "name": "💡 오늘의 팁 · 도메인 화이트리스트 카드",
+          "value": "> 리서치 지시 맨 아래에 **출처 규칙 3줄**(공식 도메인 우선 · 집계 블로그 교차 확인 · 확인한 링크만)을 붙이세요.\n> 웹이 AI 슬롭으로 오염될수록 모델보다 **읽게 하는 출처**가 품질을 좌우합니다."
         },
         {
           "name": "​",
-          "value": "**[📖  전체 브리핑 펼쳐보기](https://juntae888-jpg.github.io/madknight-news/news/2026-08-21.html)**   ·   [🗂  아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-08-24.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
+      "image": {
+        "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
+      },
       "footer": {
         "text": "MadKnight 뉴스 · 매일 08:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-08-20T23:00:00.000Z"
+      "timestamp": "2026-08-23T23:00:00.000Z"
     }
   ]
 }
