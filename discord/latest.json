@@ -7,32 +7,32 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "8월 28일 금요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-28.html",
+      "title": "8월 31일 월요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-08-31.html",
       "color": 16747100,
-      "description": "**[Anthropic, AI가 실험 장비를 조작하는 'MHS' 표준 공개](https://www.anthropic.com/news/model-hardware-standard-research-preview)**\n> 현미경 · 로봇팔을 AI 에이전트가 직접 제어, MCP 호환 · 오픈소스 예정\n\n**[과학자에게 Claude Team 1만 석 1년 무료](https://www.anthropic.com/news/expanding-support-for-scientists)**\n> AI for Science 전 분야 확대, 프로젝트당 최대 $50K 크레딧\n\n**[OpenAI · Anthropic · Google 등 100여 개사 사이버 방어 공개서한](https://qz.com/openai-anthropic-google-ai-cyberattack-open-letter-082726)**\n> \"AI 공격, 수개월 내 더 정교해진다\" · 글로벌 공조 촉구\n\n**[Ox Alpha 정체는 GLM-5.3-Flash, MIT 오픈웨이트](https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/)**\n> 320B(활성 18B) · 1M 컨텍스트 · 엔비디아 없이 중국산 칩 구동\n\n**[내 도구 4종 동시 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-08-28.html)**\n> Claude Code 2.1.248 · Codex 0.150.0 · Gemini Live 음성 에이전트 · Cursor 리포 없는 시작",
+      "description": "**[소니 뮤직 퍼블리싱 · 워너 채플, Anthropic 제소](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/)**\n> 가사 무단 학습 쟁점, 3대 음악 퍼블리셔 모두 소송 중\n\n**[OpenAI, SpaceX에 인수된 Cursor에서 모델 철수](https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/)**\n> 11/12부터 접근 종료 · Cursor 사용자는 대체 모델 설정 점검\n\n**[법원, 펜타곤의 Anthropic 블랙리스트 무효화](https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/)**\n> \"안전장치 제거 거부에 대한 보복\" 판단 · 첫 법원 승리\n\n**[Anthropic 자동 정렬 연구자 공개](https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures)**\n> 정렬 벤치마크 10개 중 7개에서 인간 연구자 능가\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-08-31.html)**\n> Claude Code 2.1.251 보안 패치 · ChatGPT 멀티 Google 계정 · Codex 0.151.0",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[스텔라 블레이드 컴플리트 에디션 스위치2 버전 TGS 출품](https://www.inven.co.kr/webzine/news/?news=320083)\n[쿠키런: 크럼블 한 달 만에 매출 20억 · 250만 유저](https://www.inven.co.kr/webzine/news/?news=320093)",
+          "value": "[에픽세븐 8주년, \"변해야 산다는 마음으로\"](https://www.inven.co.kr/webzine/news/?news=320165)\n[게임스컴 한국공동관, 국내 10개사 B2B 집중](https://www.inven.co.kr/webzine/news/?news=320180)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[GTA6 26분 게임플레이 공개 · 11/19 출시 확정](https://www.inven.co.kr/webzine/news/?news=320094)\n[페르소나4 리바이벌, 2027년 2/18 발매](https://www.inven.co.kr/webzine/news/?news=320085)",
+          "value": "[위쳐3 확장팩 12분 게임플레이 · 리마스터 9/29 무료](https://www.inven.co.kr/webzine/news/?news=320205)\n[GTA6 공개 방송, 트위치 동시 시청 397만](https://www.inven.co.kr/webzine/news/?news=320186)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`하드 벨로나` `솔로 클리어` `10분 55초`\n[메이플 신규 보스 '하드 벨로나' 최초 솔로 격파](https://www.inven.co.kr/webzine/news/?news=320086) · [8월 일정](https://kr-newsroom.nexon.com/press-center/3515687)"
+          "value": "`썬데이 메이플` `광신도의 자격` `울티마 유물 탐사`\n[일요일 혜택 썬데이 메이플(8/30) 진행](https://maplestory.nexon.com/News/Event) · [보스 레이드 · 유물 탐사 9/16까지](https://maplestory.nexon.com/News/Update)"
         },
         {
-          "name": "💡 오늘의 팁 · Gemini Live 음성 아침 브리핑",
-          "value": "> Gemini Live에서 **\"오늘의 브리핑 들려줘\"**라고 말하면 Gmail · 캘린더를 음성으로 요약(8/26~).\n> 눈으로 읽는 Claude 브리핑 + 귀로 듣는 Gemini 브리핑, 두 요약이 갈리는 지점이 오늘 더 파볼 뉴스입니다."
+          "name": "💡 오늘의 팁 · ChatGPT 멀티 Google 계정",
+          "value": "> 설정 → 커넥터에서 Google 계정을 **2개 이상 연결**(8/28~), \"두 계정 캘린더 합쳐서 이번 주 일정 정리해줘\".\n> 복수 계정 교차 검색은 ChatGPT, 아침 브리핑은 Claude로 멀티 AI 분업 완성."
         },
         {
           "name": "​",
-          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-08-28.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-08-31.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "image": {
@@ -42,7 +42,7 @@
         "text": "MadKnight 뉴스 · 매일 08:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-08-27T23:00:00.000Z"
+      "timestamp": "2026-08-30T23:00:00.000Z"
     }
   ]
 }
