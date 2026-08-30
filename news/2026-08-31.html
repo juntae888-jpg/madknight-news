@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadKnight 뉴스 · 2026-08-31 (월)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.035); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; position: relative; z-index: 1; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 6px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 14px 0 26px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body {
+    max-height: 0; overflow: hidden; transition: max-height .35s ease;
+    border-top: 0 solid transparent;
+  }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  footer { margin-top: 46px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+  .backlink { display:inline-block; margin-bottom: 22px; color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <a class="backlink" href="../index.html">← 전체 브리핑 목록</a>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-08-31 (월)</div>
+    </div>
+  </header>
+  <p class="meta">범위: 8/28(금) 아침 ~ 8/31(월) 아침 KST (주말 포함) · 도구: Claude(Cowork) · ChatGPT · Gemini · Cursor · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>소니 · 워너, Anthropic 제소</b> · 3대 음악 퍼블리셔 모두 가사 무단 학습 소송 중</li><li><b>OpenAI, Cursor와 결별</b> · SpaceX 인수 여파, 11/12부터 OpenAI 모델 접근 종료</li><li><b>법원, 펜타곤의 Anthropic 블랙리스트 무효화</b> · "보복성 지정" 판단</li><li><b>Anthropic 자동 정렬 연구자</b> · 정렬 벤치마크 10개 중 7개에서 인간 연구자 능가</li><li>게임: <b>위쳐3 확장팩 12분 게임플레이 공개</b> · GTA6 방송 동시 시청 397만</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span style="letter-spacing:0;color:var(--dim);font-weight:400;text-transform:none;">(카드를 눌러 펼치기)</span></div>
+  <div class="card"><div class="card-head"><span class="tags">#저작권 #Anthropic</span><span class="title">소니 뮤직 퍼블리싱 · 워너 채플, Anthropic에 수십억 달러 소송</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">8/29 두 회사가 "역사상 가장 크고 뻔뻔한 지식재산 절도"라며 가사 무단 학습을 이유로 Anthropic을 제소했습니다. 이로써 3대 음악 퍼블리셔 모두가 Anthropic과 소송 중입니다.<div class="srcs">👉 <a href="https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright" target="_blank" rel="noopener">Axios ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#Cursor #OpenAI</span><span class="title">OpenAI, SpaceX에 인수된 Cursor에서 모델 철수 · 11/12 접근 종료</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 SpaceX의 Cursor 인수를 이유로 파트너십 종료를 공식 발표했습니다. 11월 12일부터 Cursor의 OpenAI 모델 직접 접근이 끊기므로, Cursor에서 GPT 계열을 쓰고 있다면 Claude · Gemini 등 대체 모델 설정을 미리 점검해 둘 필요가 있습니다.<div class="srcs">👉 <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" target="_blank" rel="noopener">OpenAI ↗</a><a href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html" target="_blank" rel="noopener">CNBC ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#소송 #정부</span><span class="title">연방법원, 펜타곤의 Anthropic '공급망 리스크' 지정 무효화</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">연방 판사가 국방부의 Anthropic 블랙리스트 지정이 수정헌법 1조 · 적법 절차 위반이며, 안전장치 제거 요구를 거부한 데 대한 보복이라고 판단했습니다. Anthropic이 정부 상대 분쟁에서 얻은 첫 법원 승리입니다.<div class="srcs">👉 <a href="https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/" target="_blank" rel="noopener">TechCrunch ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#정렬연구 #에이전트</span><span class="title">Anthropic, 정렬 문제를 스스로 고치는 '자동 연구자' 공개</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Claude 기반 자동 정렬 연구자가 문헌을 탐색하고 수정안을 제안 · 반복 검증해, 정렬 실패 10개 카테고리 벤치마크 중 7개에서 숙련된 인간 연구자를 앞섰습니다. 기존 파이프라인보다 훨씬 적은 학습 예시로 실전 수준 결과를 냈다는 점이 핵심입니다.<div class="srcs">👉 <a href="https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures" target="_blank" rel="noopener">Anthropic Research ↗</a></div></div></div></div><div class="card"><div class="card-head"><span class="tags">#오픈웨이트 #중국</span><span class="title">텐센트 Hy4 프리뷰 · 770B 오픈웨이트, Apache-2.0</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">텐센트가 770B 규모 오픈웨이트 모델 Hy4 프리뷰를 Apache-2.0 라이선스로 공개했습니다. 1M 토큰 컨텍스트를 지원하며, GLM-5.3에 이어 중국발 대형 오픈웨이트 공세가 이어지는 흐름입니다.<div class="srcs">👉 <a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener">Tencent ↗</a><a href="https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-august-29-2026/" target="_blank" rel="noopener">AI/TLDR ↗</a></div></div></div></div>
+
+  <div class="section-label">② 내가 쓰는 도구 업데이트</div>
+  <div class="tools"><div class="tool"><span class="st">🔔</span><span class="tx"><b>Claude (Cowork 포함)</b> · Claude Code 2.1.251: 심링크 · 경로 탐색 등 보안 패치 5건, 모델 전환 차단 훅, /usage 지출 한도 바 · <a href='https://github.com/anthropics/claude-code/releases/tag/v2.1.251' target='_blank'>릴리스</a></span></div><div class="tool"><span class="st">🔔</span><span class="tx"><b>ChatGPT</b> · 멀티 Google 계정 연결(8/28): Gmail · 캘린더 · 연락처를 여러 계정 동시 연결, 한 대화에서 교차 검색 · Codex 0.151.0: MCP 도구 처리 · 샌드박스 강화 · <a href='https://releasebot.io/updates/openai' target='_blank'>Releasebot</a></span></div><div class="tool"><span class="st">➖</span><span class="tx"><b>Gemini</b> · 변동 없음 (주말 신규 발표 없음, 최신: 8/27 Omni 1.1 Flash 영상 컨트롤) · <a href='https://releasebot.io/updates/google/gemini' target='_blank'>Releasebot</a></span></div><div class="tool"><span class="st">⚠️</span><span class="tx"><b>Cursor</b> · 체인지로그 변동 없음, 대신 OpenAI 모델 11/12 철수 예고(위 뉴스) · 모델 설정 점검 권장 · <a href='https://cursor.com/changelog' target='_blank'>체인지로그</a></span></div></div>
+
+  <div class="section-label">③ 게임</div>
+  <div class="tools"><div class="tool"><span class="st">🎮</span><span class="tx"><b>국내 게임</b> · 슈퍼크리에이티브 '에픽세븐'이 8주년을 맞아 탁광진 PD가 "변해야 산다는 마음으로 준비했다"고 밝혔습니다 · <a href='https://www.inven.co.kr/webzine/news/?news=320165' target='_blank'>인벤</a> · 게임스컴 2026 한국공동관에 국내 10개사가 참여해 B2B 미팅에 집중했습니다 · <a href='https://www.inven.co.kr/webzine/news/?news=320180' target='_blank'>인벤</a></span></div><div class="tool"><span class="st">🌍</span><span class="tx"><b>해외 게임</b> · '더 위쳐3' 확장팩 '송즈 오브 더 패스트'의 12분 게임플레이가 공개됐고(2027년 출시), 리마스터는 9/29 무료 배포됩니다 · <a href='https://www.inven.co.kr/webzine/news/?news=320205' target='_blank'>인벤</a> · GTA6 게임플레이 공개 방송이 트위치 최고 동시 시청 397만 명을 기록했습니다 · <a href='https://www.inven.co.kr/webzine/news/?news=320186' target='_blank'>인벤</a></span></div><div class="tool"><span class="st">Ⓝ</span><span class="tx"><b>넥슨</b> · <code>썬데이 메이플</code> <code>광신도의 자격</code> <code>울티마 유물 탐사</code> · 메이플스토리 일요일 혜택 '썬데이 메이플'(8/30)이 진행됐고, '광신도의 자격' 보스 레이드와 '울티마 유물 탐사' 이벤트는 9/16까지 이어집니다 · <a href='https://maplestory.nexon.com/News/Event' target='_blank'>이벤트</a> · <a href='https://maplestory.nexon.com/News/Update' target='_blank'>업데이트</a></span></div></div>
+
+  <div class="section-label">④ 오늘의 활용 팁</div>
+  <div class="tip"><h3>ChatGPT에 Google 계정 2개 연결해 '통합 일정 · 메일 비서' 만들기</h3>
+<p>8/28 업데이트로 ChatGPT가 Gmail · 캘린더 · 연락처의 여러 Google 계정 동시 연결을 지원합니다. 개인 · 업무 계정을 나눠 쓴다면:</p>
+<blockquote>ChatGPT 설정 → 커넥터(Connectors)에서 Google 계정을 두 개 모두 연결한 뒤, "두 계정 캘린더를 합쳐서 이번 주 일정 정리해줘" 또는 "두 메일함에서 지난주 미답장 메일 찾아줘"라고 요청해 보세요.</blockquote>
+<p>Gemini는 기본 계정 중심이니 복수 계정 교차 검색은 ChatGPT에 맡기고, 아침에 도착하는 Claude 브리핑 메일과 겹쳐 보면 멀티 AI 분업이 완성됩니다.</p></div>
+
+  <footer>MadKnight 뉴스 · 2026-08-31 (월) 발행 · <a href="../index.html">아카이브</a></footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+</script>
+</body>
+</html>
