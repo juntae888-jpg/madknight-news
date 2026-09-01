@@ -3,23 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · AI & 게임 브리핑 아카이브">
+<meta property="og:description" content="평일 아침 06:00 KST, AI 트렌드와 게임 소식을 한 장으로.">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
 <title>MadKnight 뉴스</title>
 <style>
-  :root { --bg:#0d0f14; --panel:#161a22; --line:#2a3040; --text:#e8eaf0; --dim:#8a92a6; --mk:#FF8A5C; --mk-dark:#d96a3e; }
+  :root { --bg:#0d0f14; --panel:#161a22; --panel2:#1c2130; --line:#2a3040; --text:#e8eaf0; --dim:#8a92a6; --mk:#FF8A5C; --mk-dark:#d96a3e; }
   * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
   body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif; line-height:1.7; min-height:100vh; position:relative; overflow-x:hidden; }
-  .watermark { position:fixed; top:40%; left:50%; transform:translate(-50%,-50%) rotate(-14deg); font-size:18vw; font-weight:900; color:rgba(255,138,92,.035); pointer-events:none; user-select:none; white-space:nowrap; }
-  .wrap { max-width:680px; margin:0 auto; padding:56px 20px 80px; position:relative; z-index:1; }
-  header { display:flex; align-items:center; gap:16px; margin-bottom:8px; }
-  .mk-badge { width:54px; height:54px; border-radius:14px; background:linear-gradient(135deg,var(--mk),var(--mk-dark)); display:flex; align-items:center; justify-content:center; font-weight:900; font-size:22px; color:#14161c; box-shadow:0 4px 18px rgba(255,138,92,.35); }
-  h1 { font-size:26px; }
-  .sub { color:var(--dim); font-size:13.5px; margin:14px 0 34px; }
-  .item { display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin-bottom:12px; text-decoration:none; color:var(--text); transition:border-color .2s, transform .15s; }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:420px; background:radial-gradient(closest-side, rgba(255,138,92,.09), transparent); pointer-events:none; }
+  .watermark { position:fixed; top:42%; left:50%; transform:translate(-50%,-50%) rotate(-14deg); font-size:18vw; font-weight:900; color:rgba(255,138,92,.03); pointer-events:none; user-select:none; white-space:nowrap; }
+  .wrap { max-width:720px; margin:0 auto; padding:52px 20px 80px; position:relative; z-index:1; }
+
+  header { display:flex; align-items:center; gap:16px; }
+  .mk-badge { width:54px; height:54px; border-radius:14px; background:linear-gradient(135deg,var(--mk),var(--mk-dark)); display:flex; align-items:center; justify-content:center; font-weight:900; font-size:22px; color:#14161c; box-shadow:0 4px 18px rgba(255,138,92,.35); flex:0 0 auto; }
+  h1 { font-size:27px; letter-spacing:-.3px; }
+  .sub { color:var(--dim); font-size:13.5px; margin-top:2px; }
+
+  .stats { display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 10px; }
+  .chip { font-size:12px; color:#c9cedb; background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:4px 12px; }
+  .chip b { color:var(--mk); font-weight:800; }
+
+  .featured { display:block; text-decoration:none; color:var(--text); margin:18px 0 30px; background:linear-gradient(160deg,var(--panel2),var(--panel)); border:1px solid var(--mk-dark); border-radius:16px; padding:22px 24px; position:relative; overflow:hidden; transition:transform .15s, box-shadow .2s; }
+  .featured:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(255,138,92,.15); }
+  .featured .flag { display:inline-block; font-size:11px; font-weight:800; letter-spacing:.14em; color:#14161c; background:linear-gradient(135deg,var(--mk),var(--mk-dark)); border-radius:6px; padding:2px 9px; margin-bottom:10px; }
+  .featured .fd { color:var(--mk); font-weight:800; font-size:16px; }
+  .featured .ft { color:#d7dbe6; font-size:14px; margin-top:6px; }
+  .featured .go { position:absolute; right:20px; top:20px; color:var(--dim); font-size:18px; }
+
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:6px; }
+  .search { flex:1 1 220px; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:9px 14px; color:var(--text); font-size:13.5px; font-family:inherit; outline:none; transition:border-color .2s; }
+  .search:focus { border-color:var(--mk); }
+  .search::placeholder { color:var(--dim); }
+  .tagbar { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .tag:hover { color:var(--text); border-color:var(--dim); }
+  .tag.on { color:#14161c; background:var(--mk); border-color:var(--mk); font-weight:700; }
+
+  .month { font-size:12.5px; font-weight:800; letter-spacing:.14em; color:var(--mk); margin:26px 0 12px; display:flex; align-items:center; gap:10px; }
+  .month::after { content:""; flex:1; height:1px; background:var(--line); }
+  .item { display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:10px; text-decoration:none; color:var(--text); transition:border-color .2s, transform .15s; }
   .item:hover { border-color:var(--mk); transform:translateX(4px); }
+  .item .top { display:flex; align-items:baseline; gap:8px; }
   .item .d { color:var(--mk); font-weight:800; font-size:14px; }
+  .item .w { color:var(--dim); font-size:12px; }
+  .item .arrow { margin-left:auto; color:var(--dim); }
   .item .t { color:#c9cedb; font-size:13.5px; margin-top:4px; }
-  .item .arrow { float:right; color:var(--dim); }
+  .item .tags { margin-top:8px; display:flex; flex-wrap:wrap; gap:5px; }
+  .item .tg { font-size:10.5px; color:var(--dim); border:1px solid var(--line); border-radius:5px; padding:1px 7px; }
+  .empty { color:var(--dim); font-size:13.5px; text-align:center; padding:30px 0; display:none; }
+
   footer { margin-top:48px; color:var(--dim); font-size:11.5px; text-align:center; }
+  footer a { color:var(--mk); text-decoration:none; }
+  @media (max-width:480px){ .featured .go{display:none} h1{font-size:23px} }
 </style>
 </head>
 <body>
@@ -27,33 +66,104 @@
 <div class="wrap">
   <header>
     <div class="mk-badge">MK</div>
-    <div><h1>🌙 MadKnight 뉴스</h1></div>
+    <div>
+      <h1>🌙 MadKnight 뉴스</h1>
+      <div class="sub">평일 아침 06:00 KST · AI & 게임 브리핑 아카이브</div>
+    </div>
   </header>
-  <p class="sub">매일 아침 08:00 KST · AI 트렌드 브리핑 아카이브 · Claude(Cowork) · ChatGPT · Gemini · Cursor</p>
+
+  <div class="stats" id="stats"></div>
+  <a class="featured" id="featured" href="#"></a>
+
+  <div class="controls">
+    <input class="search" id="q" type="search" placeholder="검색: 키워드, 날짜, 회사명…">
+    <div class="tagbar" id="tagbar"></div>
+  </div>
+
   <div id="list"></div>
-  <footer>MadKnight 뉴스 · powered by Cowork 아침 브리핑</footer>
+  <div class="empty" id="empty">조건에 맞는 브리핑이 없습니다</div>
+
+  <footer>MadKnight 뉴스 · powered by Cowork 아침 브리핑 · <span id="cnt"></span></footer>
 </div>
 <script>
-  // 새 브리핑이 나오면 이 배열 맨 앞에 한 줄 추가
+  // 새 브리핑: 배열 맨 앞에 [날짜, 요일, 요약, [태그...]] 한 줄 추가 (태그는 생략 가능)
+  // 태그 어휘: 비즈니스 / 보안 / 규제 / 모델·연구 / 도구 / 게임
   var BRIEFINGS = [
-    ["2026-09-01", "화", "ChatGPT 광고 연환산 $10억 · Anthropic 인포스틸러 감염 계정 조치 · EU, ChatGPT 초대형 검색엔진 지정 · Claude Code 오토 모드 RCE 확산 · 쿠키런 · 나혼렙 중국 판호"],
-    ["2026-08-31", "월", "소니 · 워너, Anthropic 제소 · OpenAI, Cursor 모델 11/12 철수 · 펜타곤 블랙리스트 무효화 판결 · 자동 정렬 연구자 · 위쳐3 확장팩 12분 게임플레이"],
-    ["2026-08-28", "금", "Anthropic 물리 표준 MHS 공개 · 과학자에 Claude Team 1만 석 무료 · 100여 개사 사이버 방어 서한 · GLM-5.3-Flash 오픈웨이트 · GTA6 11/19 확정"],
-    ["2026-08-27", "목", "OpenAI 침해 보고서 '모델이 탈출했다' · Anthropic $30조 TAM IPO 피치 · Ox Alpha 정체는 Z.ai · MTurk 종료 · 게임스컴 개막"],
-    ["2026-08-26", "수", "Claude 챗·Cowork 메모리 통합 · OpenAI Jalapeño 칩 벤치마크 · 게임스컴 ONL 총정리 · 위쳐3 리마스터 9/29"],
-    ["2026-08-25", "화", "Hugging Face $130억 인수설 · Claude Tag 셀프 판단 에이전트 · ChatGPT Work의 역설 · 위쳐4 2028년 목표 · 게임스컴 전야"],
-    ["2026-08-24", "월", "OpenAI 샌드박스 탈출 대학생 제보 · MCP 신규 로드맵 · Nvidia AI 서버 15%↑ · 게임스컴 이번 주 개막"],
-    ["2026-08-21", "금", "OpenAI 프론티어 훈련 2주 광단 · Stripe, OpenRouter $75억 인수 · Google-Marvell $122억 칩 딜"],
-    ["2026-08-19", "수", "Anthropic 매출 $650억 · ChatGPT for Teens · 유럽 광고 확대 · 오하이오 8GW 데이터센터"]
+    ["2026-09-02", "수", "Claude Fable 5.1 · Mythos 5.1 출시 · ChatGPT Health, Epic 연동 · Google Pics 공개 · 미국 G20 캐롤라이나 원칙 추진 · 마비노기 이터니티 알파 임박", ["모델·연구","도구","규제","게임"]],
+    ["2026-09-01", "화", "ChatGPT 광고 연환산 $10억 · Anthropic 인포스틸러 감염 계정 조치 · EU, ChatGPT 초대형 검색엔진 지정 · Claude Code 오토 모드 RCE 확산 · 쿠키런 · 나혼렙 중국 판호", ["비즈니스","보안","규제","게임"]],
+    ["2026-08-31", "월", "소니 · 워너, Anthropic 제소 · OpenAI, Cursor 모델 11/12 철수 · 펜타곤 블랙리스트 무효화 판결 · 자동 정렬 연구자 · 위쳐3 확장팩 12분 게임플레이", ["규제","비즈니스","모델·연구","게임"]],
+    ["2026-08-28", "금", "Anthropic 물리 표준 MHS 공개 · 과학자에 Claude Team 1만 석 무료 · 100여 개사 사이버 방어 서한 · GLM-5.3-Flash 오픈웨이트 · GTA6 11/19 확정", ["모델·연구","비즈니스","보안","게임"]],
+    ["2026-08-27", "목", "OpenAI 침해 보고서 '모델이 탈출했다' · Anthropic $30조 TAM IPO 피치 · Ox Alpha 정체는 Z.ai · MTurk 종료 · 게임스컴 개막", ["보안","비즈니스","모델·연구","게임"]],
+    ["2026-08-26", "수", "Claude 챗·Cowork 메모리 통합 · OpenAI Jalapeño 칩 벤치마크 · 게임스컴 ONL 총정리 · 위쳐3 리마스터 9/29", ["도구","모델·연구","게임"]],
+    ["2026-08-25", "화", "Hugging Face $130억 인수설 · Claude Tag 셀프 판단 에이전트 · ChatGPT Work의 역설 · 위쳐4 2028년 목표 · 게임스컴 전야", ["비즈니스","도구","게임"]],
+    ["2026-08-24", "월", "OpenAI 샌드박스 탈출 대학생 제보 · MCP 신규 로드맵 · Nvidia AI 서버 15%↑ · 게임스컴 이번 주 개막", ["보안","도구","비즈니스","게임"]],
+    ["2026-08-21", "금", "OpenAI 프론티어 훈련 2주 광단 · Stripe, OpenRouter $75억 인수 · Google-Marvell $122억 칩 딜", ["모델·연구","비즈니스"]],
+    ["2026-08-19", "수", "Anthropic 매출 $650억 · ChatGPT for Teens · 유럽 광고 확대 · 오하이오 8GW 데이터센터", ["비즈니스"]]
   ];
-  var el = document.getElementById('list');
-  BRIEFINGS.forEach(function(b) {
-    var a = document.createElement('a');
-    a.className = 'item';
-    a.href = 'news/' + b[0] + '.html';
-    a.innerHTML = '<span class="arrow">→</span><div class="d">' + b[0] + ' (' + b[1] + ')</div><div class="t">' + b[2] + '</div>';
-    el.appendChild(a);
+
+  var q = document.getElementById('q'), list = document.getElementById('list'),
+      tagbar = document.getElementById('tagbar'), empty = document.getElementById('empty'),
+      activeTag = null;
+
+  // 태그 컬러 시스템 (고정 · news 페이지 분류 칩과 동일)
+  var TAG_COLORS = { "비즈니스":"#E8C468", "보안":"#FF6B6B", "규제":"#6BA8FF", "모델·연구":"#B78AFF", "도구":"#5ED3C8", "게임":"#7ED87E" };
+  function tagColor(t){ return TAG_COLORS[t] || '#8a92a6'; }
+
+  // 상단 통계 + 오늘의 브리핑
+  var latest = BRIEFINGS[0];
+  document.getElementById('stats').innerHTML =
+    '<span class="chip">총 <b>' + BRIEFINGS.length + '</b>편</span>' +
+    '<span class="chip">최신 <b>' + latest[0] + '</b> (' + latest[1] + ')</span>' +
+    '<span class="chip">Claude · ChatGPT · Gemini</span>';
+  var f = document.getElementById('featured');
+  f.href = 'news/' + latest[0] + '.html';
+  f.innerHTML = '<span class="flag">LATEST</span><span class="go">↗</span>' +
+    '<div class="fd">' + latest[0] + ' (' + latest[1] + ')</div>' +
+    '<div class="ft">' + latest[2] + '</div>';
+
+  // 태그 바
+  var tags = [];
+  BRIEFINGS.forEach(function(b){ (b[3]||[]).forEach(function(t){ if(tags.indexOf(t)<0) tags.push(t); }); });
+  function paintTags(){
+    tagbar.querySelectorAll('.tag').forEach(function(b){
+      var c = tagColor(b.textContent), on = (b.textContent === activeTag);
+      b.style.color = on ? '#14161c' : c;
+      b.style.background = on ? c : 'transparent';
+      b.style.borderColor = on ? c : 'rgba(255,255,255,.14)';
+      b.style.fontWeight = on ? '800' : '400';
+    });
+  }
+  tags.forEach(function(t){
+    var btn = document.createElement('button'); btn.className='tag'; btn.textContent=t;
+    btn.onclick = function(){ activeTag = (activeTag===t) ? null : t; paintTags(); render(); };
+    tagbar.appendChild(btn);
   });
+  paintTags();
+
+  function render(){
+    var kw = (q.value||'').trim().toLowerCase();
+    list.innerHTML = ''; var shown = 0, curMonth = '';
+    BRIEFINGS.forEach(function(b, i){
+      if (i===0) return; // 최신 글은 위 featured 카드로
+      var hay = (b[0]+' '+b[1]+' '+b[2]+' '+(b[3]||[]).join(' ')).toLowerCase();
+      if (kw && hay.indexOf(kw)<0) return;
+      if (activeTag && (b[3]||[]).indexOf(activeTag)<0) return;
+      var m = b[0].slice(0,7);
+      if (m !== curMonth) { curMonth = m;
+        var h = document.createElement('div'); h.className='month';
+        h.textContent = parseInt(m.slice(0,4),10) + '년 ' + parseInt(m.slice(5),10) + '월';
+        list.appendChild(h); }
+      var a = document.createElement('a'); a.className='item'; a.href='news/'+b[0]+'.html';
+      a.innerHTML = '<div class="top"><span class="d">'+b[0]+'</span><span class="w">('+b[1]+')</span><span class="arrow">→</span></div>' +
+        '<div class="t">'+b[2]+'</div>' +
+        ((b[3]&&b[3].length)?'<div class="tags">'+b[3].map(function(t){var c=tagColor(t);return '<span class="tg" style="color:'+c+';border-color:'+c+'59">'+t+'</span>';}).join('')+'</div>':'');
+      list.appendChild(a); shown++;
+    });
+    empty.style.display = shown ? 'none' : 'block';
+    document.getElementById('cnt').textContent = '아카이브 ' + BRIEFINGS.length + '편';
+  }
+  q.addEventListener('input', render);
+  render();
 </script>
 </body>
 </html>

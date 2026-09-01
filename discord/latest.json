@@ -7,42 +7,42 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 1일 화요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-01.html",
+      "title": "9월 2일 수요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-02.html",
       "color": 16747100,
-      "description": "**[ChatGPT 광고, 200일 만에 연환산 매출 $10억](https://www.cnbc.com/2026/08/31/open-ai-chatgpt-ads-revenue.html)**\n> 유럽 셀프서브 개방 · 인도 · 중동 확장 중\n\n**[Anthropic, 인포스틸러 감염 Claude 계정 일괄 조치](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/)**\n> 탈취 세션 강제 로그아웃 · 결제수단 삭제 · 환불\n\n**[EU, ChatGPT를 '초대형 온라인 검색엔진' 지정](https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act)**\n> AI 챗봇 최초 · Reddit · Roblox와 함께 DSA 최고 수위 규제\n\n**[\"웹페이지 요약 한 번으로 RCE\" · Claude Code 연구 확산](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/)**\n> 오토 모드 인젝션 체인 성공률 60~80% · 샌드박싱 권고\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-01.html)**\n> Claude · ChatGPT · Gemini · Cursor 4종 모두 기능 변동 없음",
+      "description": "**[🔥 Claude Fable 5.1 · Mythos 5.1 출시](https://www.anthropic.com/claude-fable-and-mythos-5-1)**\n> 캐시 읽기 75% 인하 · 안전장치 오탐 60% 감소 · 오늘부터 전 플랫폼\n\n**[ChatGPT Health, Epic EHR 연동](https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/)**\n> 임상의가 환자 기록 읽기 전용 요약 · 기록 3억 2,500만 건 네트워크\n\n**[Google 'Pics' 공개 · 프롬프트로 만드는 캔바 대항마](https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/)**\n> Docs · Slides부터 · Workspace / AI Pro · Ultra 구독자 대상\n\n**[미국, G20에 '캐롤라이나 원칙' 라이트터치 규제 추진](https://techxplore.com/news/2026-09-g20-ai.html)**\n> 9/3~4 채플힐 · 올트먼 · 황 · 하사비스 참석, 한국 등 장관급\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-02.html)**\n> Claude **NEW**(Fable 5.1 전 플랫폼) · ChatGPT **NEW**(8/31 릴리스 노트) · Gemini 변동 없음",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[쿠키런 모험의 탑 · 나혼렙 · 씰, 중국 판호 동시 획득](https://www.inven.co.kr/webzine/news/?news=320249)\n[원스토어 글로벌 122개국 출시, AI · 블록체인 유통](https://www.inven.co.kr/webzine/news/?news=320231)",
+          "value": "[제노니아1: 기억의 실타래, 스팀 리메이크 9/1 출시](https://www.inven.co.kr/webzine/news/?news=320243)\n[게임스컴 결산 · 크래프톤 신작 5종](https://www.inven.co.kr/webzine/news/?news=320254)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[귀무자 · 던워커 등 9월 초 신작 러시 시작](https://www.inven.co.kr/webzine/news/?news=320191)\n[EU, 로블록스도 DSA 최고 수위 규제 지정](https://www.euronews.com/next/2026/08/31/eu-places-chatgpt-reddit-and-roblox-under-strictest-digital-safety-rules)",
+          "value": "[게임패스 9월 1차 · 데이원 4종](https://gg.deals/subscription-news/game-pass-september-2026-wave-1-confirmed-members-receiving-four-day-one-games)\n[오버워치 X 르세라핌 3차 콜라보 9/11](https://www.inven.co.kr/webzine/news/?news=320256)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`마비노기 이터니티` `광신도의 자격` `울티마 유물 탐사`\n[마비노기 이터니티, 9월 첫 알파 테스트](https://www.inven.co.kr/webzine/news/?news=318820) · [메이플 이벤트 9/16 종료 임박](https://maplestory.nexon.com/News/Event)"
+          "value": "`마비노기 이터니티` `프레이볼!` `에테리온`\n[마비노기 이터니티 알파, 내일(9/3)~9/6](https://www.inven.co.kr/webzine/news/?news=318820) · [블루아카 프레이볼! 9/1~15](https://bbs.ruliweb.com/mobile/board/1004/read/2292922)\n[메이플 에테리온 오표기 정정 · 이벤트 9/16 종료 임박](https://maplestory.nexon.com/News/Notice)"
         },
         {
-          "name": "💡 오늘의 팁 · 요약은 GUI 챗, 실행은 샌드박스",
-          "value": "> 출처 불분명한 URL 요약은 **실행 권한 없는 GUI 챗**(ChatGPT/Gemini/Claude 웹)에, Claude Code · Cowork에는 신뢰하는 리포만.\n> 외부 웹을 읽어야 하면 자동 승인 대신 권한 프롬프트 유지."
+          "name": "💡 오늘의 팁 · Fable 5.1 첫날 3종 체감 테스트",
+          "value": "> claude.ai에서 Fable 5.1 확인 후, 예전에 과하게 거절당한 프롬프트 재시도(오탐 60%↓ 체감 구간).\n> 같은 프롬프트를 ChatGPT · Gemini에도 붙여 비교, 긴 작업은 Cowork로."
         },
         {
           "name": "​",
-          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-01.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-02.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "image": {
         "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
       },
       "footer": {
-        "text": "MadKnight 뉴스 · 매일 08:00 KST",
+        "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-08-31T23:00:00.000Z"
+      "timestamp": "2026-09-01T21:00:00.000Z"
     }
   ]
 }
