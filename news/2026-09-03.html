@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="../mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · 2026-09-03 (목)">
+<meta property="og:description" content="Gemini 3.8 Flash · Flash Cyber 출시 · OpenAI Astra 첫 Critical 사이버 등급 · Perplexity 하이브리드 컴퓨트 · World Labs Atlas · 마비노기 이터니티 알파 오늘 시작">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
+<title>MadKnight 뉴스 · 2026-09-03 (목)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(closest-side, rgba(255,138,92,.08), transparent); pointer-events:none; }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.03); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+  .topbar { display:flex; align-items:center; margin-bottom: 22px; }
+  .backlink { color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin: 14px 0 6px; }
+  .chip { font-size: 11.5px; color:#c9cedb; background: var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 8px 0 24px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .section-label .aux { letter-spacing:0; color:var(--dim); font-weight:400; text-transform:none; font-size:12px; }
+  .toggle-all { flex:0 0 auto; font-size:11.5px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .toggle-all:hover { color:var(--mk); border-color:var(--mk); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .cat { font-size: 10.5px; font-weight: 800; border: 1px solid; border-radius: 5px; padding: 1px 7px; flex: 0 0 auto; }
+  .hot-badge { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: #14161c; background: linear-gradient(135deg, #FF6B6B, var(--mk)); border-radius: 5px; padding: 2px 7px; flex: 0 0 auto; }
+  .card.hot { border-color: rgba(255,107,107,.4); }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; border-top: 0 solid transparent; }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .why { margin-top:10px; font-size:12.5px; color:#d7dbe6; background:rgba(255,138,92,.07); border:1px solid rgba(255,138,92,.18); border-radius:8px; padding:8px 12px; }
+  .why b { color: var(--mk); }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tool .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 8px; }
+  .dot.same { background: #4a5468; }
+  .dot.new { background: #7ED87E; box-shadow: 0 0 8px rgba(126,216,126,.55); }
+  .tool .nb { font-size: 10px; font-weight: 800; color: #14161c; background: #7ED87E; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .g-card { background: var(--panel); border:1px solid var(--line); border-radius:12px; padding:15px 18px; margin-bottom:10px; }
+  .g-card h4 { font-size:13.5px; margin-bottom:8px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .g-card h4 .gi { font-size:15px; }
+  .g-card ul { list-style:none; }
+  .g-card li { font-size:13.5px; color:#c9cedb; padding:5px 0 5px 14px; position:relative; }
+  .g-card li::before { content:"·"; color:var(--mk); font-weight:900; position:absolute; left:2px; }
+  .g-card a { color:var(--mk); text-decoration:none; }
+  .g-card a:hover { text-decoration:underline; }
+  .g-card code { font-family:inherit; font-size:12px; background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 7px; color:#d7dbe6; }
+  .g-card .react { color:var(--dim); font-size:12.5px; margin-top:3px; background:rgba(255,255,255,.02); border-left:2px solid var(--line); border-radius:0 6px 6px 0; padding:4px 10px; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  .pnav { display:flex; gap:10px; margin-top: 40px; }
+  .pnav a { flex:1; display:block; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 16px; text-decoration:none; color:#c9cedb; font-size:13px; transition:border-color .2s; }
+  .pnav a:hover { border-color: var(--mk); }
+  .pnav .lbl { display:block; font-size:11px; color:var(--dim); margin-bottom:2px; }
+  .pnav .to-index { text-align:center; flex:0 0 auto; display:flex; align-items:center; padding:12px 18px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <div class="topbar"><a class="backlink" href="../index.html">← 전체 브리핑 목록</a></div>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-09-03 (목)</div>
+    </div>
+  </header>
+  <div class="chips">
+    <span class="chip">🗞 AI 뉴스 5</span><span class="chip">🛠 도구 3종 점검</span><span class="chip">🎮 게임 3섹션</span><span class="chip">💡 팁 1</span><span class="chip">⏱ 약 3분</span>
+  </div>
+  <p class="meta">범위: 9/2(수) 아침 ~ 9/3(목) 아침 KST · 도구: Claude(Cowork) · ChatGPT · Gemini · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>Google, Gemini 3.8 Flash · Flash Cyber 출시</b> · 에이전트 코딩 강화, Gemini 앱 Pro/Ultra 즉시 적용</li><li><b>OpenAI Astra, 사상 첫 'Critical' 사이버 등급</b> · 제로데이 발굴 수준, 접근 제한 걸고 출시 · 예고</li><li><b>Perplexity, Mac '하이브리드 컴퓨트'</b> · 민감 파일은 로컬 모델이 처리</li><li><b>World Labs 'Atlas' 공개</b> · 카메라 제어 1440p 영상 + 3D 재구성 월드 모델</li><li>게임: <b>마비노기 이터니티 알파 오늘 시작</b> · 위쳐 개발진 '던워커' 출시</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span class="aux">(카드를 눌러 펼치기)</span><button class="toggle-all" id="toggleAll">모두 펼치기</button></div>
+  <!-- 분류 칩 컬러(고정): 비즈니스 #E8C468 · 보안 #FF6B6B · 규제 #6BA8FF · 모델·연구 #B78AFF · 도구 #5ED3C8 · 게임 #7ED87E · 1순위 헤드라인에는 hot 클래스 + 🔥 HEADLINE 배지 -->
+  <div class="card hot"><div class="card-head"><span class="hot-badge">🔥 HEADLINE</span><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#Google #Gemini3.8</span><span class="title">Gemini 3.8 Flash · Flash Cyber 출시, 에이전트 · 사이버 특화</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Google이 9/2 범용 추론 · 코딩 모델 Gemini 3.8 Flash와 사이버보안 특화 3.8 Flash Cyber를 공개했습니다. 3.8 Flash는 장기 소프트웨어 엔지니어링 벤치마크(DeepSWE v1.1)에서 여러 큰 프론티어 모델 다수를 앞서고 Gemini 앱(Pro/Ultra) · AI Studio · Enterprise에 적용됐으며, Flash Cyber는 20개+ 언어 자율 취약점 탐지가 가능해 신뢰된 방어 조직(Fairwind 프로그램)에만 제공됩니다.<div class="why"><b>왜 중요?</b> 어제 Fable 5.1에 이어 내가 쓰는 3종 중 두 번째 모델 교체입니다. Gemini 탭에서 3.8 Flash 적용 여부부터 확인해 보세요(아래 ④ 팁).</div><div class="srcs">👉 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Google ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#FF6B6B;border-color:#FF6B6B59">보안</span><span class="tags">#OpenAI #Astra</span><span class="title">Astra, Preparedness Framework 첫 'Critical' 사이버 등급</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 차기 모델 Astra가 자사 안전 기준의 사이버보안 'Critical' 임계값을 넘은 첫 모델이라고 9/1 밝혔습니다. 강화된 실제 시스템에서 사람 개입 없이 제로데이 취약점을 찾아 익스플로잇을 만들 수 있는 수준으로, 고급 사이버 기능은 알파 테스터와 방어 목적 파트너에게만 단계적으로 개방하고 일반 배포는 제한 구성으로 나갑니다.<div class="why"><b>왜 중요?</b> 같은 주에 Google도 Flash Cyber를 '신뢰된 방어자 전용'으로 냈습니다. 최상위 사이버 능력은 게이트 뒤로 가는 흐름이라, 일반 사용자용 모델과의 능력 격차가 커질 수 있습니다.</div><div class="srcs">👉 <a href="https://openai.com/index/path-to-astra/" target="_blank" rel="noopener">OpenAI ↗</a><a href="https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html" target="_blank" rel="noopener">CNBC ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#5ED3C8;border-color:#5ED3C859">도구</span><span class="tags">#Perplexity #프라이버시</span><span class="title">Perplexity, Mac용 '하이브리드 컴퓨트' · 민감 파일은 로컬에서</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Perplexity가 Mac 앱의 Computer 에이전트에 하이브리드 컴퓨트를 도입했습니다. 세금 서류 · 의료 기록 같은 민감 파일이 걸린 단계는 Apple Silicon에서 도는 로컬 모델이 처리하고 복잡한 추론만 클라우드로 보내, 맥락은 유지하면서 민감 데이터가 기기를 떠나지 않게 합니다.<div class="why"><b>왜 중요?</b> 에이전트에게 개인 파일을 맡길 때의 프라이버시 부담을 구조로 푸는 접근입니다. 다른 데스크톱 에이전트들도 따라올 가능성이 큽니다.</div><div class="srcs">👉 <a href="https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac" target="_blank" rel="noopener">Perplexity ↗</a><a href="https://9to5mac.com/2026/09/01/perplexity-launches-privacy-minded-hybrid-compute-ai-feature-for-mac/" target="_blank" rel="noopener">9to5Mac ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#WorldLabs #공간지능</span><span class="title">페이페이 리의 World Labs, 월드 모델 'Atlas' 공개</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">World Labs가 9/2 이미지 · 영상 · 3D를 한 모델로 다루는 옴니 월드 모델 Atlas를 얼리 액세스로 공개했습니다. 픽셀 단위 카메라 제어로 최대 1분의 1440p 영상을 생성하고 최소한의 입력에서 3D 공간을 재구성해, 단일 모델로 전문 3D 모델들을 앞선다고 주장합니다.<div class="why"><b>왜 중요?</b> 영상 생성과 3D 재구성이 한 모델로 합쳐지는 신호입니다. 게임 · 로보틱스용 공간 시뮬레이션 경쟁이 본격화됩니다.</div><div class="srcs">👉 <a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">World Labs ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#Uber #감원</span><span class="title">Uber, 3,300명(10%) 감원 · 자율주행 중심 재편</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Uber가 9/2 관리 계층 축소를 명분으로 전 세계 인력의 약 10%인 3,300명을 감원한다고 발표했습니다. 절감 자원은 로보택시 등 자율주행 전환에 투입할 계획입니다.<div class="why"><b>왜 중요?</b> AI발 조직 재편이 빅테크를 넘어 플랫폼 기업으로 번지는 신호입니다. "관리 계층 축소 + AI 투자" 조합이 감원의 표준 문법이 되고 있습니다.</div><div class="srcs">👉 <a href="https://www.bloomberg.com/news/articles/2026-09-02/uber-to-cut-3-300-jobs-in-company-overhaul-to-reduce-management-layers" target="_blank" rel="noopener">Bloomberg ↗</a><a href="https://finance.yahoo.com/technology/articles/uber-cut-3-300-jobs-150300415.html" target="_blank" rel="noopener">Yahoo Finance ↗</a></div></div></div></div>
+
+  <div class="section-label">② 내가 쓰는 도구 업데이트</div>
+  <!-- 상태 도트: 새 기능 있는 도구는 <span class="dot new"></span> + 이름 뒤 <span class="nb">NEW</span> 배지 · 변동 없음은 dot same + "변동 없음" 문구 -->
+  <div class="tools"><div class="tool"><span class="dot same"></span><span class="tx"><b>Claude (Cowork 포함)</b> · 변동 없음 · 9/1 Fable 5.1 출시(어제 다룸) 이후 신규 발표 없음 · <a href='https://releasebot.io/updates/anthropic' target='_blank'>Releasebot ↗</a></span></div><div class="tool"><span class="dot new"></span><span class="tx"><b>ChatGPT</b><span class="nb">NEW</span> · 9/1 릴리스 노트: 미국 임상의 대상 공공 의료 데이터 앱 9종(논문 · 임상시험 · 의약품 · Medicare) 추가, 환자 데이터 노출 없는 읽기 전용 · Epic 연동의 후속 · <a href='https://help.openai.com/en/articles/6825453-chatgpt-release-notes' target='_blank'>Release Notes ↗</a></span></div><div class="tool"><span class="dot new"></span><span class="tx"><b>Gemini</b><span class="nb">NEW</span> · 9/2 Gemini 3.8 Flash가 앱(Pro/Ultra) · AI Studio · Enterprise에 적용 · 장황한 출력 감소, 에이전트 워크플로 강화 · <a href='https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/' target='_blank'>발표 ↗</a></span></div></div>
+
+  <div class="section-label">③ 게임</div>
+  <div class="g-card"><h4><span class="gi">🎮</span>국내 게임</h4><ul>
+    <li>시프트업, '프로젝트 스피릿' · '스텔라 블레이드: 블러드 레인' 신작 2종 성과 주목 · <a href="https://www.inven.co.kr/webzine/news/?news=320293" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>9월 초 신작 러시: 크림슨 문(9/2) · 귀무자 검의 길(9/4) 등 연달아 출시 · <a href="https://www.inven.co.kr/webzine/news/?news=320191" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">🌍</span>해외 게임</h4><ul>
+    <li>위쳐 개발진의 레벨 울브즈 신작 '더 블러드 오브 던워커' 오늘(9/3) 출시 · 낮엔 인간, 밤엔 뱀파이어로 30일간 가족 구출 · <a href="https://www.inven.co.kr/webzine/news/?news=320293" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>몬스터헌터 와일즈: 어센던스, TGS 2026에서 세계 최초 시연 예정 · <a href="https://www.inven.co.kr/webzine/news/?news=320293" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">Ⓝ</span>넥슨 <span style="margin-left:4px"><code>마비노기 이터니티</code> <code>메이플</code> <code>인턴십</code></span></h4><ul>
+    <li>마비노기 이터니티 알파 테스트 오늘(9/3)~9/6 진행 (후속: 오늘 시작) · 언리얼 5 엔진 교체 첫 대규모 검증, 전투 · 생활 등 7개 부문 리더보드 · 한정 타이틀 · 넥슨캐시 보상 · <a href="https://www.gametoc.co.kr/news/articleView.html?idxno=110186" target="_blank" rel="noopener">게임톡 ↗</a><a href="https://www.inven.co.kr/webzine/news/?news=318820" target="_blank" rel="noopener">인벤 ↗</a>
+      <div class="react">🗣 엔진 교체 자체는 반기지만 최근 라이브 업데이트 불신이 쌓여 "이번 테스트로 증명해야 한다"는 기대 · 회의가 공존하는 분위기 (<a href="https://namu.wiki/w/%EB%A7%88%EB%B9%84%EB%85%B8%EA%B8%B0%20%EC%9D%B4%ED%84%B0%EB%8B%88%ED%8B%B0%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" rel="noopener">커뮤니티 반응 정리 ↗</a>)</div></li>
+    <li>메이플스토리, 울티마 유물 탐사 · 광신도의 자격 · 모멘텀 패스 PLUS · 헤이즐의 부탁 등 이벤트 4종 9/16 동시 종료 · 마감 2주 앞 · <a href="https://maplestory.nexon.com/news/update" target="_blank" rel="noopener">공식 홈페이지 ↗</a> (후속: 종료 대상 확대 확인)</li>
+    <li>넥슨컴퍼니, 2026 게임 프로그래머 인턴십 모집 진행 · <a href="https://m.inven.co.kr/webzine/wznews.php?iskin=mogong&amp;hashtag=%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C&amp;idx=319886" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+
+  <div class="section-label">④ 오늘의 활용 팁</div>
+  <div class="tip"><h3>💡 '벤치마크 프롬프트' 1개를 고정해 두세요</h3>
+<p>어제 Fable 5.1, 오늘 Gemini 3.8 Flash까지 이틀 연속 모델이 바뀌었습니다. 이런 주간엔 즉석 비교보다 고정 기준이 유리합니다:</p>
+<blockquote>① 평소 자주 쓰는 작업 하나(예: "이 코드 리팩터링 + 테스트 작성" 또는 "이 기사 3줄 요약 + 반론 1개")를 '벤치마크 프롬프트'로 메모장에 저장해 두세요. ② 오늘 Gemini 앱에서 3.8 Flash 적용 여부를 확인한 뒤, 같은 프롬프트를 Claude · ChatGPT · Gemini 세 탭에 그대로 붙여 결과를 나란히 비교하세요. ③ 결과 아래 "장황함 · 정확도 · 속도" 세 줄만 메모해 두면, 다음 모델 교체 때부터는 감이 아니라 기록으로 도구를 고를 수 있습니다.</blockquote></div>
+
+  <div class="pnav">
+    <a href="2026-09-02.html"><span class="lbl">← 이전 브리핑</span>2026-09-02 (수) · Claude Fable 5.1 · Mythos 5.1 출시 외</a>
+    <a class="to-index" href="../index.html">아카이브</a>
+  </div>
+  <footer>MadKnight 뉴스 · 2026-09-03 (목) 발행 · 평일 아침 06:00 KST</footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+  var btn = document.getElementById('toggleAll'), allOpen = false;
+  btn.addEventListener('click', function(){
+    allOpen = !allOpen;
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.toggle('open', allOpen); });
+    btn.textContent = allOpen ? '모두 접기' : '모두 펼치기';
+  });
+</script>
+</body>
+</html>
