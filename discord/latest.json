@@ -7,32 +7,32 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 3일 목요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-03.html",
+      "title": "9월 4일 금요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-04.html",
       "color": 16747100,
-      "description": "**[🔥 Gemini 3.8 Flash · Flash Cyber 출시](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/)**\n> 에이전트 코딩 강화 · Gemini 앱 Pro/Ultra 즉시 적용 · Cyber는 방어 조직 전용\n\n**[OpenAI Astra, 사상 첫 'Critical' 사이버 등급](https://openai.com/index/path-to-astra/)**\n> 제로데이 발굴 수준 · 고급 기능은 알파 테스터 · 방어 파트너에만 개방\n\n**[Perplexity, Mac '하이브리드 컴퓨트'](https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac)**\n> 민감 파일은 Apple Silicon 로컬 모델이 처리 · 클라우드는 추론만\n\n**[World Labs 'Atlas' 공개](https://www.worldlabs.ai/blog/atlas)**\n> 카메라 제어 1440p 영상 + 3D 재구성, 옴니 월드 모델\n\n**[Uber, 3,300명(10%) 감원 · 자율주행 재편](https://finance.yahoo.com/technology/articles/uber-cut-3-300-jobs-150300415.html)**\n> 관리 계층 축소 · 절감분은 로보택시 전환에 투입\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-03.html)**\n> Claude 변동 없음 · ChatGPT **NEW**(임상용 공공 의료 앱 9종) · Gemini **NEW**(3.8 Flash 적용)",
+      "description": "**[🔥 GPT-6 Astra 정식 출시 · \"AGI 시대\" 선언](https://thenewstack.io/openai-gpt6-astra-benchmarks/)**\n> 사이버 Critical 등급 그대로 단계 출시 · Plus/Pro · API는 며칠 내 적용\n\n**[Claude, Mac '백그라운드 컴퓨터 사용' 지원](https://9to5mac.com/2026/09/02/anthropic-upgrades-claude-codes-computer-use-to-run-in-the-background-on-mac/)**\n> 커서 안 뺏기고 데스크톱 작업 위임 · Cowork · Claude Code, Pro/Max\n\n**[Perplexity, 로컬 추론 엔진 'Lily' 오픈소스](https://www.marktechpost.com/2026/09/02/perplexity-open-sources-lily-a-rust-metal-inference-engine-for-qwen3-6-35b-a3b-on-apple-silicon/)**\n> Apple Silicon용 Rust+Metal · MLX 대비 최대 1.35배 빠르다 주장\n\n**[Gemini Notebook, 5시간 리셋 유연 한도로 전환](https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/)**\n> 컴퓨트 기반 한도 · 무거운 작업은 '나중에 실행'으로 미루기\n\n**[Wonderful, $5B 기업가치로 $550M 유치](https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/)**\n> 6개월 만에 기업가치 2배 · Salesforce 신규 투자 합류\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-04.html)**\n> Claude **NEW**(백그라운드 컴퓨터 사용) · ChatGPT **NEW**(GPT-6 Astra) · Gemini **NEW**(Notebook 유연 한도)",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[시프트업 신작 2종 성과 주목](https://www.inven.co.kr/webzine/news/?news=320293)\n[9월 초 신작 러시 · 귀무자(9/4) 등](https://www.inven.co.kr/webzine/news/?news=320191)",
+          "value": "[이클립스: 디 어웨이크닝 정식 출시](https://www.inven.co.kr/webzine/news/?news=320374)\n[귀무자: 검의 길, 오늘(9/4) 출시](https://www.inven.co.kr/webzine/news/?news=318069)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[위쳐 개발진 '던워커' 오늘 출시](https://www.inven.co.kr/webzine/news/?news=320293)\n[몬스터헌터 와일즈: 어센던스, TGS 첫 시연](https://www.inven.co.kr/webzine/news/?news=320293)",
+          "value": "[State of Play 총정리 · FF7 리벨레이션 · 언틸 던 2](https://dotesports.com/general/news/state-of-play-september-3-trailers)\n[DLSS 5 오늘 정식 데뷔](https://www.inven.co.kr/webzine/news/?news=320303)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`마비노기 이터니티` `메이플` `인턴십`\n[마비노기 이터니티 알파, 오늘(9/3)~9/6 시작](https://www.gametoc.co.kr/news/articleView.html?idxno=110186) · 7개 부문 리더보드\n[메이플 이벤트 4종 9/16 동시 종료 임박](https://maplestory.nexon.com/news/update) · [프로그래머 인턴십 모집](https://m.inven.co.kr/webzine/wznews.php?iskin=mogong&hashtag=%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C&idx=319886)"
+          "value": "`마비노기 이터니티` `서든어택` `메이플 키우기`\n[마비 이터니티 알파 이틀째(~9/6)](https://www.etoday.co.kr/news/view/2621575) · 🗣 그래픽 호평 · 충돌 버그 지적\n[서든어택 치어리더 캐릭터 출시](https://www.gametoc.co.kr/news/articleView.html?idxno=111198) · [메이플 키우기 핑크빈 레이드](https://www.inven.co.kr/webzine/news/?news=320398)"
         },
         {
-          "name": "💡 오늘의 팁 · '벤치마크 프롬프트' 고정하기",
-          "value": "> 이틀 연속 모델 교체(Fable 5.1 → Gemini 3.8 Flash). 자주 쓰는 작업 1개를 고정 프롬프트로 저장해 두고,\n> 세 탭에 그대로 붙여 장황함 · 정확도 · 속도를 기록으로 비교하세요."
+          "name": "💡 오늘의 팁 · 반복 작업을 Claude 백그라운드에",
+          "value": "> Mac Cowork에서 폴더 정리 같은 반복 작업을 백그라운드 컴퓨터 사용으로 맡기고,\n> 앞 화면에서는 ChatGPT · Gemini로 하던 일을 계속하세요. 잘 되면 지시문을 저장해 루틴화."
         },
         {
           "name": "​",
-          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-03.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-04.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "image": {
@@ -42,7 +42,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-02T21:00:00.000Z"
+      "timestamp": "2026-09-03T21:00:00.000Z"
     }
   ]
 }
