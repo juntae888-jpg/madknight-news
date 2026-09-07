@@ -7,33 +7,33 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 7일 월요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-07.html",
+      "title": "9월 8일 화요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-08.html",
       "color": 16747100,
-      "description": "**[🔥 OpenAI, \"자동화된 리서치 인턴\" 목표 달성 선언](https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/)**\n> 연구자 1인당 하루 3.1 '에이전트 작업일' 주장 · 다음 목표는 2028년 3월 '완전 자동 AI 연구자'\n\n**[Nvidia, Hugging Face 약 $13B 인수 확정 (후속)](https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html)**\n> 8월 말 인수설이 공식 발표로 · 오픈모델 허브가 칩 제조사 품으로\n\n**[Claude, 페르마의 마지막 정리 Lean 형식화 완료](https://www.anthropic.com/research/formalizing-fermats-last-theorem)**\n> 11일간 대부분 자율 진행 · 첫 끝단 컴퓨터 검증 통과\n\n**[시애틀타임스 · 뉴스데이, OpenAI · MS 저작권 제소](https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/)**\n> 손해배상에 모델 폐기까지 요구 · 언론사 소송 전선 확대\n\n**[\"Anthropic, 11개월간 $517B 컴퓨트 계약\" 분석](https://www.theinformation.com/articles/anthropic-clinched-517-billion-compute-deals-11-months)**\n> 14.8GW 확보 추산 · 초대형 선계약 구조에 재무 리스크 논쟁\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-07.html)**\n> Claude 변동 없음 · ChatGPT **NEW**(Astra가 Plus에도 · Work · Codex 한정) · Gemini **NEW**(Spark 포토 에이전트)",
+      "description": "**[🔥 OpenAI 수석과학자 \"AI는 외계 지성\" · 감속론 공개](https://openai.com/index/an-alien-mind/)**\n> \"어떤 랩도 정렬을 풀지 못했다\" · 공동 안전 기준까지 자발적 감속 상시화 촉구\n\n**[OpenAI, 연구 가속 내부 데이터 공개 (후속)](https://openai.com/index/research-acceleration-view-inside-openai/)**\n> 연구자 1인당 에이전트 지출 하루 약 $600 · 코딩 대신 스펙 작성으로 전환\n\n**[Anthropic IPO, 투자자들 \"토큰당 매출 공개하라\"](https://cryptobriefing.com/anthropic-ipo-investors-revenue-metrics/)**\n> 공개 S-1 9월 말 예상 · $2조 밸류 겨냥 · 클라우드 매출 회계 쟁점\n\n**[GPT-6 아스트라, 혼자 15시간 만에 '림월드' 클리어](https://www.gameple.co.kr/news/articleView.html?idxno=216400)**\n> 장기 계획 · 자원 관리 게임이 에이전트 벤치마크로\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-08.html)**\n> Claude · ChatGPT · Gemini 3종 모두 변동 없음",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[T1 역전승 · 월즈 3번 시드 확보, 젠지 결승 선착](https://www.inven.co.kr/webzine/news/?news=320488)",
+          "value": "[리니지M, 9/9 투사 리부트 · 신규 서버](https://www.inven.co.kr/webzine/news/?news=320530)\n[아키에이지 S, BI · 키비주얼 공개](https://www.gameple.co.kr/news/articleView.html?idxno=216408)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[던워커, 3일 만에 100만 장](https://www.pcgamer.com/games/rpg/the-blood-of-dawnwalker-sold-1-million-copies-in-just-3-days/)\n[라이엇 \"LoL MMO는 성배\"](https://www.aroged.com/2026/09/06/riot-games-holy-grail-studio-co-founder-discusses-mmorpg-development-progress/)",
+          "value": "[귀무자: 검의 길, 첫날 100만 장](https://www.inven.co.kr/webzine/news/?news=320524)\n[8번 출구, 누적 300만 장](https://www.inven.co.kr/webzine/news/?news=320528)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`마비노기 이터니티` `FC온라인` `오버워치`\n[마비 이터니티 알파 종료(9/6)](https://www.playforum.net/news/articleView.html?idxno=635268) · 🗣 \"행복한 꿈\" 호평 · 전투 · UI 지적\n[FCL 팀 드래프트 오늘 밤 9시](https://fconline.nexon.com/news/notice/view?n4ArticleSN=6235) · [오버워치 주말 PC방 이벤트](https://www.inven.co.kr/board/overwatch/4538/5936255)",
+          "value": "`택티컬 커맨더스 R` `FC온라인` `마비노기 이터니티`\n[택티컬 커맨더스 R 스팀 등록 · 9~10월 CBT](https://www.inven.co.kr/webzine/news/?news=320533) · [FCL 서머, KT 'UTA' 이지환 우승](https://www.gameple.co.kr/news/articleView.html?idxno=216408)\n[마비 이터니티 알파 후기 확산](https://www.gameple.co.kr/news/articleView.html?idxno=216404) · 🗣 \"하루만 더\" 호평, UI · 타격음은 과제",
           "inline": false
         },
         {
-          "name": "💡 오늘의 팁 · '사진은 Spark, 파일은 Cowork' 분업 실험",
-          "value": "> Gemini Spark에는 Google Photos 정리를, Claude Cowork에는 다운로드 폴더 정리를 동시에 맡겨 보세요.\n> 검수하며 '믿고 맡길 작업'과 '승인이 필요한 작업'을 메모하면 위임 기준표가 생깁니다."
+          "name": "💡 오늘의 팁 · 3-way 교차검증 뒤 '심판' 프롬프트",
+          "value": "> 중요한 질문을 ChatGPT · Gemini에 똑같이 던진 뒤, 두 답을 Claude에 넘겨 \"합의점 · 상충점 · 셋 다 놓친 것\"을 표로 정리시키세요.\n> 상충점만 웹 검색으로 재확인하면 5분 만에 환각 리스크가 크게 줄어듭니다."
         },
         {
           "name": "​",
-          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-07.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
+          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-08.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "image": {
@@ -43,7 +43,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-06T21:00:00.000Z"
+      "timestamp": "2026-09-07T21:00:00.000Z"
     }
   ]
 }
