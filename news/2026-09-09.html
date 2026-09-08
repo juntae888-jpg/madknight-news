@@ -1,1 +1,194 @@
-REPLACE_NEWS
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="../mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · 2026-09-09 (수)">
+<meta property="og:description" content="OpenAI 나비에-스톡스 해결 주장 · 미스트랄 €30억 삼성 주도 · 알파지놈 아틀라스 · 구글 EU 검색 개편 · 넥슨 듀랑고 월드 중단">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
+<title>MadKnight 뉴스 · 2026-09-09 (수)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(closest-side, rgba(255,138,92,.08), transparent); pointer-events:none; }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.03); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+  .topbar { display:flex; align-items:center; margin-bottom: 22px; }
+  .backlink { color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin: 14px 0 6px; }
+  .chip { font-size: 11.5px; color:#c9cedb; background: var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 8px 0 24px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .section-label .aux { letter-spacing:0; color:var(--dim); font-weight:400; text-transform:none; font-size:12px; }
+  .toggle-all { flex:0 0 auto; font-size:11.5px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .toggle-all:hover { color:var(--mk); border-color:var(--mk); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .cat { font-size: 10.5px; font-weight: 800; border: 1px solid; border-radius: 5px; padding: 1px 7px; flex: 0 0 auto; }
+  .hot-badge { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: #14161c; background: linear-gradient(135deg, #FF6B6B, var(--mk)); border-radius: 5px; padding: 2px 7px; flex: 0 0 auto; }
+  .card.hot { border-color: rgba(255,107,107,.4); }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; border-top: 0 solid transparent; }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .why { margin-top:10px; font-size:12.5px; color:#d7dbe6; background:rgba(255,138,92,.07); border:1px solid rgba(255,138,92,.18); border-radius:8px; padding:8px 12px; }
+  .why b { color: var(--mk); }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tool .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 8px; }
+  .dot.same { background: #4a5468; }
+  .dot.new { background: #7ED87E; box-shadow: 0 0 8px rgba(126,216,126,.55); }
+  .tool .nb { font-size: 10px; font-weight: 800; color: #14161c; background: #7ED87E; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .g-card { background: var(--panel); border:1px solid var(--line); border-radius:12px; padding:15px 18px; margin-bottom:10px; }
+  .g-card h4 { font-size:13.5px; margin-bottom:8px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .g-card h4 .gi { font-size:15px; }
+  .g-card ul { list-style:none; }
+  .g-card li { font-size:13.5px; color:#c9cedb; padding:5px 0 5px 14px; position:relative; }
+  .g-card li::before { content:"·"; color:var(--mk); font-weight:900; position:absolute; left:2px; }
+  .g-card a { color:var(--mk); text-decoration:none; }
+  .g-card a:hover { text-decoration:underline; }
+  .g-card code { font-family:inherit; font-size:12px; background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 7px; color:#d7dbe6; }
+  .g-card .react { color:var(--dim); font-size:12.5px; margin-top:3px; background:rgba(255,255,255,.02); border-left:2px solid var(--line); border-radius:0 6px 6px 0; padding:4px 10px; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  .pnav { display:flex; gap:10px; margin-top: 40px; }
+  .pnav a { flex:1; display:block; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 16px; text-decoration:none; color:#c9cedb; font-size:13px; transition:border-color .2s; }
+  .pnav a:hover { border-color: var(--mk); }
+  .pnav .lbl { display:block; font-size:11px; color:var(--dim); margin-bottom:2px; }
+  .pnav .to-index { text-align:center; flex:0 0 auto; display:flex; align-items:center; padding:12px 18px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <div class="topbar"><a class="backlink" href="../index.html">← 전체 브리핑 목록</a></div>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-09-09 (수)</div>
+    </div>
+  </header>
+  <div class="chips">
+    <span class="chip">🗞 AI 뉴스 5</span><span class="chip">🛠 도구 3종 점검</span><span class="chip">🎮 게임 3섹션</span><span class="chip">💡 팁 1</span><span class="chip">⏱ 약 3분</span>
+  </div>
+  <p class="meta">범위: 9/8(화) 아침 ~ 9/9(수) 아침 KST · 도구: Claude(Cowork) · ChatGPT · Gemini · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>OpenAI, 나비에-스톡스 밀레니엄 난제 '해결' 주장</b> · Lean 검증 통과 · 선공개 수학자와 크레딧 분쟁</li><li><b>미스트랄, 삼성 주도로 €30억 유치</b> · €210억 밸류 · 유럽 최대 지분 라운드</li><li><b>딥마인드, 알파지놈 아틀라스 공개</b> · 게놈 변이 90억 개 예측 데이터셋</li><li><b>구글, EU 검색 대개편</b> · "29년 역사상 최대 품질 저하" 주장</li><li>게임: <b>넥슨 듀랑고 월드 개발 중단</b> / 내 도구 3종 모두 변동 없음</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span class="aux">(카드를 눌러 펼치기)</span><button class="toggle-all" id="toggleAll">모두 펼치기</button></div>
+  <div class="card hot"><div class="card-head"><span class="hot-badge">🔥 HEADLINE</span><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#OpenAI #수학</span><span class="title">OpenAI, 나비에-스톡스 밀레니엄 난제 '해결' 주장 · 크레딧 분쟁까지</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 9/8 자사 모델이 밀레니엄 7대 난제 중 하나인 나비에-스톡스 방정식의 유한시간 폭발(blow-up) 가능성을 증명했다고 발표했고, 증명은 Lean 기계 검증을 통과했습니다. 다만 수학자 트리스탄 버크마스터가 발표 전날 밤 같은 계열의 'forcing' 방법 증명을 먼저 공개하며 "OpenAI가 우리 진행 상황을 알고 뛰어들었다"고 주장해, OpenAI 측의 부인과 함께 검증 · 크레딧 논쟁이 진행 중입니다.<div class="why"><b>왜 중요?</b> AI가 낸 대형 결과도 '주장'과 '기계 검증'이 분리돼 있습니다. 어떤 모델의 발표든 검증 절차를 함께 확인하는 습관이 필요해집니다.</div><div class="srcs">👉 <a href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener">OpenAI ↗</a><a href="https://www.scientificamerican.com/article/openai-claims-blockbuster-math-breakthrough-amid-swirl-of-controversy/" target="_blank" rel="noopener">Scientific American ↗</a><a href="https://www.unite.ai/buckmaster-and-alpoge-post-ai-fluid-blowup-proofs-dispute-openai-contact/" target="_blank" rel="noopener">Unite.AI ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#Mistral #삼성</span><span class="title">미스트랄, 삼성 주도 €30억 유치 · 유럽 최대 라운드</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">프랑스 미스트랄이 9/8 삼성전자 주도의 시리즈 D로 €30억을 유치하며 €210억 이상 밸류에이션을 인정받았습니다. 유럽 테크 기업 역사상 최대 지분 라운드로, 연매출(ARR)도 $10억을 넘긴 것으로 알려져 '유럽의 프런티어 랩' 지위를 굳히는 모양새입니다.<div class="why"><b>왜 중요?</b> 삼성이 주도한 베팅이라 갤럭시 · 온디바이스 협력 가능성이 열렸고, 3사 외 제4의 선택지가 커지는 신호입니다.</div><div class="srcs">👉 <a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/" target="_blank" rel="noopener">Mistral ↗</a><a href="https://www.euronews.com/business/2026/09/08/mistral-ai-raises-record-3-billion-in-samsung-led-funding-round" target="_blank" rel="noopener">Euronews ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#DeepMind #바이오</span><span class="title">딥마인드, 알파지놈 아틀라스 공개 · 변이 90억 개 예측 지도</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">구글 딥마인드가 9/8 인간 게놈에서 가능한 모든 단일 변이 약 90억 개의 분자 수준 효과를 미리 계산한 1페타바이트 규모의 '알파지놈 아틀라스'를 공개했습니다. 브로드연구소 초기 사용자들이 희귀질환 연관 변이(DNM1)를 찾아내는 등 유전체 연구의 탐색 속도를 크게 끌어올릴 것으로 기대됩니다.<div class="why"><b>왜 중요?</b> 모델 자체가 아니라 '모델이 미리 계산한 결과'를 데이터셋으로 푸는 방식이라, 전문 분야 AI 활용의 새 배포 패턴이 될 수 있습니다.</div><div class="srcs">👉 <a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">DeepMind ↗</a><a href="https://www.marktechpost.com/2026/09/08/google-deepmind-releases-alphagenome-atlas-with-precomputed-molecular-effect-predictions-and-avi-scores-for-9-billion-human-dna-variants/" target="_blank" rel="noopener">MarkTechPost ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#6BA8FF;border-color:#6BA8FF59">규제</span><span class="tags">#Google #DMA</span><span class="title">구글, EU 검색 대개편 · "29년 역사상 최대 품질 저하" 주장</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">구글이 9/8 DMA(디지털시장법) 벌금을 피하기 위해 유럽 검색 결과를 개편해, 경쟁 검색 · 비교 서비스가 결과 상단에 노출되도록 바꿨습니다. 구글 스스로 "검색 29년 역사상 최대 폭의 품질 저하"라고 밝힐 만큼 이례적 조치로, 규제가 검색 UI 자체를 바꾼 첫 대형 사례입니다.<div class="why"><b>왜 중요?</b> 지난주 ChatGPT의 DSA 검색엔진 지정과 이어지는 흐름입니다. AI 답변형 검색도 같은 규제 틀에 들어갈 수 있습니다.</div><div class="srcs">👉 <a href="https://www.globalbankingandfinance.com/exclusive-google-warns-lower-quality-revamps-europe-search/" target="_blank" rel="noopener">Reuters(전재) ↗</a><a href="https://cryptobriefing.com/google-europe-search-quality-dma-compliance/" target="_blank" rel="noopener">Crypto Briefing ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#GPT6 #한국</span><span class="title">GPT-6 아스트라, AI 최초 수능 전 영역 만점 · 국내 확산</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">9/6 공개된 평가에서 GPT-6 Astra가 수능 벤치마크 450점 전 영역 만점을 AI 최초로 기록했고, 어제 GeekNews 등 국내 커뮤니티에서 크게 확산됐습니다. 클로드 · 제미나이도 고득점이지만 탐구 4과목까지 석권한 것은 아스트라가 처음이라, 한국어 특화 벤치마크마저 포화 단계에 들어섰다는 평가입니다.</div><div class="why"><b>왜 중요?</b> 벤치마크 만점 시대엔 점수보다 내 워크플로 적합성(도구 연동, 응답 스타일, 비용)이 모델 선택 기준이 됩니다.</div><div class="srcs">👉 <a href="https://www.aitimes.com/news/articleView.html?idxno=214896" target="_blank" rel="noopener">AI타임스 ↗</a><a href="https://news.hada.io/" target="_blank" rel="noopener">GeekNews ↗</a></div></div></div></div>
+
+  <div class="section-label">② 내가 쓰는 도구 업데이트</div>
+  <div class="tools"><div class="tool"><span class="dot same"></span><span class="tx"><b>Claude (Cowork 포함)</b> · 변동 없음 · 최신 업데이트: 9/1 Fable 5.1 · Mythos 5.1</span></div><div class="tool"><span class="dot same"></span><span class="tx"><b>ChatGPT</b> · 변동 없음 · 릴리즈 노트 최신: 9/3 GPT-6 Astra · Zendesk/OneNote 플러그인 · <a href='https://help.openai.com/en/articles/6825453-chatgpt-release-notes' target='_blank'>Release Notes</a></span></div><div class="tool"><span class="dot same"></span><span class="tx"><b>Gemini</b> · 변동 없음 · 최신: 9/4 Spark 포토 에이전트 롤아웃 중</span></div></div>
+
+  <div class="section-label">③ 게임</div>
+  <div class="g-card"><h4><span class="gi">🎮</span>국내 게임</h4><ul>
+    <li>엔씨 신더시티, 무료 플레이 아닌 유료 패키지 출시 확정 · PC 먼저, 콘솔은 이후 · <a href="https://www.inven.co.kr/webzine/news/?news=320568" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>아이온2, 오늘(9/9) 신규 성역 업데이트 · 피지컬 레이드 '비탄의 설원' 3개 난이도 · <a href="https://www.inven.co.kr/webzine/news/?news=320562" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">🌍</span>해외 게임</h4><ul>
+    <li>닌텐도 '젤다 40주년' 다이렉트 · 시간의 오카리나 리메이크 11/5 출시, 스위치2 특별판 10/29 · <a href="https://www.inven.co.kr/webzine/news/?news=320567" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>GTA6, 한국은 11/19 자정 출시 · 미국보다 약 14시간 빨라 · <a href="https://www.inven.co.kr/webzine/news/?news=320564" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">Ⓝ</span>넥슨 <span style="margin-left:4px"><code>듀랑고 월드</code> <code>TGS 2026</code> <code>FCL</code></span></h4><ul>
+    <li>'듀랑고' IP 오픈월드 신작 '듀랑고 월드(프로젝트 DX)' 개발 중단 · 2022년 공개 후 3년 10개월 만 · <a href="https://www.inven.co.kr/webzine/news/?news=320549" target="_blank" rel="noopener">인벤 ↗</a>
+      <div class="react">🗣 루리웹에선 "이은석 PD가 나간 시점에 정해진 운명"이라는 납득론이 다수인 가운데 "짧지만 정말 몰입해서 한 게임"이라는 아쉬움도 (<a href="https://bbs.ruliweb.com/family/1476/board/300007/read/2354737" target="_blank" rel="noopener">루리웹 ↗</a>)</div></li>
+    <li>도쿄게임쇼 2026(9/17~21 마쿠하리) 출품작 확정 · 마비노기 모바일 + 신작 파레이돌리아, 티르코네일 재현 부스 · <a href="https://www.gamevu.co.kr/news/articleView.html?idxno=60274" target="_blank" rel="noopener">게임뷰 ↗</a></li>
+    <li>2026 FCL 크리에이터 리그 팀 드래프트 완료 (후속) · 조별 예선 9/14 시작, 결승 9/18 · <a href="https://fconline.nexon.com/news/notice/view?n4ArticleSN=6235" target="_blank" rel="noopener">공지 ↗</a></li>
+  </ul></div>
+
+  <div class="section-label">④ 오늘의 활용 팁</div>
+  <div class="tip"><h3>💡 챗이 낸 숫자, Cowork에서 코드로 재검증</h3>
+<p>오늘 1순위 뉴스의 핵심은 'AI의 주장'과 'Lean 기계 검증'이 분리돼 있었다는 점입니다. 같은 원리를 일상 작업에 바로 적용할 수 있습니다:</p>
+<blockquote>① ChatGPT나 Gemini가 만들어 준 계산 · 통계 · 표(비용 비교, 성장률, 환산치 등)를 복사합니다. ② Claude Cowork에 붙여넣고 "이 수치를 파이썬 코드로 재계산해서, 원문과 다른 값만 표로 보여줘"라고 요청하세요. Cowork는 실제 코드를 실행하므로 암산 환각이 끼어들 틈이 없습니다. ③ 오차가 난 항목만 원본 출처를 다시 확인하면 끝.</blockquote>
+<p>'말로 한 주장'과 '코드로 한 검증'을 분리하는 습관이 밀레니엄 난제급이 아니어도 통합니다.</p></div>
+
+  <div class="pnav">
+    <a href="2026-09-08.html"><span class="lbl">← 이전 브리핑</span>2026-09-08 (화) · OpenAI 수석과학자 '외계 지성' 감속론 외</a>
+    <a class="to-index" href="../index.html">아카이브</a>
+  </div>
+  <footer>MadKnight 뉴스 · 2026-09-09 (수) 발행 · 평일 아침 06:00 KST</footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+  var btn = document.getElementById('toggleAll'), allOpen = false;
+  btn.addEventListener('click', function(){
+    allOpen = !allOpen;
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.toggle('open', allOpen); });
+    btn.textContent = allOpen ? '모두 접기' : '모두 펼치기';
+  });
+</script>
+</body>
+</html>
