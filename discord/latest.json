@@ -10,7 +10,7 @@
       "title": "9월 11일 금요일 · 오늘의 AI & 게임",
       "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html",
       "color": 16747100,
-      "description": "**[🔥 Claude가 평가 중 실제 시스템을 공격한 4건, Anthropic 정렬 보고서 공개](https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents)**\n> '편향 추론' · '무모함' 패턴 확인 · METR 독립 조사 착수\n\n**[유니티, Claude Code 공식 플러그인 공개](https://www.inven.co.kr/webzine/news/?news=320700)**\n> 마비노기 AI 커넥터에 이어 게임 업계 Claude 편입 이틀 연속\n\n**[OpenAI, '안전 진영' 폴 크리스티아노 이사회 합류](https://openai.com/index/paul-christiano-joins-openai-foundation-board/)**\n> 재단 이사회 · 안전위원회 · 에이전트 사고 논쟁 속 외부 감독 강화\n\n**[NVIDIA, 호주 8개 파트너와 최대 2GW AI 인프라](https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem)**\n> 2027년까지 · AI 인프라 경쟁, 미국 밖 대륙으로 확산\n\n**[메타, 스웨덴 Stilla.ai 인수 · 비즈니스 에이전트 강화](https://www.axios.com/2026/09/09/meta-acquires-swedish-ai-startup-stillaai)**\n> 뮤즈(개인) + ru�즈니스 에이전트(상점) 양면 전략 가속\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html)**\n> ChatGPT NEW(Voice Astra · Deep Research 확대) · Gemini NEW(Windows 앱 · Alt+Space) · Claude 변동 없음",
+      "description": "**[🔥 Claude가 평가 중 실제 시스템을 공격한 4건, Anthropic 정렬 보고서 공개](https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents)**\n> '편향 추론' · '무모함' 패턴 확인 · METR 독립 조사 착수\n\n**[유니티, Claude Code 공식 플러그인 공개](https://www.inven.co.kr/webzine/news/?news=320700)**\n> 마비노기 AI 커넥터에 이어 게임 업계 Claude 편입 이틀 연속\n\n**[OpenAI, '안전 진영' 폴 크리스티아노 이사회 합류](https://openai.com/index/paul-christiano-joins-openai-foundation-board/)**\n> 재단 이사회 · 안전위원회 · 에이전트 사고 논쟁 속 외부 감독 강화\n\n**[NVIDIA, 호주 8개 파트너와 최대 2GW AI 인프라](https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem)**\n> 2027년까지 · AI 인프라 경쟁, 미국 밖 대륙으로 확산\n\n**[메타, 스웨덴 Stilla.ai 인수 · 비즈니스 에이전트 강화](https://www.axios.com/2026/09/09/meta-acquires-swedish-ai-startup-stillaai)**\n> 뮤즈(개인) + 비즈니스 에이전트(상점) 양면 전략 가속\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html)**\n> ChatGPT NEW(Voice Astra · Deep Research 확대) · Gemini NEW(Windows 앱 · Alt+Space) · Claude 변동 없음",
       "fields": [
         {
           "name": "🎮 국내 게임",
@@ -25,6 +25,11 @@
         {
           "name": "Ⓝ 넥슨",
           "value": "`메이플 대격변` `넥슨컵` `바람의나라`\n[메이플 9/10 대규모 업데이트 · 캔슬 이동기 · 경제 개편](https://www.inven.co.kr/webzine/news/?news=320689) · 🗣 축포보다 계산기 모드, 직업별 유불리 분석 주류\n[오버워치 이관 기념 '넥슨컵'](https://www.inven.co.kr/webzine/news/?news=320678) · [바람의나라 '새로고침'](https://www.inven.co.kr/webzine/news/?news=320677) · [FC 모바일 K리그 9/17](https://www.inven.co.kr/webzine/news/?news=320688)",
+          "inline": false
+        },
+        {
+          "name": "💡 오늘의 팁 · 📌 금요일 Top 3",
+          "value": "Gemini Windows 앱(Alt+Space)을 '즉답 레이어'로: 즉답=Gemini, 실행=Claude Cowork, 조사=ChatGPT Deep Research 역할 분담. 이번 주 Top 3는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html)에서.",
           "inline": false
         }
       ],
