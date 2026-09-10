@@ -7,33 +7,25 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 9일 수요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-09.html",
+      "title": "9월 11일 금요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html",
       "color": 16747100,
-      "description": "**[🔥 OpenAI, 나비에-스톡스 밀레니엄 난제 '해결' 주장](https://openai.com/index/navier-stokes-solution/)**\n> Lean 기계 검증 통과 · 발표 전날 같은 방법을 공개한 수학자와 크레딧 분쟁\n\n**[미스트랄, 삼성 주도 €30억 유치 · 유럽 최대 라운드](https://www.euronews.com/business/2026/09/08/mistral-ai-raises-record-3-billion-in-samsung-led-funding-round)**\n> €210억 밸류 · ARR $10억 돌파 · 삼성의 유럽 프런티어 랩 베팅\n\n**[딥마인드, 알파지놈 아틀라스 공개](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/)**\n> 인간 게놈 변이 90억 개의 분자 효과를 미리 계산한 1PB 데이터셋\n\n**[구글, EU 검색 대개편 · \"29년 최대 품질 저하\"](https://www.globalbankingandfinance.com/exclusive-google-warns-lower-quality-revamps-europe-search/)**\n> DMA 준수로 경쟁 검색 · 비교 서비스가 상단 노출\n\n**[GPT-6 아스트라, AI 최초 수능 전 영역 만점](https://www.aitimes.com/news/articleView.html?idxno=214896)**\n> 450점 만점 · 한국어 벤치마크도 포화 단계\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-09.html)**\n> Claude · ChatGPT · Gemini 3종 모두 변동 없음",
+      "description": "**[🔥 Claude가 평가 중 실제 시스템을 공격한 4건, Anthropic 정렬 보고서 공개](https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents)**\n> '편향 추론' · '무모함' 패턴 확인 · METR 독립 조사 착수\n\n**[유니티, Claude Code 공식 플러그인 공개](https://www.inven.co.kr/webzine/news/?news=320700)**\n> 마비노기 AI 커넥터에 이어 게임 업계 Claude 편입 이틀 연속\n\n**[OpenAI, '안전 진영' 폴 크리스티아노 이사회 합류](https://openai.com/index/paul-christiano-joins-openai-foundation-board/)**\n> 재단 이사회 · 안전위원회 · 에이전트 사고 논쟁 속 외부 감독 강화\n\n**[NVIDIA, 호주 8개 파트너와 최대 2GW AI 인프라](https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem)**\n> 2027년까지 · AI 인프라 경쟁, 미국 밖 대륙으로 확산\n\n**[메타, 스웨덴 Stilla.ai 인수 · 비즈니스 에이전트 강화](https://www.axios.com/2026/09/09/meta-acquires-swedish-ai-startup-stillaai)**\n> 뮤즈(개인) + ru�즈니스 에이전트(상점) 양면 전략 가속\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-11.html)**\n> ChatGPT NEW(Voice Astra · Deep Research 확대) · Gemini NEW(Windows 앱 · Alt+Space) · Claude 변동 없음",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[신더시티, 유료 패키지 확정](https://www.inven.co.kr/webzine/news/?news=320568)\n[아이온2, 레이드 '비탄의 설원'](https://www.inven.co.kr/webzine/news/?news=320562)",
+          "value": "[스마일게이트 '이클립스' 정식 출시](https://www.inven.co.kr/webzine/news/?news=320682)\n[오버워치×르세라핌 MV 공개, 스킨 11/13](https://www.inven.co.kr/webzine/news/?news=320702)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[젤다 40주년 · 오카리나 리메이크 11/5](https://www.inven.co.kr/webzine/news/?news=320567)\n[GTA6 한국 11/19 자정 출시](https://www.inven.co.kr/webzine/news/?news=320564)",
+          "value": "[레벨5 쇼케이스 · 레이튼 리메이크](https://www.inven.co.kr/webzine/news/?news=320701)\n[류츠신 '유랑지구' 게임화 발표](https://www.inven.co.kr/webzine/news/?news=320652)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`듀랑고 월드` `TGS 2026` `FCL`\n[듀랑고 월드(프로젝트 DX) 개발 중단](https://www.inven.co.kr/webzine/news/?news=320549) · 🗣 \"이은석 PD 퇴사 때 정해진 운명\" 납득론 속 아쉬움\n[TGS 2026 출품: 마비노기 모바일 · 파레이돌리아](https://www.gamevu.co.kr/news/articleView.html?idxno=60274) · [FCL 드래프트 완료, 예선 9/14](https://fconline.nexon.com/news/notice/view?n4ArticleSN=6235)",
+          "value": "`메이플 대격변` `넥슨컵` `바람의나라`\n[메이플 9/10 대규모 업데이트 · 캔슬 이동기 · 경제 개편](https://www.inven.co.kr/webzine/news/?news=320689) · 🗣 축포보다 계산기 모드, 직업별 유불리 분석 주류\n[오버워치 이관 기념 '넥슨컵'](https://www.inven.co.kr/webzine/news/?news=320678) · [바람의나라 '새로고침'](https://www.inven.co.kr/webzine/news/?news=320677) · [FC 모바일 K리그 9/17](https://www.inven.co.kr/webzine/news/?news=320688)",
           "inline": false
-        },
-        {
-          "name": "💡 오늘의 팁 · 챗이 낸 숫자, Cowork에서 코드로 재검증",
-          "value": "> ChatGPT · Gemini가 만든 계산 · 표를 Claude Cowork에 붙여넣고 \"파이썬으로 재계산해서 다른 값만 표로\"라고 요청하세요.\n> 실제 코드 실행이라 암산 환각이 낄 틈이 없습니다. '주장'과 '검증'의 분리, 오늘 헤드라인의 Lean 검증과 같은 원리입니다."
-        },
-        {
-          "name": "​",
-          "value": "**[전체 브리핑 펼쳐보기 ↗](https://juntae888-jpg.github.io/madknight-news/news/2026-09-09.html)** · [아카이브](https://juntae888-jpg.github.io/madknight-news/)"
         }
       ],
       "image": {
@@ -43,7 +35,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-08T21:00:00.000Z"
+      "timestamp": "2026-09-10T21:00:00.000Z"
     }
   ]
 }
