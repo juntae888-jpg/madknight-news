@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="../mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · 2026-09-14 (월)">
+<meta property="og:description" content="Nvidia, Anthropic IPO에 최대 $100억 투자 논의 · 아모데이 '감속' 에세이 · 중국 3사, 부정 계정으로 Claude 응답 수집 · OpenAI Agents API 베타 · 블리즈컨 2026 · 젠지 LCK 7회 우승">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
+<title>MadKnight 뉴스 · 2026-09-14 (월)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(closest-side, rgba(255,138,92,.08), transparent); pointer-events:none; }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.03); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+  .topbar { display:flex; align-items:center; margin-bottom: 22px; }
+  .backlink { color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin: 14px 0 6px; }
+  .chip { font-size: 11.5px; color:#c9cedb; background: var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 8px 0 24px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .section-label .aux { letter-spacing:0; color:var(--dim); font-weight:400; text-transform:none; font-size:12px; }
+  .toggle-all { flex:0 0 auto; font-size:11.5px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .toggle-all:hover { color:var(--mk); border-color:var(--mk); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .cat { font-size: 10.5px; font-weight: 800; border: 1px solid; border-radius: 5px; padding: 1px 7px; flex: 0 0 auto; }
+  .hot-badge { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: #14161c; background: linear-gradient(135deg, #FF6B6B, var(--mk)); border-radius: 5px; padding: 2px 7px; flex: 0 0 auto; }
+  .card.hot { border-color: rgba(255,107,107,.4); }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; border-top: 0 solid transparent; }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .why { margin-top:10px; font-size:12.5px; color:#d7dbe6; background:rgba(255,138,92,.07); border:1px solid rgba(255,138,92,.18); border-radius:8px; padding:8px 12px; }
+  .why b { color: var(--mk); }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tool .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 8px; }
+  .dot.same { background: #4a5468; }
+  .dot.new { background: #7ED87E; box-shadow: 0 0 8px rgba(126,216,126,.55); }
+  .tool .nb { font-size: 10px; font-weight: 800; color: #14161c; background: #7ED87E; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .g-card { background: var(--panel); border:1px solid var(--line); border-radius:12px; padding:15px 18px; margin-bottom:10px; }
+  .g-card h4 { font-size:13.5px; margin-bottom:8px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .g-card h4 .gi { font-size:15px; }
+  .g-card ul { list-style:none; }
+  .g-card li { font-size:13.5px; color:#c9cedb; padding:5px 0 5px 14px; position:relative; }
+  .g-card li::before { content:"·"; color:var(--mk); font-weight:900; position:absolute; left:2px; }
+  .g-card a { color:var(--mk); text-decoration:none; }
+  .g-card a:hover { text-decoration:underline; }
+  .g-card code { font-family:inherit; font-size:12px; background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 7px; color:#d7dbe6; }
+  .g-card .react { color:var(--dim); font-size:12.5px; margin-top:3px; background:rgba(255,255,255,.02); border-left:2px solid var(--line); border-radius:0 6px 6px 0; padding:4px 10px; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  .pnav { display:flex; gap:10px; margin-top: 40px; }
+  .pnav a { flex:1; display:block; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 16px; text-decoration:none; color:#c9cedb; font-size:13px; transition:border-color .2s; }
+  .pnav a:hover { border-color: var(--mk); }
+  .pnav .lbl { display:block; font-size:11px; color:var(--dim); margin-bottom:2px; }
+  .pnav .to-index { text-align:center; flex:0 0 auto; display:flex; align-items:center; padding:12px 18px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <div class="topbar"><a class="backlink" href="../index.html">← 전체 브리핑 목록</a></div>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-09-14 (월)</div>
+    </div>
+  </header>
+  <div class="chips">
+    <span class="chip">🗞 AI 뉴스 5</span><span class="chip">🛠 도구 3종 점검</span><span class="chip">🎮 게임 3섹션</span><span class="chip">💡 팁 1</span><span class="chip">⏱ 약 3분</span>
+  </div>
+  <p class="meta">범위: 9/11(금) 아침 ~ 9/14(월) 아침 KST (주말 포함) · 도구: Claude(Cowork) · ChatGPT · Gemini · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>Nvidia, Anthropic IPO에 최대 $100억 투자 논의</b> · 약 $2조 밸류에이션의 앵커 투자자 후보</li><li><b>아모데이 "We Must Pace the Frontier" 발표</b> · 업계 감속 3단계 플랜, 외부 평가자 상시 접근은 Anthropic 단독 선행</li><li><b>Anthropic 위협 보고서: 중국 3사, 부정 계정으로 Claude 응답 수집</b> · 알리바바 1.51억 건</li><li><b>OpenAI Agents API 공개 베타</b> · Codex 하네스를 API 한 번 호출로</li><li>도구: <b>Claude 오늘부터 주간 한도 조정 · ChatGPT Library 클라우드 연동</b> / 게임: <b>블리즈컨 2026 · 젠지 LCK 7회 우승</b></li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span class="aux">(카드를 눌러 펼치기)</span><button class="toggle-all" id="toggleAll">모두 펼치기</button></div>
+  <div class="card hot"><div class="card-head"><span class="hot-badge">🔥 HEADLINE</span><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#Nvidia #Anthropic</span><span class="title">Nvidia, Anthropic IPO에 최대 $100억 투자 논의 · 약 $2조 밸류에이션</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Nvidia가 Anthropic 상장(IPO)에서 최대 $100억 규모 지분을 인수하는 방안을 논의 중이라는 보도가 주말에 나왔습니다. 밸류에이션은 약 $2조(일부 보도 $2.3조)로 거론되며, 성사되면 사상 최대급 IPO의 앵커 투자자가 칩 공급사라는 구도가 됩니다.<div class="why"><b>왜 중요?</b> 매일 쓰는 Claude의 모회사가 상장 국면에 들어섰다는 뜻입니다. 자본 확충은 모델 · 인프라 투자로 이어지지만, 상장사 전환 뒤 요금 · 정책 변화도 지켜볼 지점입니다.</div><div class="srcs">👉 <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-may-invest-10-billion-142337240.html" target="_blank" rel="noopener">Yahoo Finance ↗</a><a href="https://247wallst.com/investing/2026/09/12/nvidia-may-invest-up-to-10-billion-in-anthropics-2-3-trillion-ipo/" target="_blank" rel="noopener">24/7 Wall St. ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#6BA8FF;border-color:#6BA8FF59">규제</span><span class="tags">#Anthropic #정책</span><span class="title">아모데이 "We Must Pace the Frontier" · 업계 감속 3단계 플랜 제안</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">다리오 아모데이 CEO가 9/11(현지) 에세이에서 AI 업계가 1~2년간 능력 향상 속도를 늦춰야 한다며 ① 외부 평가자에게 직원급 상시 접근 부여 ② 민주주의권 랩 간 안전 기준 공조 ③ 국제 조율의 3단계를 제안했습니다. 1단계는 Anthropic이 단독으로 먼저 시행해 외부 검증팀에 사무실 출입과 편집권 없는 발표 권한까지 부여합니다.<div class="why"><b>왜 중요?</b> 지난주 OpenAI 수석과학자 감속론에 이어 두 랩 수장이 모두 '속도 조절'을 공식화했습니다. 신모델 출시 간격과 평가 공개 방식이 달라질 수 있습니다.</div><div class="srcs">👉 <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener">에세이 원문 ↗</a><a href="https://x.com/DarioAmodei/status/2098773920774074715" target="_blank" rel="noopener">X 발표 ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#FF6B6B;border-color:#FF6B6B59">보안</span><span class="tags">#중국 #증류</span><span class="title">Anthropic 위협 보고서: 알리바바 등 중국 3사, 부정 계정으로 Claude 응답 수집</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Anthropic이 9월 위협 보고서에서 알리바바(1억 5,100만 건), 문샷(2,300만 건 이상), 딥시크(1,200만 건 이상)가 부정 계정으로 Claude와의 교환 데이터를 대량 수집해 자사 모델 학습(증류)에 쓴 정황을 공개했다고 CNBC가 보도했습니다. 사이버 작전 차단, 영향력 공작, 생물학 오용 시도 사례도 함께 담겼습니다.<div class="why"><b>왜 중요?</b> 계정 탐지와 차단이 강화되는 배경입니다. 로그인 · 결제 이상 감지 같은 보안 절차가 앞으로 더 깐깐해질 수 있습니다.</div><div class="srcs">👉 <a href="https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html" target="_blank" rel="noopener">CNBC ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#5ED3C8;border-color:#5ED3C859">도구</span><span class="tags">#OpenAI #에이전트</span><span class="title">OpenAI, Agents API 공개 베타 · Codex 인프라를 개발자에게 개방</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">OpenAI가 클라우드 에이전트를 위한 Agents API를 공개 베타로 내놨습니다. 세션 관리와 샌드박스 실행이 포함된 관리형 런타임으로, Codex를 움직이던 에이전트 하네스를 API 호출 하나로 쓸 수 있게 한 것이 핵심입니다.<div class="why"><b>왜 중요?</b> Cowork 같은 '클라우드에서 오래 도는 에이전트'가 표준 API로 풀리는 흐름입니다. ChatGPT 쪽 자동화 옵션이 넓어집니다.</div><div class="srcs">👉 <a href="https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/" target="_blank" rel="noopener">MarkTechPost ↗</a><a href="https://www.vktr.com/ai-platforms/openai-launches-managed-agents-api-for-cloud-based-agents/" target="_blank" rel="noopener">VKTR ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#구글 #인재</span><span class="title">구글, AI 코딩 스타트업 Mechanize 인재 인수 완료 · $15억+ 규모</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">구글이 Mechanize의 타마이 베시로글루 팀을 DeepMind로 흡수하는 $15억 이상 규모 인재 인수(탤런트 딜)를 완료했습니다. 모델 미드트레이닝과 코딩 · 추론 역량 강화가 목적으로, 빅테크의 '인수 없는 인재 흡수' 흐름이 이어지고 있습니다.<div class="why"><b>왜 중요?</b> Gemini의 코딩 · 추론 개선으로 이어질 투자입니다. 세 도구의 코딩 성능 격차는 계속 재측정할 가치가 있습니다.</div><div class="srcs">👉 <a href="https://www.benzinga.com/markets/tech/26/09/61752767/google-deepmind-mechanize-ai-talent" target="_blank" rel="noopener">Benzinga ↗</a></div></div></div></div>
+
+  <div class="section-label">② 내가 쓰는 도구 업데이트</div>
+  <div class="tools"><div class="tool"><span class="dot new"></span><span class="tx"><b>Claude (Cowork 포함)</b><span class="nb">NEW</span> · <b>오늘(9/14)부터 Claude Code 주간 한도 조정</b>: 임시 +50% 부스트 종료로 현행 대비 약 17% 축소(프로모션 이전 기준 +25%), Pro · Max · Team · Enterprise 대상 · <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/" target="_blank">BleepingComputer</a> / Claude Code 2.1.269(9/11) · 2.1.270(9/12) 패치 · <a href="https://releasebot.io/updates/anthropic" target="_blank">Releasebot</a></span></div><div class="tool"><span class="dot new"></span><span class="tx"><b>ChatGPT</b><span class="nb">NEW</span> · 9/10 ① <b>Library에 Box · Dropbox · SharePoint 클라우드 연동</b>: 재업로드 없이 파일 · 폴더를 탐색해 대화에 첨부 ② Work · Codex용 Data 플러그인(연결된 비즈니스 데이터 분석) · <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">Release Notes</a></span></div><div class="tool"><span class="dot same"></span><span class="tx"><b>Gemini</b> · 변동 없음 (최신 항목은 9/10 Windows 앱 출시, 직전 브리핑에서 다룸) · <a href="https://gemini.google/release-notes/" target="_blank">Release Notes</a></span></div></div>
+
+  <div class="section-label">③ 게임</div>
+  <div class="g-card"><h4><span class="gi">🎮</span>국내 게임</h4><ul>
+    <li>젠지, LCK 결승에서 한화생명 꺾고 통산 7회 우승 달성 (9/13) · <a href="https://www.inven.co.kr/webzine/news/?news=320800" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>한화생명은 준결승서 T1을 3:1로 제압하고 결승행 (9/12) · <a href="https://www.inven.co.kr/webzine/news/?news=320761" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">🌍</span>해외 게임</h4><ul>
+    <li>블리즈컨 2026 대량 발표 (9/13): 디아블로 5는 2029년 봄 출시 · <a href="https://www.inven.co.kr/webzine/news/?news=320772" target="_blank" rel="noopener">인벤 ↗</a> / WoW 신확장 '포에버' 11/5 · 신규 종족 스카이본 · <a href="https://www.inven.co.kr/webzine/news/?news=320776" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>오버워치 54번째 영웅 '독트린' 공개 (9/15까지 체험) · <a href="https://www.inven.co.kr/webzine/news/?news=320773" target="_blank" rel="noopener">인벤 ↗</a> / 스타크래프트 신작은 2030년 목표 오픈월드 슈터 · <a href="https://www.inven.co.kr/webzine/news/?news=320771" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">Ⓝ</span>넥슨 <span style="margin-left:4px"><code>FCL 드래프트</code> <code>TGS D-3</code> <code>퍼스널 버닝</code></span></h4><ul>
+    <li>'FC온라인' 크리에이터 리그 2026 FCL 팀 드래프트 완료(9/12), 오늘(9/14)부터 조별 본선 시작 · <a href="https://fconline.nexon.com/news/notice/view?n4ArticleSN=6235" target="_blank" rel="noopener">공지 ↗</a>
+      <div class="react">🗣 에펨코리아 · 인벤에 드래프트 결과 정리 글이 잇따랐고, 감스트의 마지막 라운드 '빅윈' 지명이 최대 화제</div></li>
+    <li>도쿄게임쇼 2026 개막 D-3 (9/17): 마비노기 모바일(일본 사전등록 10만 돌파)과 신작 '파레이돌리아' 출품, 티르코네일 재현 부스 · <a href="https://www.gamevu.co.kr/news/articleView.html?idxno=60582" target="_blank" rel="noopener">게임뷰 ↗</a><a href="https://www.gamevu.co.kr/news/articleView.html?idxno=60513" target="_blank" rel="noopener"> 사전등록 ↗</a></li>
+    <li>후속 · 메이플스토리 9/10 개편에 이어 '퍼스널 버닝'(260~300레벨 맞춤 성장)과 가을 이벤트 '아르고 호의 방문객' 적용 · <a href="https://www.inven.co.kr/board/maple/2314/13192" target="_blank" rel="noopener">인벤 실시간 소식 ↗</a>
+      <div class="react">🗣 인벤 직업게시판엔 "이번에 퍼스널 버닝 해볼만 할까요" 류의 실효성 계산 글이 이어지는 중</div></li>
+  </ul></div>
+
+  <div class="section-label">④ 오늘의 활용 팁</div>
+  <div class="tip"><h3>💡 재업로드 그만 · 파일 원본을 AI에 '상시 연결'하기</h3>
+<p>ChatGPT Library에 클라우드 스토리지가 붙으면서(위 도구 업데이트), 자주 쓰는 문서를 매번 끌어다 넣는 습관을 버릴 때가 됐습니다.</p>
+<blockquote>① ChatGPT 설정에서 Library에 Dropbox(또는 Box · SharePoint)를 연결하고, 자주 참조하는 폴더 하나를 정해 대화에서 바로 불러 쓰세요. ② 같은 폴더를 Claude 데스크톱 앱의 Cowork 폴더 연결로도 붙이면 동일 원본을 두 AI가 각자 방식으로 다룹니다: 조사 · 요약은 ChatGPT에서 불러 읽고, 파일을 실제로 고치고 만들어내는 작업은 Claude에 맡기기.</blockquote>
+<p>덤으로, 오늘부터 Claude Code 주간 한도가 현행보다 줄어드는 만큼 대량 반복 읽기 · 초안은 ChatGPT 연동으로 돌리고 Claude 사용량은 산출물 생성에 아껴 쓰는 배분을 권합니다.</p></div>
+
+  <div class="pnav">
+    <a href="2026-09-11.html"><span class="lbl">← 이전 브리핑</span>2026-09-11 (금) · Anthropic 정렬 보고서 · Gemini Windows 앱 외</a>
+    <a class="to-index" href="../index.html">아카이브</a>
+  </div>
+  <footer>MadKnight 뉴스 · 2026-09-14 (월) 발행 · 평일 아침 06:00 KST</footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+  var btn = document.getElementById('toggleAll'), allOpen = false;
+  btn.addEventListener('click', function(){
+    allOpen = !allOpen;
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.toggle('open', allOpen); });
+    btn.textContent = allOpen ? '모두 접기' : '모두 펼치기';
+  });
+</script>
+</body>
+</html>
