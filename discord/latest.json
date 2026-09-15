@@ -7,29 +7,29 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 14일 월요일 · 오늘의 AI & 게임 (주말 포함)",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-14.html",
+      "title": "9월 15일 화요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html",
       "color": 16747100,
-      "description": "**[🔥 Nvidia, Anthropic IPO에 최대 $100억 투자 논의](https://finance.yahoo.com/markets/stocks/articles/nvidia-may-invest-10-billion-142337240.html)**\n> 약 $2조 밸류에이션 · 사상 최대급 IPO의 앵커 투자자 후보\n\n**[아모데이 \"We Must Pace the Frontier\" 발표](https://darioamodei.com/post/we-must-pace-the-frontier)**\n> 업계 감속 3단계 플랜 · 외부 평가자 상시 접근은 Anthropic 단독 선행\n\n**[중국 3사, 부정 계정으로 Claude 응답 대량 수집](https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html)**\n> Anthropic 위협 보고서 · 알리바바 1.51억 건, 문샷 · 딥시크도\n\n**[OpenAI, Agents API 공개 베타](https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/)**\n> Codex 하네스를 API 한 번 호출로 · 샌드박스 실행 포함 관리형 런타임\n\n**[구글, Mechanize 인재 인수 완료 · $15억+](https://www.benzinga.com/markets/tech/26/09/61752767/google-deepmind-mechanize-ai-talent)**\n> 베시로글루 팀 DeepMind 합류 · 코딩 · 추론 강화 목적\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-14.html)**\n> Claude NEW(오늘부터 Code 주간 한도 조정 · 현행 대비 약 17%↓) · ChatGPT NEW(Library에 Box · Dropbox · SharePoint 연동) · Gemini 변동 없음",
+      "description": "**[🔥 구글 · OpenAI · Anthropic, 'AI판 FINRA' 자율 규제 기구 논의](https://www.pymnts.com/news/artificial-intelligence/2026/google-openai-and-anthropic-float-idea-of-ai-standards-body/)**\n> 7월부터 3사 정기 회동 · 업계 자율 감사 · 테스트 기구 구상, 트럼프는 감속 반대\n\n**[AI 감속론에 반도체주 급락](https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/)**\n> 반도체지수 -6% · 엔비디아 -3%, 하이퍼스케일러(알파벳 · MS · 메타)는 상승\n\n**[iOS 27 정식 배포 · Siri AI 교체 정황](https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/)**\n> 코드에서 Siri의 AI를 ChatGPT · Claude로 위임하는 메커니즘 발견\n\n**[소프트뱅크, OpenAI 투자용 $119억 대출 확보](https://www.japantimes.co.jp/business/2026/09/14/companies/softbank-loan-openai/)**\n> 약 20개 은행 · 2년 만기 · 당초 계획에서 증액\n\n**[MS, AI '행동강령' 초안 공개](https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/)**\n> 해킹 · 인간 기만 금지 · \"인간 통제 저항은 시스템 결함\"\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html)**\n> Claude · ChatGPT · Gemini 3종 모두 변동 없음 (Claude 주간 한도 조정은 9/14부터 발효 중)",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[젠지, 한화생명 꺾고 LCK 7회 우승](https://www.inven.co.kr/webzine/news/?news=320800)\n[한화생명, 준결승서 T1 3:1 제압](https://www.inven.co.kr/webzine/news/?news=320761)",
+          "value": "[리니지, 2차 서버 이전 앞둔 마지막 공성전](https://www.inven.co.kr/webzine/news/?news=320803)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[블리즈컨: 디아블로 5는 2029년 봄](https://www.inven.co.kr/webzine/news/?news=320772)\n[WoW '포에버' 11/5 · 오버워치 신영웅 독트린](https://www.inven.co.kr/webzine/news/?news=320776)",
+          "value": "[워크3 리포지드, 23년 만의 새 캠페인](https://www.inven.co.kr/webzine/news/?news=320808)\n[디아4 30주년 시즌 '지옥의 유산' 9/16](https://www.inven.co.kr/webzine/news/?news=320805)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`FCL 드래프트` `TGS D-3` `퍼스널 버닝`\n[FCL 드래프트 완료 · 오늘 본선 시작](https://fconline.nexon.com/news/notice/view?n4ArticleSN=6235) · 🗣 감스트 '빅윈' 지명이 최대 화제\n[TGS 2026 D-3: 마모(日 사전등록 10만) · 파레이돌리아 출품](https://www.gamevu.co.kr/news/articleView.html?idxno=60582) · [메이플 '퍼스널 버닝' 적용](https://www.inven.co.kr/board/maple/2314/13192)",
+          "value": "`전우치` `아우룸 레지스` `FCL`\n[관광공사 협약: 관광 데이터 7.1만 점이 '전우치' 배경으로](https://www.fnnews.com/news/202609141030166782)\n[메이플 가을 개편 상세 · 본섭 9/17](https://www.gamevu.co.kr/news/articleView.html?idxno=60795) · 🗣 인벤 정리글은 신중한 낙관 · [FCL 본선 1일차 종료](https://www.fmkorea.com/10335527162)",
           "inline": false
         },
         {
           "name": "💡 오늘의 팁",
-          "value": "재업로드 그만: ChatGPT Library에 Dropbox · Box 연결 + 같은 폴더를 Claude Cowork에도 연결. 조사 · 요약은 ChatGPT, 파일 수정 · 생성은 Claude로. 오늘부터 Claude 한도가 줄어드니 대량 반복 작업은 ChatGPT 쪽으로. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-14.html)에서.",
+          "value": "세 AI에 최신성 질문을 던질 땐 \"오늘은 2026-09-15다. 9/14 이후 출처만 쓰고 각 주장에 (출처, 발행일)을 붙여라\" 한 줄을 추가하세요. 답이 갈리면 발행일 표기로 재탕을 바로 판정. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html)에서.",
           "inline": false
         }
       ],
@@ -40,7 +40,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-13T21:00:00.000Z"
+      "timestamp": "2026-09-14T21:00:00.000Z"
     }
   ]
 }
