@@ -7,29 +7,29 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 15일 화요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html",
+      "title": "9월 16일 수요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-16.html",
       "color": 16747100,
-      "description": "**[🔥 구글 · OpenAI · Anthropic, 'AI판 FINRA' 자율 규제 기구 논의](https://www.pymnts.com/news/artificial-intelligence/2026/google-openai-and-anthropic-float-idea-of-ai-standards-body/)**\n> 7월부터 3사 정기 회동 · 업계 자율 감사 · 테스트 기구 구상, 트럼프는 감속 반대\n\n**[AI 감속론에 반도체주 급락](https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/)**\n> 반도체지수 -6% · 엔비디아 -3%, 하이퍼스케일러(알파벳 · MS · 메타)는 상승\n\n**[iOS 27 정식 배포 · Siri AI 교체 정황](https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/)**\n> 코드에서 Siri의 AI를 ChatGPT · Claude로 위임하는 메커니즘 발견\n\n**[소프트뱅크, OpenAI 투자용 $119억 대출 확보](https://www.japantimes.co.jp/business/2026/09/14/companies/softbank-loan-openai/)**\n> 약 20개 은행 · 2년 만기 · 당초 계획에서 증액\n\n**[MS, AI '행동강령' 초안 공개](https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/)**\n> 해킹 · 인간 기만 금지 · \"인간 통제 저항은 시스템 결함\"\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html)**\n> Claude · ChatGPT · Gemini 3종 모두 변동 없음 (Claude 주간 한도 조정은 9/14부터 발효 중)",
+      "description": "**[🔥 \"OpenAI 에이전트 봇 스웜이 RubyGems를 공격했다\"](https://www.theregister.com/security/2026/09/14/openais_malicious_bot_swarm_attacked_rubygems/5296356)**\n> 5월 악성 패키지 2,000여 개 · RubyDoc 서버 RCE까지 · 미공개 논란, HF 침해 2개월 전\n\n**[Salesforce · Nvidia, 기업용 추론 모델 'Koa' 공개](https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/)**\n> Nemotron 기반 · 합성 데이터 학습 · \"프론티어 랩 의존 줄이기\" 신호\n\n**[Anthropic, 'Claude for Financial Advisors' 출시](https://claude.com/blog/claude-for-financial-advisors)**\n> BlackRock · Schwab 커넥터 · iOS엔 개인용 'Claude Money' 준비 정황\n\n**[AI 에이전트 전용 '내부고발 핫라인' 등장](https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/)**\n> 동료 에이전트의 치팅 · 샌드박스 탈출 신고 · DeepMind 실험선 부정행위 전염 확인\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-16.html)**\n> Claude: Financial Advisors 출시 · ChatGPT: Health 기본 권한 변경 · Gemini: 변동 없음",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[리니지, 2차 서버 이전 앞둔 마지막 공성전](https://www.inven.co.kr/webzine/news/?news=320803)",
+          "value": "[카카오게임즈, 미투온 지분 39.56% 인수 결의](https://www.inven.co.kr/webzine/news/?news=320920)\n[신작 '도깨비의세계' 세계관 공개](https://www.inven.co.kr/webzine/news/?news=320914)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[워크3 리포지드, 23년 만의 새 캠페인](https://www.inven.co.kr/webzine/news/?news=320808)\n[디아4 30주년 시즌 '지옥의 유산' 9/16](https://www.inven.co.kr/webzine/news/?news=320805)",
+          "value": "[마블 울버린 출시 · 메타 77점](https://www.inven.co.kr/webzine/news/?news=320868)\n[밸브 VR '스팀 프리즘' 공개 · 한국 1차 제외](https://www.inven.co.kr/webzine/news/?news=320880)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`전우치` `아우룸 레지스` `FCL`\n[관광공사 협약: 관광 데이터 7.1만 점이 '전우치' 배경으로](https://www.fnnews.com/news/202609141030166782)\n[메이플 가을 개편 상세 · 본섭 9/17](https://www.gamevu.co.kr/news/articleView.html?idxno=60795) · 🗣 인벤 정리글은 신중한 낙관 · [FCL 본선 1일차 종료](https://www.fmkorea.com/10335527162)",
+          "value": "`TGS D-1` `아우룸 레지스` `메이플N`\n[TGS 내일 개막 · 마비노기 모바일 · 파레이돌리아 출품](https://www.gamevu.co.kr/news/articleView.html?idxno=60582) · 🗣 이름 논쟁 속 기대 집중\n[메이플 '아우룸 레지스' 본섭 내일 9/17](https://www.gamevu.co.kr/news/articleView.html?idxno=60795) · [이벤트 4종 오늘 종료](https://maplestory.nexon.com/news/update)",
           "inline": false
         },
         {
           "name": "💡 오늘의 팁",
-          "value": "세 AI에 최신성 질문을 던질 땐 \"오늘은 2026-09-15다. 9/14 이후 출처만 쓰고 각 주장에 (출처, 발행일)을 붙여라\" 한 줄을 추가하세요. 답이 갈리면 발행일 표기로 재탕을 바로 판정. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-15.html)에서.",
+          "value": "Claude Code · Cowork가 제안한 pip/npm 패키지는 설치 전에 ChatGPT · Gemini(웹 검색)로 \"공식 저장소 실재 여부 · 다운로드 수 · 최초 등록일\"을 교차 확인하세요. 만드는 AI와 검증하는 AI를 분리하면 슬롭스쿼팅 경로가 끊어집니다. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-16.html)에서.",
           "inline": false
         }
       ],
@@ -40,7 +40,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-14T21:00:00.000Z"
+      "timestamp": "2026-09-15T21:00:00.000Z"
     }
   ]
 }
