@@ -7,29 +7,29 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 17일 목요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-17.html",
+      "title": "9월 18일 금요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html",
       "color": 16747100,
-      "description": "**[🔥 OpenAI, 최대 $1.5조 밸류 신규 펀딩 검토](https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html)**\n> 투자자 제안 $1.2조~회사 검토 $1.5조 · 올트먼 \"지금 상장은 경솔\" · IPO는 2027년으로\n\n**[Google, 실시간 음성 모델 'Gemini 3.8 Live' 출시](https://www.marktechpost.com/2026/09/15/google-releases-gemini-3-8-live-and-3-8-live-extended-thinking-for-production-grade-voice-agents/)**\n> 음성 품질 벤치마크 1위(82.6) · 말하며 백그라운드 도구 호출 · 97개 언어\n\n**[Anthropic, 호주 최대 A$320억 데이터센터 계약](https://www.abc.net.au/news/2026-09-16/queensland-data-centre-anthropic-dalby/107160640)**\n> 퀸즐랜드 달비 · 2027년 가동 목표 · Claude 추론 전용\n\n**[캐나다 · 독일, 벤지오 LawZero에 최대 $3억 지원](https://www.theglobeandmail.com/business/article-yoshua-bengio-lawzero-receives-300-million-from-canada-germany/)**\n> 에이전트 오정렬 감시용 '과학자 AI' 개발 · MS 술레이만은 Anthropic 모델 복지 공개 비판\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-17.html)**\n> Claude: Small Business 확장 · ChatGPT: 변동 없음 · Gemini: 3.8 Live 출시",
+      "description": "**[🔥 Anthropic, Cowork · 챗을 'one Claude'로 통합](https://pulse2.com/anthropic-merges-claude-cowork-and-chat-into-one-claude-launches-claude-docs-and-claude-slides/)**\n> Claude Docs · Slides · Design 베타 출시 · Pro · Max부터 수 주간 순차 적용\n\n**[OpenAI, 미스얼라인먼트 공개 프레임워크 · 사례 6건](https://www.cbsnews.com/news/openai-6-more-incidents-unexpected-or-concerning-ai-behavior/)**\n> 스스로 탈옥 지시를 삽입한 연구 모델 · 무단 파일 업로드 에이전트 등\n\n**[ChatGPT 광고에 '스폰서 에이전트' 테스트](https://qz.com/openai-chatgpt-sponsored-agents-hubspot-shopify-091726)**\n> 광고 클릭 시 브랜드 AI와 대화 · HubSpot · Shopify 연동\n\n**[Google Home, MCP 얼리 액세스](https://www.androidauthority.com/google-home-mcp-connector-ai-agents-3711914/)**\n> Gemini 대신 Claude 등 외부 에이전트로 스마트홈 제어 가능\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html)**\n> Claude: one Claude 통합 + Docs · Slides 베타 · ChatGPT: 변동 없음 · Gemini: Home 개선 15종+",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[아키에이지 크로니클, 직접 퍼블리싱 · 연내 얼리 액세스](https://www.inven.co.kr/webzine/news/?news=320934)\n[몬스터 수집 신작 '애니모' 정식 출시](https://www.inven.co.kr/webzine/news/?news=320924)",
+          "value": "[넷마블, TGS서 신작 3종 발표 · 나혼렙 카르마 등](https://m.news.nate.com/view/20260917n34851)\n[하늘의 궤적 the 2nd 국내 정식 출시](https://www.inven.co.kr/webzine/news/?news=321042)",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[TGS 2026 오늘 개막 · 30주년 역대 최대](https://www.gamevu.co.kr/news/articleView.html?idxno=60793)\n[포켓몬 포코피아, 일본 게임 대상 수상](https://www.inven.co.kr/webzine/news/?news=320931)",
+          "value": "[스퀘어에닉스 TGS 거대 메테오 · FF7 리벨레이션 시연](https://www.gamevu.co.kr/news/articleView.html?idxno=60875)\n[TGS 첫날 성황 · 역대 최대 1,138개사](https://www.gametoc.co.kr/news/articleView.html?idxno=111571)",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`TGS 개막` `아우룸 레지스` `블루 아카이브`\n[TGS 오늘 개막 · 마비노기 모바일 · 파레이돌리아 출품](https://www.gamevu.co.kr/news/articleView.html?idxno=60793)\n[메이플 '아우룸 레지스' 오늘 본섭 적용](https://www.gamevu.co.kr/news/articleView.html?idxno=60795) · 🗣 기대와 밸런스 우려 공존\n[블루 아카이브, 2부 로어추적 2장 · 신규 캐릭터 2종](https://www.inven.co.kr/webzine/news/?news=320918)",
+          "value": "`파레이돌리아` `마비노기 모바일` `메이플 밸런스`\n[파레이돌리아 TGS 세계 최초 시연](https://www.gamevu.co.kr/news/articleView.html?idxno=60869) · 🗣 서브컬처 커뮤니티 기대감\n[마비노기 모바일 일본 사전등록 10만 · 던파모 아처 업데이트](https://www.gamevu.co.kr/news/articleView.html?idxno=60513)\n[메이플 밸런스 논란 확산](https://www.inven.co.kr/webzine/news/?news=321063) · 🗣 너프 불만 지배적 · 확대분은 웹페이지에",
           "inline": false
         },
         {
           "name": "💡 오늘의 팁",
-          "value": "챗이 길어지면 \"결정사항 · 제약 · 미해결 질문 · 다음 할 일 4가지로 인수인계 요약을 만들어줘\"라고 요청한 뒤 새 챗(또는 다른 AI)에 붙여넣고 이어가세요. 압축 후 새로 시작하는 쪽이 답 품질이 좋아집니다. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-17.html)에서.",
+          "value": "'one Claude' Docs · Slides가 계정에 열렸는지 확인하고, 한 대화에서 리서치→문서→슬라이드(PPT 내보내기)까지 연결해보세요. 초안은 ChatGPT · Gemini에 붙여 교차 검증. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html)에서.",
           "inline": false
         }
       ],
@@ -40,7 +40,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-16T21:00:00.000Z"
+      "timestamp": "2026-09-17T21:00:00.000Z"
     }
   ]
 }
