@@ -7,40 +7,55 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "9월 18일 금요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html",
+      "title": "11월 11일 수요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-11-11.html",
       "color": 16747100,
-      "description": "**[🔥 Anthropic, Cowork · 챗을 'one Claude'로 통합](https://pulse2.com/anthropic-merges-claude-cowork-and-chat-into-one-claude-launches-claude-docs-and-claude-slides/)**\n> Claude Docs · Slides · Design 베타 출시 · Pro · Max부터 수 주간 순차 적용\n\n**[OpenAI, 미스얼라인먼트 공개 프레임워크 · 사례 6건](https://www.cbsnews.com/news/openai-6-more-incidents-unexpected-or-concerning-ai-behavior/)**\n> 스스로 탈옥 지시를 삽입한 연구 모델 · 무단 파일 업로드 에이전트 등\n\n**[ChatGPT 광고에 '스폰서 에이전트' 테스트](https://qz.com/openai-chatgpt-sponsored-agents-hubspot-shopify-091726)**\n> 광고 클릭 시 브랜드 AI와 대화 · HubSpot · Shopify 연동\n\n**[Google Home, MCP 얼리 액세스](https://www.androidauthority.com/google-home-mcp-connector-ai-agents-3711914/)**\n> Gemini 대신 Claude 등 외부 에이전트로 스마트홈 제어 가능\n\n**[내 도구 업데이트](https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html)**\n> Claude: one Claude 통합 + Docs · Slides 베타 · ChatGPT: 변동 없음 · Gemini: Home 개선 15종+",
+      "description": "**[Anthropic, 지식노동자용 오피스 제품군 공개](https://fortune.com/2026/11/10/anthropic-launches-office-knowledge-worker-product-launch-ahead-of-ipo/)**\n> Claude Meetings · Whiteboards · Sheets · Data · Connectors(9,000개+ 앱) 공개, 발표 후 MS 주가 2%대 하락\n\n**[(후속) Anthropic IPO 조건 확정 · $1.4조 · 11/19~20 상장](https://finance.yahoo.com/markets/article/anthropic-seeks-14-trillion-valuation-in-ipo-130300928.html)**\n> 주당 $70~78 · 최대 $643.5억 조달 · 나스닥 티커 ANT · Nvidia · MS · Google 등 $260억 별도 매입\n\n**[(후속) Fable 5.2, Artificial Analysis 지능 지수 65점](https://news.hada.io/)**\n> 집계 사이트 기준 역대 최고치, GeekNews 상위 랭크\n\n**[호주, AI 안전 규제기관 신설 계획](https://aiweekly.co/ai-news-today)**\n> 과징금 권한 부여 예정, 6월 메디케어 무단 접근 사건의 후속 조치\n\n**[애플, 엔지니어 1일 AI 지출 한도 $300에서 $200으로](https://news.hada.io/)**\n> 빅테크 내부 AI 비용 관리 본격화 신호",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "[넷마블, TGS서 신작 3종 발표 · 나혼렙 카르마 등](https://m.news.nate.com/view/20260917n34851)\n[하늘의 궤적 the 2nd 국내 정식 출시](https://www.inven.co.kr/webzine/news/?news=321042)",
+          "value": "크래프톤 3Q 누적 매출 3.63조(+51%) 역대 최대 · OWCS 아시아 파이널 11/20~22 부산 벡스코",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "[스퀘어에닉스 TGS 거대 메테오 · FF7 리벨레이션 시연](https://www.gamevu.co.kr/news/articleView.html?idxno=60875)\n[TGS 첫날 성황 · 역대 최대 1,138개사](https://www.gametoc.co.kr/news/articleView.html?idxno=111571)",
+          "value": "PS Plus 11월 카탈로그에 데스 스트랜딩 2 · 드퀘3 HD-2D 추가 · GTA6 발매 D-8",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "`파레이돌리아` `마비노기 모바일` `메이플 밸런스`\n[파레이돌리아 TGS 세계 최초 시연](https://www.gamevu.co.kr/news/articleView.html?idxno=60869) · 🗣 서브컬처 커뮤니티 기대감\n[마비노기 모바일 일본 사전등록 10만 · 던파모 아처 업데이트](https://www.gamevu.co.kr/news/articleView.html?idxno=60513)\n[메이플 밸런스 논란 확산](https://www.inven.co.kr/webzine/news/?news=321063) · 🗣 너프 불만 지배적 · 확대분은 웹페이지에",
+          "value": "3Q 어닝서프라이즈: 매출 1조 2,312억(+17%) · 메이플 +72% · 템팔 · 아주르 프로밀리아 11/26 동시 출시 · 아크 레이더스 1,700만 장 (확대판은 웹페이지에)",
           "inline": false
         },
         {
+          "name": "🌤 오늘 판교 · OOTD",
+          "value": "16°/3° · 맑음 · 니트 + 코트, 아침은 겨울 초입",
+          "inline": true
+        },
+        {
+          "name": "🐕 둥둥이 케어",
+          "value": "이번 주 최고의 산책 날 · 가을 털갈이 끝물 빗질 + 양치 습관 시작하기",
+          "inline": true
+        },
+        {
           "name": "💡 오늘의 팁",
-          "value": "'one Claude' Docs · Slides가 계정에 열렸는지 확인하고, 한 대화에서 리서치→문서→슬라이드(PPT 내보내기)까지 연결해보세요. 초안은 ChatGPT · Gemini에 붙여 교차 검증. 상세는 [웹페이지](https://juntae888-jpg.github.io/madknight-news/news/2026-09-18.html)에서.",
+          "value": "용어 · 지표 · 규칙을 담은 '컨텍스트 문서' 하나를 만들어 Claude 프로젝트 · ChatGPT 지침 · Gemini Gem에 동일하게 넣으면 세 AI가 같은 맥락으로 답합니다",
+          "inline": false
+        },
+        {
+          "name": "📰 전체 브리핑",
+          "value": "[웹에서 보기](https://juntae888-jpg.github.io/madknight-news/news/2026-11-11.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)",
           "inline": false
         }
       ],
-      "image": {
-        "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
-      },
       "footer": {
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-09-17T21:00:00.000Z"
+      "timestamp": "2026-11-10T21:00:00.000Z",
+      "image": {
+        "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
+      }
     }
   ]
 }
