@@ -7,44 +7,44 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "11월 11일 수요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-11-11.html",
+      "title": "11월 12일 목요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-11-12.html",
       "color": 16747100,
-      "description": "**[Anthropic, 지식노동자용 오피스 제품군 공개](https://fortune.com/2026/11/10/anthropic-launches-office-knowledge-worker-product-launch-ahead-of-ipo/)**\n> Claude Meetings · Whiteboards · Sheets · Data · Connectors(9,000개+ 앱) 공개, 발표 후 MS 주가 2%대 하락\n\n**[(후속) Anthropic IPO 조건 확정 · $1.4조 · 11/19~20 상장](https://finance.yahoo.com/markets/article/anthropic-seeks-14-trillion-valuation-in-ipo-130300928.html)**\n> 주당 $70~78 · 최대 $643.5억 조달 · 나스닥 티커 ANT · Nvidia · MS · Google 등 $260억 별도 매입\n\n**[(후속) Fable 5.2, Artificial Analysis 지능 지수 65점](https://news.hada.io/)**\n> 집계 사이트 기준 역대 최고치, GeekNews 상위 랭크\n\n**[호주, AI 안전 규제기관 신설 계획](https://aiweekly.co/ai-news-today)**\n> 과징금 권한 부여 예정, 6월 메디케어 무단 접근 사건의 후속 조치\n\n**[애플, 엔지니어 1일 AI 지출 한도 $300에서 $200으로](https://news.hada.io/)**\n> 빅테크 내부 AI 비용 관리 본격화 신호",
+      "description": "**[Gemini 4 Carbon, 유료 개발자 · AI Ultra에 개방](https://www.khaleejtimes.com/business/google-launches-gemini-4-carbon-ai-model-with-cybersecurity-focus-2)**\n> 도입가 $2/$10은 11/30까지, 12월부터 두 배 · CursorBench 4.0 1위 · Antigravity /swarm\n\n**[OpenAI, 첫 $100억 분기 · 영업손실 $109억](https://techtrendsnewsupdate.substack.com/p/tech-trends-news-update-morning-brief-d54)**\n> WSJ 유출 문건 기준 · 매출이 늘어도 적자 폭이 더 큰 구조 지속\n\n**[AlphaProof Code, Signal 암호화 구현 형식 검증](https://news.hada.io/)**\n> Lean 600만 줄 · 4주 · 재유입 버그 2건 적발, 사람 검토는 약 1%\n\n**[뉴욕주, 프런티어 AI 등록 포털 가동](https://www.winzheng.com/en/article/new-york-raise-act-frontier-ai-registration-november-2026)**\n> 매출 $5억 이상 개발사 2027-01-01까지 등록 · 벌금 $100만~300만\n\n**[Notion AI 대화, 외부 침해로 일부 유출](https://aiweekly.co/ai-news-today)**\n> Fireworks 침해 여파 · AI 창에 붙여넣은 자격증명 교체 권고",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "크래프톤 3Q 누적 매출 3.63조(+51%) 역대 최대 · OWCS 아시아 파이널 11/20~22 부산 벡스코",
+          "value": "위메이드 3Q 영업익 264억 흑자 전환 · 엔씨 \"2027년 매출 3조\" 목표 · 타임 테이커즈 2차 테스트 11/13",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "PS Plus 11월 카탈로그에 데스 스트랜딩 2 · 드퀘3 HD-2D 추가 · GTA6 발매 D-8",
+          "value": "젤다 오카리나 리메이크 4일 520만 장 · GTA6 D-7 · 롤드컵 결승(11/15) 오프닝에 K/DA",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "3Q 어닝서프라이즈: 매출 1조 2,312억(+17%) · 메이플 +72% · 템팔 · 아주르 프로밀리아 11/26 동시 출시 · 아크 레이더스 1,700만 장 (확대판은 웹페이지에)",
+          "value": "블루아카 5주년: 200연차 + 페스 선택권 · 천장 개편(100회 3성 · 200회 픽업 확정) · 넥슨-텐센트 던파 청사진 워크숍, 유저 간담회 11/20 (확대판은 웹페이지에)",
           "inline": false
         },
         {
           "name": "🌤 오늘 판교 · OOTD",
-          "value": "16°/3° · 맑음 · 니트 + 코트, 아침은 겨울 초입",
+          "value": "17°/7° · 점차 맑음 · 니트 + 가벼운 코트, 낮은 포근",
           "inline": true
         },
         {
           "name": "🐕 둥둥이 케어",
-          "value": "이번 주 최고의 산책 날 · 가을 털갈이 끝물 빗질 + 양치 습관 시작하기",
+          "value": "맑은 목 · 금에 산책 넉넉히, 비 오는 토요일엔 실내 노즈워크 · 가구엔 경사로로 허리 보호",
           "inline": true
         },
         {
           "name": "💡 오늘의 팁",
-          "value": "용어 · 지표 · 규칙을 담은 '컨텍스트 문서' 하나를 만들어 Claude 프로젝트 · ChatGPT 지침 · Gemini Gem에 동일하게 넣으면 세 AI가 같은 맥락으로 답합니다",
+          "value": "AI 창에 비밀번호 · API 키를 붙여넣지 말고(키는 [KEY]로 치환), AI가 짠 코드는 다른 AI에게 보안 관점 교차 리뷰를 시키세요",
           "inline": false
         },
         {
           "name": "📰 전체 브리핑",
-          "value": "[웹에서 보기](https://juntae888-jpg.github.io/madknight-news/news/2026-11-11.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)",
+          "value": "[웹에서 보기](https://juntae888-jpg.github.io/madknight-news/news/2026-11-12.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)",
           "inline": false
         }
       ],
@@ -52,7 +52,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-11-10T21:00:00.000Z",
+      "timestamp": "2026-11-11T21:00:00.000Z",
       "image": {
         "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
       }

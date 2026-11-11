@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="../mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · 2026-11-12 (목)">
+<meta property="og:description" content="Gemini 4 Carbon, API · AI Ultra 개방(12월 가격 2배) · OpenAI 첫 $100억 분기, 영업손실 $109억 · AlphaProof Code가 Signal 구현 형식 검증 · 뉴욕 RAISE 등록 포털 · 블루아카 5주년 천장 개편">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
+<title>MadKnight 뉴스 · 2026-11-12 (목)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(closest-side, rgba(255,138,92,.08), transparent); pointer-events:none; }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.03); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+  .topbar { display:flex; align-items:center; margin-bottom: 22px; }
+  .backlink { color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin: 14px 0 6px; }
+  .chip { font-size: 11.5px; color:#c9cedb; background: var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 8px 0 24px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .section-label .aux { letter-spacing:0; color:var(--dim); font-weight:400; text-transform:none; font-size:12px; }
+  .toggle-all { flex:0 0 auto; font-size:11.5px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .toggle-all:hover { color:var(--mk); border-color:var(--mk); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .cat { font-size: 10.5px; font-weight: 800; border: 1px solid; border-radius: 5px; padding: 1px 7px; flex: 0 0 auto; }
+  .hot-badge { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: #14161c; background: linear-gradient(135deg, #FF6B6B, var(--mk)); border-radius: 5px; padding: 2px 7px; flex: 0 0 auto; }
+  .card.hot { border-color: rgba(255,107,107,.4); }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; border-top: 0 solid transparent; }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .why { margin-top:10px; font-size:12.5px; color:#d7dbe6; background:rgba(255,138,92,.07); border:1px solid rgba(255,138,92,.18); border-radius:8px; padding:8px 12px; }
+  .why b { color: var(--mk); }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tool .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 8px; }
+  .dot.same { background: #4a5468; }
+  .dot.new { background: #7ED87E; box-shadow: 0 0 8px rgba(126,216,126,.55); }
+  .tool .nb { font-size: 10px; font-weight: 800; color: #14161c; background: #7ED87E; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .g-card { background: var(--panel); border:1px solid var(--line); border-radius:12px; padding:15px 18px; margin-bottom:10px; }
+  .g-card h4 { font-size:13.5px; margin-bottom:8px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .g-card h4 .gi { font-size:15px; }
+  .g-card ul { list-style:none; }
+  .g-card li { font-size:13.5px; color:#c9cedb; padding:5px 0 5px 14px; position:relative; }
+  .g-card li::before { content:"·"; color:var(--mk); font-weight:900; position:absolute; left:2px; }
+  .g-card a { color:var(--mk); text-decoration:none; }
+  .g-card a:hover { text-decoration:underline; }
+  .g-card code { font-family:inherit; font-size:12px; background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 7px; color:#d7dbe6; }
+  .g-card .react { color:var(--dim); font-size:12.5px; margin-top:3px; background:rgba(255,255,255,.02); border-left:2px solid var(--line); border-radius:0 6px 6px 0; padding:4px 10px; }
+  /* 3 주간 날씨 · OOTD */
+  .week { display:grid; grid-template-columns:repeat(7,1fr); gap:7px; }
+  .wd { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:11px 6px; text-align:center; }
+  .wd.today { border-color:var(--mk); background:linear-gradient(170deg,rgba(255,138,92,.12),var(--panel)); }
+  .wd .wn { font-size:12px; font-weight:800; color:#c9cedb; }
+  .wd.today .wn { color:var(--mk); }
+  .wd .wdt { font-size:10.5px; color:var(--dim); margin-top:1px; }
+  .wd .wi { font-size:20px; margin:7px 0 5px; line-height:1; }
+  .wd .wt { font-size:12.5px; font-weight:700; }
+  .wd .wt .hi { color:#FF9E6B; }
+  .wd .wt .lo { color:#6BA8FF; margin-left:3px; }
+  .wd .wo { font-size:11px; color:#c9cedb; margin-top:7px; line-height:1.45; word-break:keep-all; }
+  .week-note { margin-top:10px; font-size:13px; color:#c9cedb; background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--mk); border-radius:0 10px 10px 0; padding:10px 14px; }
+  @media (max-width:640px){ .week { grid-template-columns:repeat(4,1fr); } }
+  @media (max-width:380px){ .week { grid-template-columns:repeat(3,1fr); } }
+  /* 4 둥둥이 케어 */
+  .dog { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .dog h4 { font-size:14px; margin-bottom:11px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .dog h4 .age { font-size:11px; font-weight:700; color:var(--dim); border:1px solid var(--line); border-radius:999px; padding:1px 9px; }
+  .dog .focus { font-size:13px; color:#d7dbe6; background:rgba(126,216,126,.08); border:1px solid rgba(126,216,126,.22); border-radius:8px; padding:9px 13px; margin-bottom:12px; line-height:1.6; }
+  .dog .focus b { color:#7ED87E; }
+  .dog ul { list-style:none; }
+  .dog li { font-size:13.5px; color:#c9cedb; padding:6px 0; display:flex; gap:9px; align-items:flex-start; line-height:1.6; }
+  .dog .k { font-size:10.5px; font-weight:800; border:1px solid; border-radius:5px; padding:1px 7px; flex:0 0 auto; margin-top:3px; white-space:nowrap; }
+  .dog a { color:var(--mk); text-decoration:none; }
+  .dog a:hover { text-decoration:underline; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  .pnav { display:flex; gap:10px; margin-top: 40px; }
+  .pnav a { flex:1; display:block; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 16px; text-decoration:none; color:#c9cedb; font-size:13px; transition:border-color .2s; }
+  .pnav a:hover { border-color: var(--mk); }
+  .pnav .lbl { display:block; font-size:11px; color:var(--dim); margin-bottom:2px; }
+  .pnav .to-index { text-align:center; flex:0 0 auto; display:flex; align-items:center; padding:12px 18px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <div class="topbar"><a class="backlink" href="../index.html">← 전체 브리핑 목록</a></div>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-11-12 (목)</div>
+    </div>
+  </header>
+  <div class="chips">
+    <span class="chip">🗞 AI 뉴스 5</span><span class="chip">🎮 게임 3섹션</span><span class="chip">🌤 날씨 · OOTD</span><span class="chip">🐕 둥둥이 케어</span><span class="chip">💡 팁 1</span><span class="chip">⏱ 약 3분</span>
+  </div>
+  <p class="meta">범위: 11/11(수) 아침 ~ 11/12(목) 아침 KST · 날씨: 판교 기준 · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>Google, Gemini 4 Carbon을 API · AI Ultra에 개방</b> · 도입가 $2/$10, 12월부터 두 배 인상 예정</li><li><b>OpenAI, 첫 '분기 매출 $100억'</b> · 그러나 영업손실 $109억 (WSJ 유출 문건)</li><li><b>DeepMind AlphaProof Code</b> · Lean 600만 줄로 Signal 구현 형식 검증, 재유입 버그 2건 적발</li><li><b>뉴욕주 RAISE Act 등록 포털 오픈</b> · 매출 $5억 이상 개발사, 2027-01-01까지 등록 의무</li><li>게임: <b>블루아카 5주년 · 모집 천장 개편</b> · 넥슨-텐센트 던파 워크숍 · 젤다 오카리나 4일 520만 장</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span class="aux">(카드를 눌러 펼치기)</span><button class="toggle-all" id="toggleAll">모두 펼치기</button></div>
+  <div class="card hot"><div class="card-head"><span class="hot-badge">🔥 HEADLINE</span><span class="cat" style="color:#5ED3C8;border-color:#5ED3C859">도구</span><span class="tags">#Google #Gemini</span><span class="title">Gemini 4 Carbon, 유료 개발자 · AI Ultra에 열렸다 · 12월부터 가격 2배</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Google이 신형 플래그십 Gemini 4 Carbon을 API(유료 개발자)와 Gemini AI Ultra 구독에 개방했습니다. 도입가는 입력 $2 · 출력 $10(백만 토큰)으로 전작 Argon과 같지만 11/30 이후 $4/$20으로 두 배 인상이 예고돼 있고, 사이버보안 특화 벤치마크와 CursorBench 4.0 1위 성적, Antigravity의 멀티 에이전트 /swarm 기능을 내세웁니다.<div class="why"><b>왜 중요?</b> Gemini를 매일 쓰는 환경이라면 AI Ultra · AI Studio에서 체감 비교를 해볼 타이밍입니다. API로 쓸 계획이 있다면 가격이 두 배가 되는 11/30 전에 작업량을 태워보는 편이 유리합니다.</div><div class="srcs">👉 <a href="https://www.khaleejtimes.com/business/google-launches-gemini-4-carbon-ai-model-with-cybersecurity-focus-2" target="_blank" rel="noopener">Khaleej Times ↗</a><a href="https://www.eesel.ai/blog/gemini-4-carbon-pricing" target="_blank" rel="noopener">가격 분석 ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#OpenAI</span><span class="title">OpenAI, 첫 $100억 분기 · 그리고 $109억 영업손실</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">WSJ가 입수한 투자자 문서 기준, OpenAI가 3분기에 처음으로 분기 매출 $100억을 넘겼지만 같은 분기 영업손실도 $109억에 달했습니다. 매출이 빠르게 늘어도 적자 폭이 더 큰 구조가 이어지고 있어, IPO를 앞둔 Anthropic(3분기 영업손실 $5.67억)과의 체질 차이가 다시 부각됐습니다.<div class="why"><b>왜 중요?</b> 구독하는 서비스들의 지속 가능성 지표입니다. 적자 구조가 길어질수록 가격 인상 · 광고 도입 같은 수익화 압력이 ChatGPT 사용 경험에 먼저 반영될 수 있습니다.</div><div class="srcs">👉 <a href="https://techtrendsnewsupdate.substack.com/p/tech-trends-news-update-morning-brief-d54" target="_blank" rel="noopener">Tech Trends 브리프 ↗</a><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#DeepMind #Signal</span><span class="title">AlphaProof Code, Signal 암호화 구현을 '수학적으로' 검증</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">DeepMind의 AlphaProof Code가 약 4주간 Lean 코드 600만 줄 이상을 생성해 Signal 프로토콜 구현의 핵심 암호화 보증을 형식 검증했고, 과정에서 재유입된 버그 2건을 잡아냈습니다. 에이전트가 표시한 결과물 중 사람 검토가 필요했던 것은 약 1%로, GeekNews에서도 상위에 오른 소식입니다.<div class="why"><b>왜 중요?</b> "AI가 짠 코드를 AI가 수학적으로 검증"하는 흐름의 실전 사례입니다. 보안이 중요한 코드일수록 생성과 검증을 분리하는 구도가 표준이 되어가고 있습니다.</div><div class="srcs">👉 <a href="https://news.hada.io/" target="_blank" rel="noopener">GeekNews ↗</a><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#6BA8FF;border-color:#6BA8FF59">규제</span><span class="tags">#미국 #뉴욕</span><span class="title">뉴욕주, 프런티어 AI 등록 포털 가동 · 2027-01-01까지 등록 의무</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">뉴욕주 RAISE Act에 따른 프런티어 AI 개발사 등록 포털이 열렸습니다. 연 매출 $5억 이상 개발사(OpenAI · Anthropic 등 해당)는 2027-01-01까지 등록해야 하며, 위반 시 1회 $100만 · 반복 시 $300만 벌금이 부과됩니다.<div class="why"><b>왜 중요?</b> 미 연방이 주 규제에 소송을 거는 와중에도 주 단위 규제는 계속 실행 단계로 넘어가고 있습니다. 쓰는 모델들의 안전 공시가 어떤 법 아래서 나오는지 읽는 기준이 됩니다.</div><div class="srcs">👉 <a href="https://www.winzheng.com/en/article/new-york-raise-act-frontier-ai-registration-november-2026" target="_blank" rel="noopener">RAISE Act 안내 ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#FF6B6B;border-color:#FF6B6B59">보안</span><span class="tags">#Notion #유출</span><span class="title">Notion AI 대화, 외부 침해로 일부 유출 · 자격증명 교체 권고</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">AI 인프라 업체 Fireworks 침해로 Notion AI 대화 내용이 일부 노출됐습니다. 영향은 전체 워크스페이스의 1% 미만이지만, Notion은 AI 창에 붙여넣었던 자격증명(비밀번호 · API 키 등)의 교체를 권고했습니다. AI 도구에 입력한 내용도 공급망을 타고 샐 수 있다는 실전 사례입니다.<div class="why"><b>왜 중요?</b> Claude · ChatGPT · Gemini 어디든 마찬가지입니다. 프롬프트에 넣은 비밀값은 내 손을 떠난 뒤의 경로를 통제할 수 없으니, 처음부터 넣지 않는 것이 유일한 방어입니다.</div><div class="srcs">👉 <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly ↗</a></div></div></div></div>
+
+  <div class="section-label">② 게임</div>
+  <div class="g-card"><h4><span class="gi">🎮</span>국내 게임</h4><ul>
+    <li>위메이드, 3분기 영업이익 264억 원으로 흑자 전환 · <a href="https://www.inven.co.kr/webzine/news/?news=323265" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>엔씨 3분기 매출 6,865억 원 · 박병무 대표 "2027년 매출 3조 원 돌파" 목표 제시 · 신작 '타임 테이커즈' 2차 스팀 테스트는 11/13부터 72시간 · <a href="https://www.inven.co.kr/webzine/news/?news=323267" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">🌍</span>해외 게임</h4><ul>
+    <li>스위치2 '젤다의 전설 시간의 오카리나' 리메이크, 출시 4일 만에 520만 장 · 시리즈 역대 최고 페이스 · <a href="https://www.inven.co.kr/webzine/news/?news=323259" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>GTA6 발매(11/19) D-7 · 영국에선 발매일에 맞춘 휴가 신청 러시 · <a href="https://www.inven.co.kr/webzine/news/?news=323215" target="_blank" rel="noopener">인벤 ↗</a></li>
+    <li>롤드컵 결승(11/15 브루클린) 오프닝 무대에 K/DA · True Damage 출연 확정 · <a href="https://www.inven.co.kr/webzine/news/?news=323217" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">Ⓝ</span>넥슨 <span style="margin-left:4px"><code>블루아카 5주년</code> <code>던파 청사진</code> <code>연매출 1위 경쟁</code></span></h4><ul>
+    <li>블루 아카이브 5주년 업데이트 적용: 메인스토리 2부 '불꽃과 그림자' 개막 · 무료 200연차 + 페스 3성 선택권 · 모집 포인트를 '모집 스택 · 마일리지'로 개편(100회 3성 확정 · 200회 픽업 확정) · 메이플스토리 콜라보 상세는 11/12 Maple NOW에서 공개 · <a href="https://www.gamemeca.com/view.php?gid=1783277" target="_blank" rel="noopener">게임메카 ↗</a>
+      <div class="react">🗣 천장 개편엔 기대와 우려가 함께 나와, 김용하 PD가 방송에서 "우려를 표하는 선생님들께는 죄송하다"고 직접 언급 (<a href="https://www.gamemeca.com/view.php?gid=1783147" target="_blank" rel="noopener">게임메카 ↗</a>)</div></li>
+    <li>(후속) 넥슨-텐센트, 던파 장기 청사진 워크숍: 연 1~2회 대형 업데이트에서 '꾸준한 소규모 업데이트' 체제로 전환 추진 · 커뮤니티 정책 개편은 11/20 던파 유저 간담회에서 공개 · 2027년 던파 클래식 · 프로젝트 오버킬로 IP 확장 · <a href="https://www.gameinsight.co.kr/news/articleView.html?idxno=36962" target="_blank" rel="noopener">게임인사이트 ↗</a></li>
+    <li>넥슨 vs 크래프톤 연매출 1위 경쟁: 1~9월 누적 넥슨 약 3.79조 원 > 크래프톤 약 3.63조 원 · 상반기 역전을 3분기에 재역전, 양사 모두 AI로 개발 속도전 · <a href="https://view.asiae.co.kr/article/2026111109253701835" target="_blank" rel="noopener">아시아경제 ↗</a></li>
+  </ul></div>
+
+  <div class="section-label">③ 이번 주 판교 날씨 &amp; OOTD <span class="aux">(월~일 · 오늘 강조)</span></div>
+  <!-- 매일: 실제 예보로 7칸을 채우고 오늘 칸에 class="wd today" · 수치를 확인 못 하면 숫자 없이 코디 가이드만 -->
+  <div class="week">
+    <div class="wd"><div class="wn">월</div><div class="wdt">11/9</div><div class="wi">·</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd"><div class="wn">화</div><div class="wdt">11/10</div><div class="wi">☀️</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd"><div class="wn">수</div><div class="wdt">11/11</div><div class="wi">☀️</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd today"><div class="wn">목</div><div class="wdt">11/12</div><div class="wi">☀️</div><div class="wt"><span class="hi">17°</span><span class="lo">7°</span></div><div class="wo">니트 + 가벼운 코트, 낮은 포근</div></div>
+    <div class="wd"><div class="wn">금</div><div class="wdt">11/13</div><div class="wi">🌤</div><div class="wt"><span class="hi">18°</span><span class="lo">9°</span></div><div class="wo">셔츠 + 얇은 아우터</div></div>
+    <div class="wd"><div class="wn">토</div><div class="wdt">11/14</div><div class="wi">🌧️</div><div class="wt"><span class="hi">13°</span><span class="lo">7°</span></div><div class="wo">우산 필수 · 방수 아우터</div></div>
+    <div class="wd"><div class="wn">일</div><div class="wdt">11/15</div><div class="wi">☀️</div><div class="wt"><span class="hi">19°</span><span class="lo">5°</span></div><div class="wo">아침 쌀쌀 · 낮 포근, 레이어드</div></div>
+  </div>
+  <div class="week-note"><b>이번 주 한 줄</b> · 목 · 금은 낮 17~18°로 포근, 토요일 하루만 비(강수확률 95% · 약 8시간), 일요일은 다시 맑고 19°. 아침은 5~9°라 일교차 10° 안팎이 계속됩니다. (AccuWeather 분당 · 11/12 조회)</div>
+
+  <div class="section-label">④ 둥둥이 케어</div>
+  <!-- 매일: 아래 항목 중 2~3개를 그날 날씨 · 계절에 맞춰 교체 · 임상적 주장에는 확인한 출처 링크 -->
+  <div class="dog">
+    <h4>🐕 둥둥이 <span class="age">웰시코기 · 2살</span></h4>
+    <div class="focus"><b>오늘의 포인트</b> · 맑고 낮 17°까지 오르는 산책 좋은 날, 대신 토요일은 종일 비 예보입니다. 목 · 금 맑을 때 산책을 넉넉히 해두고, 비 오는 토요일용 실내 놀이를 미리 준비해 두세요.</div>
+    <ul>
+      <li><span class="k" style="color:#FF6B6B;border-color:#FF6B6B59">관절</span><span>코기는 긴 허리 탓에 추간판탈출증(IVDD) 위험이 높은 견종으로, 소파 · 침대를 뛰어 오르내리는 동작이 허리에 큰 부담을 줍니다. 자주 오르는 가구에는 경사로나 스텝을 두고 미끄러운 바닥엔 매트를 깔아주는 것이 예방의 기본입니다 (<a href="https://www.hepper.com/how-to-prevent-corgi-back-problems/" target="_blank" rel="noopener">Hepper ↗</a>). 뒷다리를 끌거나 점프를 갑자기 꺼리면 수의사 진료를 서두르세요.</span></li>
+      <li><span class="k" style="color:#6BA8FF;border-color:#6BA8FF59">계절질환</span><span>날이 쌀쌀해지면 심장사상충 예방을 쉬고 싶어지지만, 미국심장사상충학회(AHS)는 'Think 12', 즉 연중 12개월 매달 예방을 권고합니다 (<a href="https://www.heartwormsociety.org/in-the-news/ahs-revises-heartworm-prevention-guidelines-launches-think-12-campaign" target="_blank" rel="noopener">AHS ↗</a>). 실내 모기도 있는 만큼 겨울에도 예방약 일정을 유지하는 편이 안전합니다.</span></li>
+      <li><span class="k" style="color:#7ED87E;border-color:#7ED87E59">산책·두뇌</span><span>비 오는 토요일엔 목축견 둥둥이의 에너지가 남기 쉽습니다. 수건 사이 간식 숨기기, 노즈워크 매트, 새 기술 5분 연습 같은 실내 두뇌 놀이 2~3가지를 돌리면 산책 부족분을 상당 부분 메울 수 있습니다.</span></li>
+    </ul>
+  </div>
+
+  <div class="section-label">⑤ 오늘의 활용 팁</div>
+  <div class="tip"><h3>💡 AI 창에 '비밀값'은 넣지 말고, 코드는 교차 보안 리뷰</h3>
+<p>오늘 Notion AI 유출 사례의 교훈은 명확합니다. AI 도구에 붙여넣은 자격증명은 내 손을 떠난 뒤에도 공급망 어딘가에 남을 수 있습니다.</p>
+<blockquote>① Claude · ChatGPT · Gemini 어디든 프롬프트에 비밀번호 · API 키 · 토큰을 그대로 붙여넣지 않기. 로그 · 설정 파일을 공유할 땐 키 값을 [KEY]로 치환하는 습관을 들이세요. ② GeekNews 상위에 오른 "AI 사용은 취약한 코드베이스를 만든다" 글처럼, AI가 짠 코드는 그 AI 말고 다른 AI에게 "보안 취약점 관점에서만 리뷰해줘"라고 교차 검토를 시키세요. 작성자와 리뷰어를 분리하면 같은 사각지대를 공유하지 않습니다. (<a href="https://news.hada.io/" target="_blank" rel="noopener">GeekNews ↗</a>)</blockquote></div>
+
+  <div class="pnav">
+    <a href="2026-11-11.html"><span class="lbl">← 이전 브리핑</span>2026-11-11 (수) · Anthropic 오피스 제품군 공개 · IPO $1.4조 외</a>
+    <a class="to-index" href="../index.html">아카이브</a>
+  </div>
+  <footer>MadKnight 뉴스 · 2026-11-12 (목) 발행 · 평일 아침 06:00 KST</footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+  var btn = document.getElementById('toggleAll'), allOpen = false;
+  btn.addEventListener('click', function(){
+    allOpen = !allOpen;
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.toggle('open', allOpen); });
+    btn.textContent = allOpen ? '모두 접기' : '모두 펼치기';
+  });
+</script>
+</body>
+</html>
