@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" type="image/png" href="../mk.png">
+<meta property="og:title" content="MadKnight 뉴스 · 2026-11-13 (금)">
+<meta property="og:description" content="시민단체 4곳, 5대 AI 기업 '신모델 중단' 소송 · Anthropic 'Mythos가 사흘 만에 Claude AMD 포팅' · Gemini Decisions API · Anthropic 중국 제한 발효 · 메이플 쇼케이스 12/12 · GTA6 프리로드">
+<meta property="og:image" content="https://juntae888-jpg.github.io/madknight-news/banner.png">
+<title>MadKnight 뉴스 · 2026-11-13 (금)</title>
+<style>
+  :root {
+    --bg: #0d0f14; --panel: #161a22; --panel2: #1c2130; --line: #2a3040;
+    --text: #e8eaf0; --dim: #8a92a6; --mk: #FF8A5C; --mk-dark: #d96a3e;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+    line-height: 1.7; min-height: 100vh; position: relative; overflow-x: hidden;
+  }
+  body::before { content:""; position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(closest-side, rgba(255,138,92,.08), transparent); pointer-events:none; }
+  .watermark {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%,-50%) rotate(-14deg);
+    font-size: 18vw; font-weight: 900; letter-spacing: .05em;
+    color: rgba(255,138,92,0.03); pointer-events: none; user-select: none;
+    white-space: nowrap; z-index: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+  .topbar { display:flex; align-items:center; margin-bottom: 22px; }
+  .backlink { color: var(--dim); font-size: 13px; text-decoration: none; }
+  .backlink:hover { color: var(--mk); }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  .mk-badge {
+    width: 46px; height: 46px; border-radius: 12px; flex: 0 0 auto;
+    background: linear-gradient(135deg, var(--mk), var(--mk-dark));
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 900; font-size: 19px; color: #14161c; letter-spacing: -1px;
+    box-shadow: 0 4px 18px rgba(255,138,92,.35);
+  }
+  h1 { font-size: 22px; }
+  h1 .moon { font-size: 18px; }
+  .date { color: var(--mk); font-size: 14px; font-weight: 700; margin-top: 2px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin: 14px 0 6px; }
+  .chip { font-size: 11.5px; color:#c9cedb; background: var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  .meta { color: var(--dim); font-size: 12.5px; margin: 8px 0 24px; }
+  .section-label {
+    font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--mk);
+    margin: 34px 0 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content:""; flex:1; height:1px; background: var(--line); }
+  .section-label .aux { letter-spacing:0; color:var(--dim); font-weight:400; text-transform:none; font-size:12px; }
+  .toggle-all { flex:0 0 auto; font-size:11.5px; color:var(--dim); background:transparent; border:1px solid var(--line); border-radius:999px; padding:3px 11px; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .toggle-all:hover { color:var(--mk); border-color:var(--mk); }
+  .summary {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--mk);
+    border-radius: 12px; padding: 18px 20px; font-size: 14.5px;
+  }
+  .summary li { margin: 6px 0 6px 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 12px; overflow: hidden; transition: border-color .2s;
+  }
+  .card:hover { border-color: var(--mk-dark); }
+  .card-head {
+    padding: 15px 18px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    user-select: none;
+  }
+  .card-head .tags { font-size: 11px; color: var(--mk); font-weight: 700; white-space: nowrap; }
+  .card-head .cat { font-size: 10.5px; font-weight: 800; border: 1px solid; border-radius: 5px; padding: 1px 7px; flex: 0 0 auto; }
+  .hot-badge { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: #14161c; background: linear-gradient(135deg, #FF6B6B, var(--mk)); border-radius: 5px; padding: 2px 7px; flex: 0 0 auto; }
+  .card.hot { border-color: rgba(255,107,107,.4); }
+  .card-head .title { font-size: 15px; font-weight: 700; flex: 1; }
+  .card-head .chev { color: var(--dim); transition: transform .25s; font-size: 12px; }
+  .card.open .chev { transform: rotate(90deg); }
+  .card-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; border-top: 0 solid transparent; }
+  .card.open .card-body { max-height: 600px; border-top: 1px solid var(--line); }
+  .card-body-inner { padding: 16px 18px; font-size: 14px; color: #c9cedb; }
+  .why { margin-top:10px; font-size:12.5px; color:#d7dbe6; background:rgba(255,138,92,.07); border:1px solid rgba(255,138,92,.18); border-radius:8px; padding:8px 12px; }
+  .why b { color: var(--mk); }
+  .srcs { margin-top: 12px; font-size: 12.5px; }
+  .srcs a { color: var(--mk); text-decoration: none; margin-right: 12px; }
+  .srcs a:hover { text-decoration: underline; }
+  .tools .tool { display:flex; gap: 12px; background: var(--panel); border:1px solid var(--line);
+    border-radius: 10px; padding: 13px 16px; margin-bottom: 8px; font-size: 13.5px; }
+  .tools .tool b { color: var(--text); }
+  .tools .tool .st { flex: 0 0 auto; }
+  .tool .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 8px; }
+  .dot.same { background: #4a5468; }
+  .dot.new { background: #7ED87E; box-shadow: 0 0 8px rgba(126,216,126,.55); }
+  .tool .nb { font-size: 10px; font-weight: 800; color: #14161c; background: #7ED87E; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .tools .tool .tx { color: #c9cedb; }
+  .tools .tool a { color: var(--mk); text-decoration: none; }
+  .g-card { background: var(--panel); border:1px solid var(--line); border-radius:12px; padding:15px 18px; margin-bottom:10px; }
+  .g-card h4 { font-size:13.5px; margin-bottom:8px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .g-card h4 .gi { font-size:15px; }
+  .g-card ul { list-style:none; }
+  .g-card li { font-size:13.5px; color:#c9cedb; padding:5px 0 5px 14px; position:relative; }
+  .g-card li::before { content:"·"; color:var(--mk); font-weight:900; position:absolute; left:2px; }
+  .g-card a { color:var(--mk); text-decoration:none; }
+  .g-card a:hover { text-decoration:underline; }
+  .g-card code { font-family:inherit; font-size:12px; background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 7px; color:#d7dbe6; }
+  .g-card .react { color:var(--dim); font-size:12.5px; margin-top:3px; background:rgba(255,255,255,.02); border-left:2px solid var(--line); border-radius:0 6px 6px 0; padding:4px 10px; }
+  /* 3 주간 날씨 · OOTD */
+  .week { display:grid; grid-template-columns:repeat(7,1fr); gap:7px; }
+  .wd { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:11px 6px; text-align:center; }
+  .wd.today { border-color:var(--mk); background:linear-gradient(170deg,rgba(255,138,92,.12),var(--panel)); }
+  .wd .wn { font-size:12px; font-weight:800; color:#c9cedb; }
+  .wd.today .wn { color:var(--mk); }
+  .wd .wdt { font-size:10.5px; color:var(--dim); margin-top:1px; }
+  .wd .wi { font-size:20px; margin:7px 0 5px; line-height:1; }
+  .wd .wt { font-size:12.5px; font-weight:700; }
+  .wd .wt .hi { color:#FF9E6B; }
+  .wd .wt .lo { color:#6BA8FF; margin-left:3px; }
+  .wd .wo { font-size:11px; color:#c9cedb; margin-top:7px; line-height:1.45; word-break:keep-all; }
+  .week-note { margin-top:10px; font-size:13px; color:#c9cedb; background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--mk); border-radius:0 10px 10px 0; padding:10px 14px; }
+  @media (max-width:640px){ .week { grid-template-columns:repeat(4,1fr); } }
+  @media (max-width:380px){ .week { grid-template-columns:repeat(3,1fr); } }
+  /* 4 둥둥이 케어 */
+  .dog { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .dog h4 { font-size:14px; margin-bottom:11px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .dog h4 .age { font-size:11px; font-weight:700; color:var(--dim); border:1px solid var(--line); border-radius:999px; padding:1px 9px; }
+  .dog .focus { font-size:13px; color:#d7dbe6; background:rgba(126,216,126,.08); border:1px solid rgba(126,216,126,.22); border-radius:8px; padding:9px 13px; margin-bottom:12px; line-height:1.6; }
+  .dog .focus b { color:#7ED87E; }
+  .dog ul { list-style:none; }
+  .dog li { font-size:13.5px; color:#c9cedb; padding:6px 0; display:flex; gap:9px; align-items:flex-start; line-height:1.6; }
+  .dog .k { font-size:10.5px; font-weight:800; border:1px solid; border-radius:5px; padding:1px 7px; flex:0 0 auto; margin-top:3px; white-space:nowrap; }
+  .dog a { color:var(--mk); text-decoration:none; }
+  .dog a:hover { text-decoration:underline; }
+  .tip {
+    background: linear-gradient(160deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; font-size: 14px; color:#c9cedb;
+  }
+  .tip h3 { color: var(--text); font-size: 16px; margin-bottom: 10px; }
+  .tip blockquote {
+    border-left: 3px solid var(--mk); background: rgba(255,138,92,.06);
+    padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px;
+  }
+  .pnav { display:flex; gap:10px; margin-top: 40px; }
+  .pnav a { flex:1; display:block; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 16px; text-decoration:none; color:#c9cedb; font-size:13px; transition:border-color .2s; }
+  .pnav a:hover { border-color: var(--mk); }
+  .pnav .lbl { display:block; font-size:11px; color:var(--dim); margin-bottom:2px; }
+  .pnav .to-index { text-align:center; flex:0 0 auto; display:flex; align-items:center; padding:12px 18px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 11.5px; text-align: center; }
+  footer a { color: var(--mk); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="watermark">MADKNIGHT</div>
+<div class="wrap">
+  <div class="topbar"><a class="backlink" href="../index.html">← 전체 브리핑 목록</a></div>
+  <header>
+    <div class="mk-badge">MK</div>
+    <div>
+      <h1><span class="moon">🌙</span> MadKnight 뉴스</h1>
+      <div class="date">2026-11-13 (금)</div>
+    </div>
+  </header>
+  <div class="chips">
+    <span class="chip">🗞 AI 뉴스 5</span><span class="chip">🎮 게임 3섹션</span><span class="chip">🌤 날씨 · OOTD</span><span class="chip">🐕 둥둥이 케어</span><span class="chip">💡 팁 1</span><span class="chip">⏱ 약 3분</span>
+  </div>
+  <p class="meta">범위: 11/12(목) 아침 ~ 11/13(금) 아침 KST · 날씨: 판교 기준 · 실제 확인한 출처만 링크</p>
+
+  <div class="section-label">⚡ 30초 요약</div>
+  <div class="summary"><ul><li><b>시민단체 4곳, Anthropic · Google · Meta · OpenAI · SpaceX 상대 '신모델 개발 중단' 소송</b> · 11/12 샌프란시스코 고등법원</li><li><b>Anthropic "Mythos가 사흘 만에 Claude를 AMD GPU로 포팅"</b> · 커널 거의 100% AI 작성 (투자자 발표 · 미검증)</li><li><b>Google Gemini Decisions API</b> · 입력 1건에 예/아니오 질문 최대 1,000개 · 입력 $0.10/M, 출력 무료</li><li><b>Anthropic 중국 본토 이용 제한 11/12 발효</b> · OpenAI 제3자 플랫폼 승인제 11/20</li><li>게임: <b>메이플 겨울 쇼케이스 12/12 · 블루아카 콜라보 11/19</b> · GTA6 프리로드 개시(D-6) · 지스타 D-6</li></ul></div>
+
+  <div class="section-label">① 오늘의 주요 뉴스 <span class="aux">(카드를 눌러 펼치기)</span><button class="toggle-all" id="toggleAll">모두 펼치기</button></div>
+  <div class="card hot"><div class="card-head"><span class="hot-badge">🔥 HEADLINE</span><span class="cat" style="color:#6BA8FF;border-color:#6BA8FF59">규제</span><span class="tags">#소송 #캘리포니아</span><span class="title">시민단체들, 5대 AI 기업에 "신모델 개발을 멈춰라" 소송</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Public Citizen · Heat Initiative · Alliance for Secure AI · Irreplaceable Education Fund 등 4개 비영리단체가 11/12 샌프란시스코 고등법원에 Anthropic · Google · Meta · OpenAI · SpaceX를 상대로 신규 AI 모델 개발 · 배포를 중단시켜 달라는 소송을 냈습니다. 캘리포니아 불공정경쟁법을 근거로 "기업들이 파국적 피해를 막을 수 없다"고 주장하며, 민주당이 중간선거로 의회를 되찾아 규제 드라이브가 걸리는 시점이라 상징성이 큽니다.<div class="why"><b>왜 중요?</b> 당장 Claude · ChatGPT · Gemini가 멈추는 일은 아니지만, 소송 · 규제 리스크가 신모델 출시 일정에 변수가 되는 시대가 열렸습니다. 모델 업데이트 공지를 평소보다 눈여겨볼 이유가 생겼습니다.</div><div class="srcs">👉 <a href="https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/12/advocacy-groups-sue-ai-giants-to-freeze-new-models-warning-of-catastrophic-risks" target="_blank" rel="noopener">BNN Bloomberg ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#B78AFF;border-color:#B78AFF59">모델·연구</span><span class="tags">#Anthropic #AMD</span><span class="title">"Mythos가 사흘 만에 Claude를 AMD GPU로 포팅" · 4대 칩 패밀리 구동</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Anthropic이 투자자 발표에서 자사 모델 Mythos가 약 3일 만에 Claude 추론 스택을 AMD GPU로 포팅했고 저수준 커널의 거의 100%를 직접 작성했다고 밝혔습니다. 이로써 Claude가 4대 주요 칩 패밀리에서 모두 구동되어 하나의 컴퓨트 풀처럼 운용된다는 설명인데, 회사 측 주장으로 외부 검증은 아직 없습니다.<div class="why"><b>왜 중요?</b> 20년 된 CUDA 종속이 AI 손으로 풀리기 시작했다는 상징적 사례입니다. 사실이라면 장기적으로 추론 비용 인하, 즉 구독료 · API 가격 안정으로 이어질 수 있는 소식입니다.</div><div class="srcs">👉 <a href="https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure" target="_blank" rel="noopener">RIO Rundown ↗</a><a href="https://www.itiger.com/news/1157569611" target="_blank" rel="noopener">iTiger ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#5ED3C8;border-color:#5ED3C859">도구</span><span class="tags">#Google #API</span><span class="title">Gemini Decisions API 공개 · "문서 하나에 질문 1,000개"</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Google이 Gemini Decision 1 기반의 Decisions API를 공개했습니다. 텍스트 · 이미지 · 오디오 · 영상 · PDF를 하나의 입력으로 받아 예/아니오형 질문을 최대 1,000개까지 평가하고 보정된 확률을 돌려주며, 입력 백만 토큰당 $0.10에 출력 과금이 없고 지연은 150~250ms 수준입니다. GeekNews에서도 상위에 올랐습니다.<div class="why"><b>왜 중요?</b> '생성'이 아니라 '판정'만 싸고 빠르게 하는 API라는 새 카테고리입니다. 오늘의 팁처럼 GUI에서도 체크리스트 평가 패턴으로 흉내 낼 수 있습니다.</div><div class="srcs">👉 <a href="https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure" target="_blank" rel="noopener">RIO Rundown ↗</a><a href="https://news.hada.io/" target="_blank" rel="noopener">GeekNews ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#6BA8FF;border-color:#6BA8FF59">규제</span><span class="tags">#Anthropic #OpenAI</span><span class="title">Anthropic 중국 본토 제한 발효 · OpenAI는 제3자 플랫폼 승인제</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">Anthropic의 개정 정책이 11/12부로 발효되어 중국 본토 및 제한 지역 주체가 직 · 간접 지배하는 조직의 Claude 이용이 금지되고, 위험 신호가 감지되면 신분증 + 셀피 인증을 요구합니다. OpenAI도 제3자 플랫폼이 GPT 직접 접근을 제공하려면 승인을 받도록 하는 요건을 11/20부터 시행합니다.<div class="why"><b>왜 중요?</b> 국내 개인 사용에는 영향이 없지만, Claude · GPT를 감싼 서드파티 서비스는 정책 심사를 거치게 됩니다. 쓰고 있는 래퍼 앱이 있다면 공지를 확인해 두세요.</div><div class="srcs">👉 <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly ↗</a></div></div></div></div>
+  <div class="card"><div class="card-head"><span class="cat" style="color:#E8C468;border-color:#E8C46859">비즈니스</span><span class="tags">#Tencent #조직개편</span><span class="title">텐센트 "직원 절반을 AI 네이티브 사업으로 재배치"</span><span class="chev">▶</span></div><div class="card-body"><div class="card-body-inner">마화텅 창업자가 약 10만 명 직원의 절반을 AI 네이티브 사업으로 옮기겠다고 밝혔습니다. 발표 직후 대규모 감원설이 돌 만큼 파급이 컸고, 빅테크가 부서 단위가 아니라 회사 절반 규모로 AI 전환에 들어간 첫 사례급 선언입니다.<div class="why"><b>왜 중요?</b> 던파 · 배그 등 한국 게임 IP와 얽힌 텐센트의 방향 전환이라 게임 업계 파급도 함께 지켜볼 포인트입니다.</div><div class="srcs">👉 <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly ↗</a></div></div></div></div>
+
+  <div class="section-label">② 게임</div>
+  <div class="g-card"><h4><span class="gi">🎮</span>국내 게임</h4><ul>
+    <li>지스타 2026 개막 D-6 · 11/19~22 부산 벡스코 · 넥슨 · 엔씨 · 넷마블 대형 부스 불참 속 CDPR · 스퀘어에닉스 · 캡콤 등 해외 라인업 강화, 키노트는 시프트업 김형태 × 미카미 신지 대담 · <a href="https://www.xportsnews.com/article/2214492" target="_blank" rel="noopener">엑스포츠뉴스 ↗</a></li>
+    <li>한국게임대상은 개막 전날 11/18 벡스코에서 시상 · <a href="https://www.xportsnews.com/article/2214492" target="_blank" rel="noopener">엑스포츠뉴스 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">🌍</span>해외 게임</h4><ul>
+    <li>GTA6 디지털 프리로드 11/12 시작 · 발매(11/19)까지 D-6 · <a href="https://www.gamesradar.com/games/grand-theft-auto/gta-6-pre-loads-open-exactly-1-week-before-rockstars-long-awaited-sequel-comes-out-take-two-finally-confirms/" target="_blank" rel="noopener">GamesRadar ↗</a></li>
+    <li>'빅 워크'(하우스 하우스), 버그 수정에 쓴 AI 코드 10줄(전체 0.1% 미만)을 공개했다가 IGF 심사위원 19인이 "생성형 AI 사용 게임에 투표 안 한다" 보이콧 성명 · 정직한 공개가 불이익이 되느냐는 논쟁으로 확산 · <a href="https://www.inven.co.kr/webzine/news/?news=323271" target="_blank" rel="noopener">인벤 ↗</a></li>
+  </ul></div>
+  <div class="g-card"><h4><span class="gi">Ⓝ</span>넥슨 <span style="margin-left:4px"><code>메이플 쇼케이스</code> <code>블루아카 콜라보</code> <code>마영전 신규 보스</code> <code>카스온라인 대개편</code></span></h4><ul>
+    <li>메이플스토리 겨울 쇼케이스 '셀렉션' 12/12(토) 킨텍스 개최 확정 · 현장 투표가 업데이트에 반영되는 참여형 구성, 블루 아카이브 콜라보는 11/19~12/16 진행(학생 21명 등장 · 데미안 보스 · 가구형 일러스트 컬렉션) · <a href="https://www.inven.co.kr/webzine/news/?news=323317" target="_blank" rel="noopener">인벤 ↗</a>
+      <div class="react">🗣 공개 영상에는 "같은 회사인데도 얼마나 열심히 준비했는지 감이 안 온다", "21명 등장은 예상 못 했다" 등 규모에 놀란 호평이 다수 (<a href="https://www.gameple.co.kr/news/articleView.html?idxno=216960" target="_blank" rel="noopener">게임플 ↗</a>)</div></li>
+    <li>마비노기 영웅전, 시공왜곡 '무신의 절해고도' 업데이트 · 무기 없이 맨몸 무술로만 싸우는 5페이즈 보스 '공허의 무신 가르반', 휘장 슬롯 신설, 아이템 거래 체계 3종 단순화 · <a href="https://www.gamemeca.com/view.php?gid=1783432" target="_blank" rel="noopener">게임메카 ↗</a></li>
+    <li>카운터 스트라이크 온라인, 신규 초월 클래스 '아이리' 대개편 · 신규 맵 '요술나무', 각성 스탯 좀비 모드 적용, 10개 주요 맵 그래픽 개선 · <a href="https://www.gamemeca.com/view.php?gid=1783410" target="_blank" rel="noopener">게임메카 ↗</a></li>
+  </ul></div>
+
+  <div class="section-label">③ 이번 주 판교 날씨 &amp; OOTD <span class="aux">(월~일 · 오늘 강조)</span></div>
+  <!-- 매일: 실제 예보로 7칸을 채우고 오늘 칸에 class="wd today" · 수치를 확인 못 하면 숫자 없이 코디 가이드만 -->
+  <div class="week">
+    <div class="wd"><div class="wn">월</div><div class="wdt">11/9</div><div class="wi">·</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd"><div class="wn">화</div><div class="wdt">11/10</div><div class="wi">·</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd"><div class="wn">수</div><div class="wdt">11/11</div><div class="wi">☀️</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd"><div class="wn">목</div><div class="wdt">11/12</div><div class="wi">☀️</div><div class="wt"></div><div class="wo">지난 날짜</div></div>
+    <div class="wd today"><div class="wn">금</div><div class="wdt">11/13</div><div class="wi">⛅</div><div class="wt"><span class="hi">17°</span><span class="lo">10°</span></div><div class="wo">맨투맨 + 얇은 아우터</div></div>
+    <div class="wd"><div class="wn">토</div><div class="wdt">11/14</div><div class="wi">🌧️</div><div class="wt"><span class="hi">14°</span><span class="lo">8°</span></div><div class="wo">우산 필수 · 방수 아우터 · 미세먼지 매우나쁨</div></div>
+    <div class="wd"><div class="wn">일</div><div class="wdt">11/15</div><div class="wi">☀️</div><div class="wt"><span class="hi">19°</span><span class="lo">4°</span></div><div class="wo">아침 코트 · 낮 니트, 일교차 15°</div></div>
+  </div>
+  <div class="week-note"><b>이번 주 한 줄</b> · 오늘(금)은 구름 사이 17°로 무난, 토요일은 비(강수확률 88%)에 공기질 '매우나쁨'까지 겹쳐 실내 추천, 일요일은 맑고 19°지만 아침 4°로 일교차가 15°까지 벌어집니다. (AccuWeather 분당 · 11/13 조회)</div>
+
+  <div class="section-label">④ 둥둥이 케어</div>
+  <!-- 매일: 아래 항목 중 2~3개를 그날 날씨 · 계절에 맞춰 교체 · 임상적 주장에는 확인한 출처 링크 -->
+  <div class="dog">
+    <h4>🐕 둥둥이 <span class="age">웰시코기 · 2살</span></h4>
+    <div class="focus"><b>오늘의 포인트</b> · 내일(토)은 비에 공기질 '매우나쁨'까지 겹쳐 산책이 어려운 날입니다. 오늘 오후 맑아질 때 산책을 넉넉히 해두고, 주말 실내 놀이를 미리 준비해 두세요.</div>
+    <ul>
+      <li><span class="k" style="color:#6BA8FF;border-color:#6BA8FF59">계절</span><span>공기가 나쁜 날은 반려견도 눈 · 호흡기 자극을 받을 수 있어, 야외 운동을 줄이고 짧은 배변 산책 정도로 낮추는 것이 권장됩니다 (<a href="https://www.pca.state.mn.us/news/does-air-pollution-affect-our-furry-friends" target="_blank" rel="noopener">미네소타 환경청 ↗</a>). 귀가 후 젖은 수건으로 털 · 발 · 눈가를 닦아주고, 기침이나 눈곱이 평소보다 늘면 수의사 상담을 받아보세요.</span></li>
+      <li><span class="k" style="color:#E8C468;border-color:#E8C46859">체중</span><span>코기는 식탐 많고 체구가 작아 살이 찌기 쉬운데, 조금만 쪄도 긴 허리와 관절 부담이 커져 IVDD · 고관절 이형성 악화 요인이 됩니다 (<a href="https://www.imprimedicine.com/veterinary/blog/corgi-health" target="_blank" rel="noopener">ImpriMed 수의 블로그 ↗</a>). 위에서 봤을 때 허리 라인이 보이고 갈비뼈가 손끝에 만져지는지 주 1회 체크하세요.</span></li>
+      <li><span class="k" style="color:#7ED87E;border-color:#7ED87E59">산책·두뇌</span><span>주말 실내 체제 대비로 오늘은 평소보다 긴 '킁킁 산책'으로 에너지를 빼두고, 내일은 노즈워크 매트 · 수건 간식 찾기 · 5분 기술 연습을 2~3세트 돌리면 목축견 둥둥이의 좀이 쑤시는 주말을 막을 수 있습니다.</span></li>
+    </ul>
+  </div>
+
+  <div class="section-label">⑤ 오늘의 활용 팁</div>
+  <div class="tip"><h3>💡 '체크리스트 평가 패턴' · 문서 하나에 질문 20개를 한 번에</h3>
+<p>오늘 공개된 Gemini Decisions API의 핵심 아이디어(입력 하나 + 예/아니오 질문 묶음)는 GUI에서도 바로 흉내 낼 수 있습니다.</p>
+<blockquote>검토할 문서 · 계약서 · 기획서 · 스크린샷을 올리고, 질문을 하나씩 던지는 대신 예/아니오 체크리스트 15~20개를 한 번에 주세요: "각 항목에 예/아니오 + 확신도(%) + 근거 한 줄로 답해. 불확실하면 불확실하다고 표시해." 같은 체크리스트를 Claude와 Gemini에 동시에 돌리고 두 AI의 답이 갈린 항목만 직접 확인하면, 검토 시간이 줄면서 사각지대는 더 잘 잡힙니다.</blockquote>
+<p><b>이번 주 시도할 것 Top 3</b> · ① '회사 두뇌' 컨텍스트 문서 한 페이지를 Claude 프로젝트 · ChatGPT Projects · Gemini Gem에 똑같이 심기 ② AI 코드는 다른 AI에게 "보안 취약점 관점에서만 리뷰" 교차 검토 + 비밀값은 [KEY] 치환 ③ 반복 검토 업무 하나를 예/아니오 체크리스트로 템플릿화</p></div>
+
+  <div class="pnav">
+    <a href="2026-11-12.html"><span class="lbl">← 이전 브리핑</span>2026-11-12 (목) · Gemini 4 Carbon API 개방 외</a>
+    <a class="to-index" href="../index.html">아카이브</a>
+  </div>
+  <footer>MadKnight 뉴스 · 2026-11-13 (금) 발행 · 평일 아침 06:00 KST</footer>
+</div>
+<script>
+  document.querySelectorAll('.card-head').forEach(function(h) {
+    h.addEventListener('click', function() { h.parentElement.classList.toggle('open'); });
+  });
+  var first = document.querySelector('.card'); if (first) first.classList.add('open');
+  var btn = document.getElementById('toggleAll'), allOpen = false;
+  btn.addEventListener('click', function(){
+    allOpen = !allOpen;
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.toggle('open', allOpen); });
+    btn.textContent = allOpen ? '모두 접기' : '모두 펼치기';
+  });
+</script>
+</body>
+</html>
