@@ -7,49 +7,44 @@
         "name": "MADKNIGHT DAILY",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "title": "11월 13일 금요일 · 오늘의 AI & 게임",
-      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-11-13.html",
+      "title": "11월 16일 월요일 · 오늘의 AI & 게임",
+      "url": "https://juntae888-jpg.github.io/madknight-news/news/2026-11-16.html",
       "color": 16747100,
-      "description": "**[시민단체 4곳, 5대 AI 기업에 '신모델 개발 중단' 소송](https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/12/advocacy-groups-sue-ai-giants-to-freeze-new-models-warning-of-catastrophic-risks)**\n> 11/12 샌프란시스코 고등법원 · Anthropic · Google · Meta · OpenAI · SpaceX 피소\n\n**[Anthropic \"Mythos가 사흘 만에 Claude를 AMD GPU로 포팅\"](https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure)**\n> 커널 거의 100% AI 작성 · 4대 칩 패밀리 구동 (투자자 발표 · 미검증)\n\n**[Google Gemini Decisions API 공개](https://news.hada.io/)**\n> 입력 1건에 예/아니오 질문 최대 1,000개 · 입력 $0.10/M · 출력 무료\n\n**[Anthropic 중국 본토 이용 제한 11/12 발효](https://aiweekly.co/ai-news-today)**\n> 위험 신호 시 신분증 + 셀피 인증 · OpenAI 제3자 승인제는 11/20부터\n\n**[텐센트 \"직원 절반을 AI 네이티브 사업으로\"](https://aiweekly.co/ai-news-today)**\n> 10만 명 중 절반 재배치 선언 · 발표 직후 감원설 확산",
+      "description": "**[젠슨 황, 엔비디아 CEO 전격 사임 · 주말 내내 후폭풍](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm)**\n> 11/12 SEC 공시 · CFO 크레스 임시 CEO · HSBC 목표가 $370→$170 · 11/17 실적이 분수령\n\n**[Google Antigravity '/teamwork' 공개](https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature)**\n> 멀티 에이전트가 수학 난제 공략 · 베유 추측을 Lean 180만 줄로 형식화\n\n**[OpenAI, PayPal과 ChatGPT Wallet 출시](https://www.capitalbrief.com/briefing/openai-paypal-partner-to-launch-first-payments-wallet-on-chatgpt-30ddb705-3c14-43c7-bb8b-87fa9dd2c922/)**\n> 에이전트가 쇼핑하고 결제는 건별 승인 · 챗 내 쇼핑의 결제 구간 장악\n\n**[Thinking Machines, Inkling 2 Small 오픈 웨이츠](https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem)**\n> 594B MoE(활성 17B) · Apache 2.0 · 오픈 웨이츠 상위권 평가\n\n**[애플 첫 스마트 글래스, WWDC 2027 공개 전망](https://aiweekly.co/ai-news-today)**\n> 코드명 N50 · 아이폰 연동 · 2027년 내 출시 목표 (거먼)",
       "fields": [
         {
           "name": "🎮 국내 게임",
-          "value": "지스타 2026 D-6(11/19~22 벡스코) · 해외 라인업 강화, 키노트 김형태 × 미카미 신지 · 한국게임대상 11/18",
+          "value": "지스타 2026 D-3(11/19~22 벡스코) · 한성숙 총리 개막식 참석 예정 · 메인 스폰서는 AI 스토리 플랫폼 '크랙' · 해외 게임사 + 인디 114팀",
           "inline": true
         },
         {
           "name": "🌍 해외 게임",
-          "value": "GTA6 프리로드 11/12 시작, 발매 D-6 · '빅 워크' AI 코드 10줄에 IGF 심사위원 19인 보이콧 논쟁",
+          "value": "월즈 결승: BLG가 젠지 3:1 격파, LCK 4:0 올킬 첫 우승 · FMVP '나이트' · GTA6 발매 D-3",
           "inline": true
         },
         {
           "name": "Ⓝ 넥슨",
-          "value": "메이플 겨울 쇼케이스 '셀렉션' 12/12 킨텍스 · 블루아카 콜라보 11/19~12/16(학생 21명) · 마영전 신규 보스 '가르반' · 카스온라인 '아이리' 대개편 (확대판은 웹페이지에)",
-          "inline": false
-        },
-        {
-          "name": "🧪 베타 테스트 TOP 3",
-          "value": "**타임 테이커즈**(엔씨) 2차 스팀 플레이테스트 오늘~11/16 · **붕괴: 넥서스 아니마**(호요버스) 파이널 CBT 11/25 시작, 사전 신청 중 · **드퀘 RPG**(스퀘어 에닉스) CBT 신청 11/23 마감, 테스트 12/8~15",
+          "value": "빈딕투스: 디파잉 페이트 신규 시네마틱 + 트위치콘 첫 시연(2027 PC · PS5) · 블루아카 5주년 LP 패키지 예약 · 메이플 × 블루아카 콜라보 D-3 (확대판은 웹페이지에)",
           "inline": false
         },
         {
           "name": "🌤 오늘 판교 · OOTD",
-          "value": "17°/10° · 구름 뒤 옅은 햇살 · 맨투맨 + 얇은 아우터",
+          "value": "17°/9° · 대체로 흐림 · 맨투맨 + 가벼운 재킷 (수요일부터 한파급 추위 · 목금 4°/-3°)",
           "inline": true
         },
         {
           "name": "🐕 둥둥이 케어",
-          "value": "내일은 비 + 미세먼지 매우나쁨 · 오늘 산책 넉넉히, 주말엔 실내 노즈워크 2~3세트",
+          "value": "이번 주 첫 한파 적응 주간 · 오늘 포근할 때 산책 넉넉히, 목금 아침 산책은 해 뜬 뒤로",
           "inline": true
         },
         {
           "name": "💡 오늘의 팁",
-          "value": "문서 하나에 예/아니오 체크리스트 15~20개를 한 번에 주고(확신도 + 근거 포함), Claude와 Gemini의 답이 갈린 항목만 직접 확인하세요",
+          "value": "'반증 전담 AI' 패턴: A가 만든 결과를 B에게 \"틀렸다고 가정하고 반례 · 빠진 전제 · 숫자 오류만 찾아라(개선 제안 금지)\"로 넘기면 리뷰가 훨씬 날카로워집니다",
           "inline": false
         },
         {
           "name": "📰 전체 브리핑",
-          "value": "[웹에서 보기](https://juntae888-jpg.github.io/madknight-news/news/2026-11-13.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)",
+          "value": "[웹에서 보기](https://juntae888-jpg.github.io/madknight-news/news/2026-11-16.html) · [아카이브](https://juntae888-jpg.github.io/madknight-news/)",
           "inline": false
         }
       ],
@@ -57,7 +52,7 @@
         "text": "MadKnight 뉴스 · 매일 06:00 KST",
         "icon_url": "https://juntae888-jpg.github.io/madknight-news/mk.png"
       },
-      "timestamp": "2026-11-12T21:00:00.000Z",
+      "timestamp": "2026-11-15T21:00:00.000Z",
       "image": {
         "url": "https://juntae888-jpg.github.io/madknight-news/banner.png"
       }
